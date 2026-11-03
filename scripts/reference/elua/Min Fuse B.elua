@@ -1,0 +1,75 @@
+-- BEGIN DESCRIPTION
+--   File Name    : Downline Transformers.elua
+--   Version      : WindMil 8.2
+--   Input        : None
+--   Return       : None
+--   Description  : This script returns the count of downline transformers
+--   Customer     : None
+-- END DESCRIPTION
+
+-- BEGIN META DATA
+--<luaelementfield>
+-- <name>Min Fuse B</name>
+-- <type>stringTypeEnum</type>
+-- <category>fieldCategoryGeneral</category>
+-- <getfunction>MinFuseB</getfunction>
+-- <setfunction></setfunction>
+--</luaelementfield>
+-- END META DATA
+
+function MinFuseB ( element )
+	local count = 0
+    local kva = 0
+  if GetElementField( element, "Type" ) == "Transformer" then
+    kva = GetElementField( element, "Transformer Base Kva B" )
+    if kva then
+      count = count + kva
+    end
+  end
+  local set = {}
+  set = GetChildren( element )
+  local i = 1
+  local x = 1
+  while #set ~= 0 do
+    local newSet = {}
+    i = 1
+    while set[i] do
+      if GetElementField( set[i], "Type" ) == "Transformer" then
+        kva = GetElementField( set[i], "Transformer Base Kva B" )
+        if kva then
+          count = count + kva
+        end
+      end 
+      local children = GetChildren(set[i])
+      x = 1
+      while children[x] do
+        table.insert(newSet,children[x])
+        x = x + 1
+      end
+      i = i + 1
+    end
+    set = {}
+    set = newSet
+  end
+    if count < 1 then
+      count = ''
+    elseif count <= 167 then
+      count = "10KS"
+    elseif count <= 250 then
+      count = "15KS"
+    elseif count <= 334 then
+      count = "20KS"
+    elseif count <= 430 then
+      count = "25KS"
+    elseif count <= 515 then
+      count = "30KS"
+    elseif count <= 700 then
+      count = "40KS"
+    elseif count <= 850 then
+      count = "50KS"
+    else
+      count = "65KS"
+    end
+	return count
+end
+

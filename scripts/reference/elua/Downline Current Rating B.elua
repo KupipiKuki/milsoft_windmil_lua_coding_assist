@@ -1,0 +1,58 @@
+-- BEGIN DESCRIPTION
+--   File Name    : Downline Devices.elua
+--   Version      : WindMil 8.2
+--   Input        : None
+--   Return       : None
+--   Description  : This script returns the count of downline transformers
+--   Customer     : None
+-- END DESCRIPTION
+
+-- BEGIN META DATA
+--<luaelementfield>
+-- <name>Downline Current Rating B</name>
+-- <type>stringTypeEnum</type>
+-- <category>fieldCategoryGeneral</category>
+-- <getfunction>DownlineRatingB</getfunction>
+-- <setfunction></setfunction>
+--</luaelementfield>
+-- END META DATA
+
+function DownlineRatingB( element )
+	local count = 0
+    local current = 0
+    local max_current = 0
+  --if GetElementField( element, "Type" ) == "Device" then
+  --  count = count + 1
+  --end
+  local set = {}
+  set = GetChildren( element )
+  local i = 1
+  local x = 1
+  while #set ~= 0 do
+    local newSet = {}
+    i = 1
+    while set[i] do
+      if GetElementField( set[i], "Type" ) == "Device" then
+        count = count + 1
+        current = GetElementField(set[i], "Current Rating B")
+        if current then
+          if current < 200 then
+            if current > max_current then
+              max_current = current
+            end
+          end
+        end
+      end 
+      local children = GetChildren(set[i])
+      x = 1
+      while children[x] do
+        table.insert(newSet,children[x])
+        x = x + 1
+      end
+      i = i + 1
+    end
+    set = {}
+    set = newSet
+  end
+	return max_current--count
+end
