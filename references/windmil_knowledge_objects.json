@@ -1,0 +1,180 @@
+{
+  "schema_version": "1.0",
+  "objects_count": 15,
+  "studies_count":7,
+  "imports_counts":6,
+  "objects": [
+    {
+      "name": "Element",
+      "parent": null,
+      "kind": "base_element",
+      "description": "Contains fields that are common to all other element types."
+    },
+    {
+      "name": "Line",
+      "parent": "Element",
+      "kind": "element",
+      "description": "Inherits fields from Element, contains fields that relate to electrical transmission and distribution lines"
+    },
+    {
+      "name": "Overhead",
+      "parent": "Line",
+      "kind": "element",
+      "description": "Inherist fields from Line, contains fields that relate to overhead transmission and distribution construction"
+    },
+    {
+      "name": "Underground",
+      "parent": "Line",
+      "kind": "element",
+      "description": "Inherist fields from Line, contains fields that relate to underground distribution construction"
+    },
+    {
+      "name": "Transformer",
+      "parent": "Element",
+      "kind": "element",
+      "description": "Inherits fields from Element, contains fields that relate to distribution and power transformers"
+    },
+    {
+      "name": "Switch",
+      "parent": "Element",
+      "kind": "element",
+      "description": "Inherits fields from Element, contains fields that relate to electrical switching equipment"
+    },
+    {
+      "name": "Regulator",
+      "parent": "Element",
+      "kind": "element",
+      "description": "Inherits fields from Element, contains fields that relate to voltage reulation equipment"
+    },
+    {
+      "name": "Capacitors",
+      "parent": "Element",
+      "kind": "element",
+      "description": "Inherits fields from Element, contains fields that relate to capacitors"
+    },
+    {
+      "name": "Consumers",
+      "parent": "Element",
+      "kind": "element",
+      "description": "Inherits fields from Element, contains fields that relate to consumer loads"
+    },
+    {
+      "name": "Device",
+      "parent": "Element",
+      "kind": "element",
+      "description": "Inherits fields from Element, contains fields that relate to system protection and control equipment"
+    },
+    {
+      "name": "Generator",
+      "parent": "Element",
+      "kind": "element",
+      "description": "Inherits fields from Element, contains fields that relate to synchronous power generation equipment"
+    },
+    {
+      "name": "Motor",
+      "parent": "Element",
+      "kind": "element",
+      "description": "Inherits fields from Element, contains fields that relate to electrical to mechanical conversion equipment"
+    },
+    {
+      "name": "Motor Start",
+      "parent": "Motor",
+      "kind": "element",
+      "description": "Inherits fields from Element, contains fields that relate to motor starting equipment"
+    },
+    {
+      "name": "Node",
+      "parent": "Element",
+      "kind": "element",
+      "description": "Inherits fields from Element, contains fields that relate a invisible or fake node required to create the correct network representation"
+    },
+    {
+      "name": "Solar PV",
+      "parent": "Element",
+      "kind": "element",
+      "description": "Inherits fields from Element, contains fields that relate to electrical photovoltaic power generation equipment"
+    }
+  ],
+  "studies" : [
+    {
+      "name": "Arc Flash",
+      "parent": null,
+      "kind": "result",
+      "description": "Fields that apply to elements after the completion of an arc flash or incident energy study"
+    },
+    {
+      "name": "Calculated Load",
+      "parent": null,
+      "kind": "result",
+      "description": "Fields that apply to elements after the completion of a load calculation anaylsis"
+    },
+    {
+      "name": "Coordination",
+      "parent": null,
+      "kind": "result",
+      "description": "Fields that apply to elements after the completion of a system corrdination study" 
+    },
+    {
+      "name": "Fault Current",
+      "parent": null,
+      "kind": "result",
+      "description": "Fields that apply to elements after the completion of a fault current analysis at each element"
+    },
+    {
+      "name": "Fault Flow",
+      "parent": null,
+      "kind": "result",
+      "description": "Fields that apply to elements after the completion of a fault flow analysis" 
+    },
+    {
+      "name": "Reliability Analysis",
+      "parent": null,
+      "kind": "result",
+      "description": "Fields that apply to elements after the completion of a reliability study"
+    },
+    {
+      "name": "Voltage Drop",
+      "parent": null,
+      "kind": "result",
+      "description": "Fields that apply to elements after the completion of a voltage drop analysis"
+    }
+  ],
+  "imports" : [
+    {
+      "name": "Billing Load",
+      "parent": null,
+      "kind": "data",
+      "description": "Fields that apply to elements upon the completion of a billing/revenue load report"
+    },
+    {
+      "name": "Calculated Load",
+      "parent": null,
+      "kind": "data",
+      "description": "Fields that apply to elements upon the completion of a calculated load file"
+    },
+    {
+      "name": "Load Control Point",
+      "parent": null,
+      "kind": "data",
+      "description": "Fields that apply to elements upon the completion of a load control point file"
+    },
+    {
+      "name": "Load",
+      "parent": null,
+      "kind": "data",
+      "description": "Fields that apply to elements upon the completion of a archived load file"
+    },
+    {
+      "name": "SCADA",
+      "parent": null,
+      "kind": "data",
+      "description": "Fields that apply to elements upon the completion of a SCADA data file"
+    },
+    {
+      "name": "System",
+      "parent": null,
+      "kind": "data",
+      "description": "Fields that apply to elements upon the completion of a system data file"
+    }
+  ]
+}

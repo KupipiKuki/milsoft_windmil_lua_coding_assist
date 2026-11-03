@@ -1,0 +1,1820 @@
+{
+  "overhead": {
+    "0": {
+      "column": "1",
+      "data_type": "A",
+      "description": "Equipment Identifier",
+      "mandatory": "X",
+      "details": "Unique, alphanumeric, and < 20 characters."
+    },
+    "1": {
+      "column": "2",
+      "data_type": "SI",
+      "description": "Equipment Type",
+      "mandatory": "X",
+      "details": "See Equipment Type Code."
+    },
+    "2": {
+      "column": "50",
+      "data_type": "G",
+      "description": "Equipment GUID",
+      "mandatory": "",
+      "details": ""
+    },
+    "3": {
+      "column": "3",
+      "data_type": "SI",
+      "description": "Material",
+      "mandatory": "",
+      "details": "See Conductor Material."
+    },
+    "4": {
+      "column": "4",
+      "data_type": "F",
+      "description": "Carrying Capacity",
+      "mandatory": "",
+      "details": "Amps, Default=0"
+    },
+    "5": {
+      "column": "5",
+      "data_type": "F",
+      "description": "Resistance @ 25",
+      "mandatory": "",
+      "details": "Ohms/Mile, Default=0"
+    },
+    "6": {
+      "column": "6",
+      "data_type": "F",
+      "description": "Resistance @ 50",
+      "mandatory": "",
+      "details": "Ohms/Mile, Default=0"
+    },
+    "7": {
+      "column": "7",
+      "data_type": "F",
+      "description": "Geometric Mean Radius",
+      "mandatory": "",
+      "details": "Feet, Default=0"
+    },
+    "8": {
+      "column": "8",
+      "data_type": "A",
+      "description": "Preferred Neutral Description",
+      "mandatory": "",
+      "details": "See SEQ Preferred Neutral Description."
+    },
+    "9": {
+      "column": "9",
+      "data_type": "F",
+      "description": "Diameter",
+      "mandatory": "",
+      "details": ""
+    },
+    "10": {
+      "column": "10",
+      "data_type": "A",
+      "description": "Named Equipment Category",
+      "mandatory": "",
+      "details": ""
+    },
+    "11": {
+      "column": "11",
+      "data_type": "A",
+      "description": "Preferred Neutral Identifier",
+      "mandatory": "",
+      "details": ""
+    }
+  },
+  "underground": {
+    "0": {
+      "column": "1",
+      "data_type": "A",
+      "description": "Equipment Identifier",
+      "mandatory": "X",
+      "details": "Unique, alphanumeric, and < 20 characters."
+    },
+    "1": {
+      "column": "2",
+      "data_type": "SI",
+      "description": "Equipment Type",
+      "mandatory": "X",
+      "details": "See Equipment Type Code."
+    },
+    "2": {
+      "column": "50",
+      "data_type": "G",
+      "description": "Equipment GUID",
+      "mandatory": "",
+      "details": ""
+    },
+    "3": {
+      "column": "3",
+      "data_type": "SI",
+      "description": "Cable Type",
+      "mandatory": "",
+      "details": "See Underground Cable Type."
+    },
+    "4": {
+      "column": "4",
+      "data_type": "F",
+      "description": "Carrying Capacity In Amps, Default=0",
+      "mandatory": "",
+      "details": ""
+    },
+    "5": {
+      "column": "5",
+      "data_type": "F",
+      "description": "Phase Conductor Resistance Ohms/Mile, Default=0",
+      "mandatory": "",
+      "details": ""
+    },
+    "6": {
+      "column": "6",
+      "data_type": "F",
+      "description": "Geometric Mean Radius In Feet, Default=0",
+      "mandatory": "",
+      "details": ""
+    },
+    "7": {
+      "column": "7",
+      "data_type": "F",
+      "description": "Concentric Neutral Resist Ohms/Mile, Default=0",
+      "mandatory": "",
+      "details": ""
+    },
+    "8": {
+      "column": "8",
+      "data_type": "SI",
+      "description": "# of Individual Strands in Neutral Default=0",
+      "mandatory": "",
+      "details": ""
+    },
+    "9": {
+      "column": "9",
+      "data_type": "F",
+      "description": "OD of Cable Insulation In Feet, Default=0",
+      "mandatory": "",
+      "details": ""
+    },
+    "10": {
+      "column": "10",
+      "data_type": "F",
+      "description": "OD of Cable Including Neutral In Feet, Default=0",
+      "mandatory": "",
+      "details": ""
+    },
+    "11": {
+      "column": "11",
+      "data_type": "F",
+      "description": "Note Used",
+      "mandatory": "",
+      "details": ""
+    },
+    "12": {
+      "column": "12",
+      "data_type": "F",
+      "description": "Dielectric Constant of Insulation Under Neutral Default=0",
+      "mandatory": "",
+      "details": ""
+    },
+    "13": {
+      "column": "13",
+      "data_type": "F",
+      "description": "Diameter Under Neutral In Feet, Default=0",
+      "mandatory": "",
+      "details": ""
+    },
+    "14": {
+      "column": "14",
+      "data_type": "F",
+      "description": "Not Used",
+      "mandatory": "",
+      "details": ""
+    },
+    "15": {
+      "column": "15",
+      "data_type": "F",
+      "description": "kV Depreciated",
+      "mandatory": "",
+      "details": ""
+    },
+    "16": {
+      "column": "16",
+      "data_type": "F",
+      "description": "Type Neutral Depreciated",
+      "mandatory": "",
+      "details": ""
+    },
+    "17": {
+      "column": "17",
+      "data_type": "F",
+      "description": "GMR (Neutral) In Feed, Default=0",
+      "mandatory": "",
+      "details": ""
+    },
+    "18": {
+      "column": "18",
+      "data_type": "F",
+      "description": "Diameter of Conductor In Feet, Default=0",
+      "mandatory": "",
+      "details": ""
+    },
+    "19": {
+      "column": "19",
+      "data_type": "F",
+      "description": "Distance to CN In Feet, Default=0",
+      "mandatory": "",
+      "details": ""
+    },
+    "20": {
+      "column": "20",
+      "data_type": "A",
+      "description": "Named Equipment Category",
+      "mandatory": "",
+      "details": ""
+    }
+  },
+  "zsm": {
+    "0": {
+      "column": "1",
+      "data_type": "A",
+      "description": "Equipment Identifier",
+      "mandatory": "X",
+      "details": "Unique, alphanumeric, and < 20 characters."
+    },
+    "1": {
+      "column": "2",
+      "data_type": "SI",
+      "description": "Equipment Type",
+      "mandatory": "X",
+      "details": "See Equipment Type Code."
+    },
+    "2": {
+      "column": "50",
+      "data_type": "G",
+      "description": "Equipment GUID",
+      "mandatory": "",
+      "details": ""
+    },
+    "3": {
+      "column": "3",
+      "data_type": "F",
+      "description": "Carrying Capacity",
+      "mandatory": "",
+      "details": "In Amps, Default=0.0"
+    },
+    "4": {
+      "column": "4",
+      "data_type": "SI",
+      "description": "Types of Units (for display)",
+      "mandatory": "",
+      "details": "See Impedance Type Units for Display Purposes."
+    },
+    "5": {
+      "column": "5",
+      "data_type": "F",
+      "description": "Base kVA",
+      "mandatory": "",
+      "details": ""
+    },
+    "6": {
+      "column": "6",
+      "data_type": "F",
+      "description": "Base kV",
+      "mandatory": "",
+      "details": ""
+    },
+    "7": {
+      "column": "7",
+      "data_type": "SI",
+      "description": "Units (for display)",
+      "mandatory": "",
+      "details": "See Units."
+    },
+    "8": {
+      "column": "8",
+      "data_type": "F",
+      "description": "Self Impedance, R",
+      "mandatory": "",
+      "details": "Always in ohms and feet."
+    },
+    "9": {
+      "column": "9",
+      "data_type": "F",
+      "description": "Self Impedance, +jX",
+      "mandatory": "",
+      "details": "Always in ohms and feet."
+    },
+    "10": {
+      "column": "10",
+      "data_type": "F",
+      "description": "Self Impedance, +jB",
+      "mandatory": "",
+      "details": "Always in ohms and feet."
+    },
+    "11": {
+      "column": "11",
+      "data_type": "F",
+      "description": "Mutual Impedance, R",
+      "mandatory": "",
+      "details": "Always in ohms and feet."
+    },
+    "12": {
+      "column": "12",
+      "data_type": "F",
+      "description": "Mutual Impedance, +jX",
+      "mandatory": "",
+      "details": "Always in ohms and feet."
+    },
+    "13": {
+      "column": "13",
+      "data_type": "F",
+      "description": "Mutual Impedance, +jB",
+      "mandatory": "",
+      "details": "Always in ohms and feet."
+    },
+    "14": {
+      "column": "14",
+      "data_type": "F",
+      "description": "Positive Sequence, R",
+      "mandatory": "",
+      "details": "See Alternative Impedance Value."
+    },
+    "15": {
+      "column": "15",
+      "data_type": "F",
+      "description": "Positive Sequence, jX",
+      "mandatory": "",
+      "details": "See Alternative Impedance Value."
+    },
+    "16": {
+      "column": "16",
+      "data_type": "F",
+      "description": "Zero Sequence, R",
+      "mandatory": "",
+      "details": "See Alternative Impedance Value."
+    },
+    "17": {
+      "column": "17",
+      "data_type": "F",
+      "description": "Zero Sequence, jX",
+      "mandatory": "",
+      "details": "See Alternative Impedance Value."
+    },
+    "18": {
+      "column": "18",
+      "data_type": "F",
+      "description": "Mutual Reverse, R",
+      "mandatory": "",
+      "details": ""
+    },
+    "19": {
+      "column": "19",
+      "data_type": "F",
+      "description": "Mutual Reverse, jX",
+      "mandatory": "",
+      "details": ""
+    },
+    "20": {
+      "column": "20",
+      "data_type": "F",
+      "description": "Negative Sequence, R",
+      "mandatory": "",
+      "details": "Only when Self and Mutual Impedances are empty."
+    },
+    "21": {
+      "column": "21",
+      "data_type": "F",
+      "description": "Negative Sequence, jX",
+      "mandatory": "",
+      "details": "Only when Self and Mutual Impedances are empty."
+    },
+    "22": {
+      "column": "22",
+      "data_type": "A",
+      "description": "Named Equipment Category",
+      "mandatory": "",
+      "details": ""
+    }
+  },
+  "zabc": {
+    "0": {
+      "column": "1",
+      "data_type": "A",
+      "description": "Equipment Identifier",
+      "mandatory": "X",
+      "details": "Unique, alphanumeric, and < 20 characters."
+    },
+    "1": {
+      "column": "2",
+      "data_type": "SI",
+      "description": "Equipment Type",
+      "mandatory": "X",
+      "details": "See Equipment Type Code."
+    },
+    "2": {
+      "column": "50",
+      "data_type": "G",
+      "description": "Equipment GUID",
+      "mandatory": "",
+      "details": ""
+    },
+    "3": {
+      "column": "3",
+      "data_type": "F",
+      "description": "Carrying Capacity",
+      "mandatory": "",
+      "details": "In Amps, Default=0.0"
+    },
+    "4": {
+      "column": "4",
+      "data_type": "SI",
+      "description": "Types of Units (for display)",
+      "mandatory": "",
+      "details": "See Impedance Type Units for Display Purposes."
+    },
+    "5": {
+      "column": "5",
+      "data_type": "F",
+      "description": "Base kVA",
+      "mandatory": "",
+      "details": ""
+    },
+    "6": {
+      "column": "6",
+      "data_type": "F",
+      "description": "Base kV",
+      "mandatory": "",
+      "details": ""
+    },
+    "7": {
+      "column": "7",
+      "data_type": "SI",
+      "description": "Units",
+      "mandatory": "",
+      "details": "See Units."
+    },
+    "8": {
+      "column": "8",
+      "data_type": "F",
+      "description": "Impedance R-AA",
+      "mandatory": "",
+      "details": ""
+    },
+    "9": {
+      "column": "9",
+      "data_type": "F",
+      "description": "Impedance jX-AA",
+      "mandatory": "",
+      "details": ""
+    },
+    "10": {
+      "column": "10",
+      "data_type": "F",
+      "description": "Impedance R-AB",
+      "mandatory": "",
+      "details": ""
+    },
+    "11": {
+      "column": "11",
+      "data_type": "F",
+      "description": "Impedance jX-AB",
+      "mandatory": "",
+      "details": ""
+    },
+    "12": {
+      "column": "12",
+      "data_type": "F",
+      "description": "Impedance R-AC",
+      "mandatory": "",
+      "details": ""
+    },
+    "13": {
+      "column": "13",
+      "data_type": "F",
+      "description": "Impedance jX-AC",
+      "mandatory": "",
+      "details": ""
+    },
+    "14": {
+      "column": "14",
+      "data_type": "F",
+      "description": "Impedance R-BA",
+      "mandatory": "",
+      "details": ""
+    },
+    "15": {
+      "column": "15",
+      "data_type": "F",
+      "description": "Impedance jX-BA",
+      "mandatory": "",
+      "details": ""
+    },
+    "16": {
+      "column": "16",
+      "data_type": "F",
+      "description": "Impedance R-BB",
+      "mandatory": "",
+      "details": ""
+    },
+    "17": {
+      "column": "17",
+      "data_type": "F",
+      "description": "Impedance jX-BB",
+      "mandatory": "",
+      "details": ""
+    },
+    "18": {
+      "column": "18",
+      "data_type": "F",
+      "description": "Impedance R-BC",
+      "mandatory": "",
+      "details": ""
+    },
+    "19": {
+      "column": "19",
+      "data_type": "F",
+      "description": "Impedance jX-BC",
+      "mandatory": "",
+      "details": ""
+    },
+    "20": {
+      "column": "20",
+      "data_type": "F",
+      "description": "Impedance R-CA",
+      "mandatory": "",
+      "details": ""
+    },
+    "21": {
+      "column": "21",
+      "data_type": "F",
+      "description": "Impedance jX-CA",
+      "mandatory": "",
+      "details": ""
+    },
+    "22": {
+      "column": "22",
+      "data_type": "F",
+      "description": "Impedance R-CB",
+      "mandatory": "",
+      "details": ""
+    },
+    "23": {
+      "column": "23",
+      "data_type": "F",
+      "description": "Impedance jX-CB",
+      "mandatory": "",
+      "details": ""
+    },
+    "24": {
+      "column": "24",
+      "data_type": "F",
+      "description": "Impedance R-CC",
+      "mandatory": "",
+      "details": ""
+    },
+    "25": {
+      "column": "25",
+      "data_type": "F",
+      "description": "Impedance jX-CC",
+      "mandatory": "",
+      "details": ""
+    },
+    "26": {
+      "column": "26",
+      "data_type": "A",
+      "description": "Named Equipment Category",
+      "mandatory": "",
+      "details": ""
+    }
+  },
+  "transformers": {
+    "0": {
+      "column": "1",
+      "data_type": "A",
+      "description": "Equipment Identifier",
+      "mandatory": "X",
+      "details": "Unique, alphanumeric, and < 20 characters."
+    },
+    "1": {
+      "column": "2",
+      "data_type": "SI",
+      "description": "Equipment Type",
+      "mandatory": "X",
+      "details": "See Equipment Type Code."
+    },
+    "2": {
+      "column": "50",
+      "data_type": "G",
+      "description": "Equipment GUID",
+      "mandatory": "",
+      "details": ""
+    },
+    "3": {
+      "column": "3",
+      "data_type": "F",
+      "description": "Ampacity",
+      "mandatory": "",
+      "details": ""
+    },
+    "4": {
+      "column": "4",
+      "data_type": "SI",
+      "description": "Type of Transformer Cond",
+      "mandatory": "",
+      "details": "See Type of Transformer Conductor."
+    },
+    "5": {
+      "column": "5",
+      "data_type": "F",
+      "description": "Percent Impedance, Zps",
+      "mandatory": "",
+      "details": ""
+    },
+    "6": {
+      "column": "6",
+      "data_type": "F",
+      "description": "Percent Impedance, Zpt",
+      "mandatory": "",
+      "details": ""
+    },
+    "7": {
+      "column": "7",
+      "data_type": "F",
+      "description": "Percent Impedance, Zst",
+      "mandatory": "",
+      "details": ""
+    },
+    "8": {
+      "column": "8",
+      "data_type": "F",
+      "description": "X/R Ratio, Phase A",
+      "mandatory": "",
+      "details": ""
+    },
+    "9": {
+      "column": "9",
+      "data_type": "F",
+      "description": "X/R Ratio, Phase B",
+      "mandatory": "",
+      "details": ""
+    },
+    "10": {
+      "column": "10",
+      "data_type": "F",
+      "description": "X/R Ratio, Phase C",
+      "mandatory": "",
+      "details": ""
+    },
+    "11": {
+      "column": "11",
+      "data_type": "F",
+      "description": "Single Phase Base kVA, Zps",
+      "mandatory": "",
+      "details": ""
+    },
+    "12": {
+      "column": "12",
+      "data_type": "F",
+      "description": "Single Phase Base kVA, Zpt",
+      "mandatory": "",
+      "details": ""
+    },
+    "13": {
+      "column": "13",
+      "data_type": "F",
+      "description": "Single Phase Base kVA, Zst",
+      "mandatory": "",
+      "details": ""
+    },
+    "14": {
+      "column": "14",
+      "data_type": "F",
+      "description": "Zgp, R Value",
+      "mandatory": "",
+      "details": ""
+    },
+    "15": {
+      "column": "15",
+      "data_type": "F",
+      "description": "Zgs, R Value",
+      "mandatory": "",
+      "details": ""
+    },
+    "16": {
+      "column": "16",
+      "data_type": "F",
+      "description": "Zg, R Value",
+      "mandatory": "",
+      "details": ""
+    },
+    "17": {
+      "column": "17",
+      "data_type": "F",
+      "description": "Zgp, X Value",
+      "mandatory": "",
+      "details": ""
+    },
+    "18": {
+      "column": "18",
+      "data_type": "F",
+      "description": "Zgs, X Value",
+      "mandatory": "",
+      "details": ""
+    },
+    "19": {
+      "column": "19",
+      "data_type": "F",
+      "description": "Zg, X Value",
+      "mandatory": "",
+      "details": ""
+    },
+    "20": {
+      "column": "20",
+      "data_type": "F",
+      "description": "K Factor",
+      "mandatory": "",
+      "details": ""
+    },
+    "21": {
+      "column": "21",
+      "data_type": "F",
+      "description": "No-Load Loss, Zps",
+      "mandatory": "",
+      "details": ""
+    },
+    "22": {
+      "column": "22",
+      "data_type": "F",
+      "description": "No-Load Loss, Zpt",
+      "mandatory": "",
+      "details": ""
+    },
+    "23": {
+      "column": "23",
+      "data_type": "F",
+      "description": "No-Load Loss, Zst",
+      "mandatory": "",
+      "details": ""
+    },
+    "24": {
+      "column": "24",
+      "data_type": "A",
+      "description": "Named Equipment Category",
+      "mandatory": "",
+      "details": ""
+    },
+    "25": {
+      "column": "25",
+      "data_type": "F",
+      "description": "Single Phase Rated kVA, Zps",
+      "mandatory": "",
+      "details": ""
+    },
+    "26": {
+      "column": "26",
+      "data_type": "F",
+      "description": "Single Phase Rated kVA, Zpt",
+      "mandatory": "",
+      "details": ""
+    },
+    "27": {
+      "column": "27",
+      "data_type": "F",
+      "description": "Single Phase Rated kVA, Zst",
+      "mandatory": "",
+      "details": ""
+    },
+    "28": {
+      "column": "28",
+      "data_type": "SI",
+      "description": "Is Pad Mounted Transformer",
+      "mandatory": "",
+      "details": "0 = False, 1 = True"
+    }
+  },
+  "regulators": {
+    "0": {
+      "column": "1",
+      "data_type": "A",
+      "description": "Equipment Identifier",
+      "mandatory": "X",
+      "details": "Unique, alphanumeric, and < 20 characters."
+    },
+    "1": {
+      "column": "2",
+      "data_type": "SI",
+      "description": "Equipment Type",
+      "mandatory": "X",
+      "details": "See Equipment Type Code."
+    },
+    "2": {
+      "column": "50",
+      "data_type": "G",
+      "description": "Equipment GUID",
+      "mandatory": "",
+      "details": ""
+    },
+    "3": {
+      "column": "3",
+      "data_type": "F",
+      "description": "Ampacity",
+      "mandatory": "",
+      "details": "In Amps, Default=0.0"
+    },
+    "4": {
+      "column": "4",
+      "data_type": "F",
+      "description": "CT Rating",
+      "mandatory": "",
+      "details": "In Amps, Default=0.0"
+    },
+    "5": {
+      "column": "5",
+      "data_type": "F",
+      "description": "% Boost",
+      "mandatory": "",
+      "details": "In PU, Default=0.0"
+    },
+    "6": {
+      "column": "6",
+      "data_type": "F",
+      "description": "% Buck",
+      "mandatory": "",
+      "details": "In PU, Default=0.0"
+    },
+    "7": {
+      "column": "7",
+      "data_type": "F",
+      "description": "Step Size",
+      "mandatory": "",
+      "details": "In PU, Default=0.0"
+    },
+    "8": {
+      "column": "8",
+      "data_type": "F",
+      "description": "Bandwidth",
+      "mandatory": "",
+      "details": "In PU, Default=0.0"
+    },
+    "9": {
+      "column": "9",
+      "data_type": "A",
+      "description": "Named Equipment Category",
+      "mandatory": "",
+      "details": ""
+    }
+  },
+  "load_mix": {
+    "0": {
+      "column": "1",
+      "data_type": "A",
+      "description": "Equipment Identifier",
+      "mandatory": "X",
+      "details": "Unique, alphanumeric, and < 20 characters."
+    },
+    "1": {
+      "column": "2",
+      "data_type": "SI",
+      "description": "Equipment Type",
+      "mandatory": "X",
+      "details": "See Equipment Type Code."
+    },
+    "2": {
+      "column": "50",
+      "data_type": "G",
+      "description": "Equipment GUID",
+      "mandatory": "",
+      "details": ""
+    },
+    "3": {
+      "column": "3",
+      "data_type": "F",
+      "description": "Constant kVA",
+      "mandatory": "",
+      "details": "PU, Default=1"
+    },
+    "4": {
+      "column": "4",
+      "data_type": "F",
+      "description": "Constant IMP",
+      "mandatory": "",
+      "details": "In PU, Default=0"
+    },
+    "5": {
+      "column": "5",
+      "data_type": "F",
+      "description": "Constant Current",
+      "mandatory": "",
+      "details": "In PU, Default=0"
+    },
+    "6": {
+      "column": "6",
+      "data_type": "A",
+      "description": "Connection Code",
+      "mandatory": "",
+      "details": "W=Wye, D=Delta, Default=W"
+    },
+    "7": {
+      "column": "7",
+      "data_type": "A",
+      "description": "Named Equipment Category",
+      "mandatory": "",
+      "details": ""
+    }
+  },
+  "construction_code": {
+    "0": {
+      "column": "1",
+      "data_type": "A",
+      "description": "Equipment Identifier",
+      "mandatory": "X",
+      "details": "Unique, alphanumeric, and < 20 characters."
+    },
+    "1": {
+      "column": "2",
+      "data_type": "SI",
+      "description": "Equipment Type",
+      "mandatory": "X",
+      "details": "See Equipment Type Code."
+    },
+    "2": {
+      "column": "50",
+      "data_type": "G",
+      "description": "Equipment GUID",
+      "mandatory": "",
+      "details": ""
+    },
+    "3": {
+      "column": "3",
+      "data_type": "F",
+      "description": "OH Single Phase GMDP",
+      "mandatory": "",
+      "details": "In Inches, Default=0"
+    },
+    "4": {
+      "column": "4",
+      "data_type": "F",
+      "description": "OH V-Phase GMDP",
+      "mandatory": "",
+      "details": "In Inches, Default=0"
+    },
+    "5": {
+      "column": "5",
+      "data_type": "F",
+      "description": "OH 3-Phase GMPD",
+      "mandatory": "",
+      "details": "In Inches, Default=0"
+    },
+    "6": {
+      "column": "6",
+      "data_type": "F",
+      "description": "OH Single Phase GMDPN",
+      "mandatory": "",
+      "details": "In Inches, Default=0"
+    },
+    "7": {
+      "column": "7",
+      "data_type": "F",
+      "description": "OH V-Phase GMDPN",
+      "mandatory": "",
+      "details": "In Inches, Default=0"
+    },
+    "8": {
+      "column": "8",
+      "data_type": "F",
+      "description": "OH 3-Phase GMDPN",
+      "mandatory": "",
+      "details": "In Inches, Default=0"
+    },
+    "9": {
+      "column": "9",
+      "data_type": "F",
+      "description": "UG GMDP",
+      "mandatory": "",
+      "details": "In Inches, Default=0"
+    },
+    "10": {
+      "column": "10",
+      "data_type": "F",
+      "description": "Height Above Ground",
+      "mandatory": "",
+      "details": "In Inches, Default=0"
+    },
+    "11": {
+      "column": "11",
+      "data_type": "SI",
+      "description": "Height Unit",
+      "mandatory": "",
+      "details": "See Height Units."
+    },
+    "12": {
+      "column": "12",
+      "data_type": "F",
+      "description": "Distance Between OD",
+      "mandatory": "",
+      "details": "In Inches, Default=0.5"
+    },
+    "13": {
+      "column": "13",
+      "data_type": "SI",
+      "description": "Distance Unit",
+      "mandatory": "",
+      "details": "See Height Units."
+    },
+    "14": {
+      "column": "14",
+      "data_type": "SI",
+      "description": "Spacing",
+      "mandatory": "",
+      "details": "See Spacing."
+    },
+    "15": {
+      "column": "15",
+      "data_type": "F",
+      "description": "Maximum Operating Voltage",
+      "mandatory": "",
+      "details": "In kV"
+    },
+    "16": {
+      "column": "16",
+      "data_type": "SI",
+      "description": "Assume Full Transposition",
+      "mandatory": "",
+      "details": "0=False, 1=True"
+    },
+    "17": {
+      "column": "17",
+      "data_type": "SI",
+      "description": "Position of Single Phase",
+      "mandatory": "",
+      "details": ""
+    },
+    "18": {
+      "column": "18",
+      "data_type": "SI",
+      "description": "Position of First Phase",
+      "mandatory": "",
+      "details": ""
+    },
+    "19": {
+      "column": "19",
+      "data_type": "SI",
+      "description": "Position of Second Phase",
+      "mandatory": "",
+      "details": ""
+    },
+    "20": {
+      "column": "20",
+      "data_type": "F",
+      "description": "Vertical Height Position, Phase A",
+      "mandatory": "",
+      "details": ""
+    },
+    "21": {
+      "column": "21",
+      "data_type": "F",
+      "description": "Vertical Height Position, Phase B",
+      "mandatory": "",
+      "details": ""
+    },
+    "22": {
+      "column": "22",
+      "data_type": "F",
+      "description": "Vertical Height Position, Phase C",
+      "mandatory": "",
+      "details": ""
+    },
+    "23": {
+      "column": "23",
+      "data_type": "F",
+      "description": "Vertical Height Position, Neutral",
+      "mandatory": "",
+      "details": ""
+    },
+    "24": {
+      "column": "24",
+      "data_type": "F",
+      "description": "Horizontal Distance Position, Phase A",
+      "mandatory": "",
+      "details": ""
+    },
+    "25": {
+      "column": "25",
+      "data_type": "F",
+      "description": "Horizontal Distance Position, Phase B",
+      "mandatory": "",
+      "details": ""
+    },
+    "26": {
+      "column": "26",
+      "data_type": "F",
+      "description": "Horizontal Distance Position, Phase C",
+      "mandatory": "",
+      "details": ""
+    },
+    "27": {
+      "column": "27",
+      "data_type": "F",
+      "description": "Horizontal Distance Position, Neutral",
+      "mandatory": "",
+      "details": ""
+    },
+    "28": {
+      "column": "28",
+      "data_type": "A",
+      "description": "Named Equipment Category",
+      "mandatory": "",
+      "details": ""
+    },
+    "29": {
+      "column": "29",
+      "data_type": "F",
+      "description": "UG GMDPN",
+      "mandatory": "",
+      "details": "In Inches, Default=0"
+    },
+    "30": {
+      "column": "30",
+      "data_type": "F",
+      "description": "Parallel Conductor Spacing",
+      "mandatory": "",
+      "details": "In Inches"
+    },
+    "31": {
+      "column": "31",
+      "data_type": "F",
+      "description": "Parallel Neutral Spacing",
+      "mandatory": "",
+      "details": "In Inches"
+    }
+  },
+  "load_zone": {
+    "0": {
+      "column": "1",
+      "data_type": "A",
+      "description": "Equipment Identifier",
+      "mandatory": "X",
+      "details": "Unique, alphanumeric, and < 20 characters."
+    },
+    "1": {
+      "column": "2",
+      "data_type": "SI",
+      "description": "Equipment Type",
+      "mandatory": "X",
+      "details": "See Equipment Type Code."
+    },
+    "2": {
+      "column": "50",
+      "data_type": "G",
+      "description": "Equipment GUID",
+      "mandatory": "",
+      "details": ""
+    },
+    "3": {
+      "column": "3",
+      "data_type": "F",
+      "description": "Growth Rate",
+      "mandatory": "",
+      "details": "In PU, Default=0"
+    },
+    "4": {
+      "column": "4",
+      "data_type": "A",
+      "description": "Named Equipment Category",
+      "mandatory": "",
+      "details": ""
+    }
+  },
+  "device": {
+    "0": {
+      "column": "1",
+      "data_type": "A",
+      "description": "Equipment Identifier",
+      "mandatory": "X",
+      "details": "Unique, alphanumeric, and < 20 characters."
+    },
+    "1": {
+      "column": "2",
+      "data_type": "SI",
+      "description": "Equipment Type",
+      "mandatory": "X",
+      "details": "See Equipment Type Code."
+    },
+    "2": {
+      "column": "50",
+      "data_type": "G",
+      "description": "Equipment GUID",
+      "mandatory": "",
+      "details": ""
+    },
+    "3": {
+      "column": "3",
+      "data_type": "SI",
+      "description": "Group",
+      "mandatory": "",
+      "details": "See Device Group."
+    },
+    "4": {
+      "column": "4",
+      "data_type": "F",
+      "description": "Current Rating",
+      "mandatory": "",
+      "details": "In Amps, Default=0"
+    },
+    "5": {
+      "column": "5",
+      "data_type": "F",
+      "description": "Max Symmetrical Fault",
+      "mandatory": "",
+      "details": "In Amps, Default=0"
+    },
+    "6": {
+      "column": "6",
+      "data_type": "F",
+      "description": "Max Asymmetrical Fault",
+      "mandatory": "",
+      "details": "In Amps, Default=0"
+    },
+    "7": {
+      "column": "7",
+      "data_type": "F",
+      "description": "Minimum Pickup Ground",
+      "mandatory": "",
+      "details": "In Amps, Default=0"
+    },
+    "8": {
+      "column": "8",
+      "data_type": "F",
+      "description": "Nominal Voltage",
+      "mandatory": "",
+      "details": "In kV, L-G, Default=0"
+    },
+    "9": {
+      "column": "9",
+      "data_type": "SI",
+      "description": "Number of Fast Trip Phase",
+      "mandatory": "",
+      "details": "Default=0"
+    },
+    "10": {
+      "column": "10",
+      "data_type": "SI",
+      "description": "Number of Slow Trip Phase",
+      "mandatory": "",
+      "details": "Default=0"
+    },
+    "11": {
+      "column": "11",
+      "data_type": "SI",
+      "description": "Electronic or Hydraulic",
+      "mandatory": "",
+      "details": "0=Electronic, 1=Hydraulic"
+    },
+    "12": {
+      "column": "12",
+      "data_type": "SI",
+      "description": "Use LightTable",
+      "mandatory": "",
+      "details": "0=Don't connect to LT, 1=Connect to LT"
+    },
+    "13": {
+      "column": "13",
+      "data_type": "A",
+      "description": "LightTable Device Control",
+      "mandatory": "",
+      "details": ""
+    },
+    "14": {
+      "column": "14",
+      "data_type": "A",
+      "description": "LightTable Operating Device",
+      "mandatory": "",
+      "details": ""
+    },
+    "15": {
+      "column": "15",
+      "data_type": "SI",
+      "description": "Single Phase Operation",
+      "mandatory": "",
+      "details": "0=Three-Phase Operation, 1=Single-Phase Operation"
+    },
+    "16": {
+      "column": "16",
+      "data_type": "A",
+      "description": "Named Equipment Category",
+      "mandatory": "",
+      "details": ""
+    },
+    "17": {
+      "column": "17",
+      "data_type": "F",
+      "description": "Minimum Pickup Phase",
+      "mandatory": "",
+      "details": "In Amps, Default=0"
+    },
+    "18": {
+      "column": "18",
+      "data_type": "SI",
+      "description": "Has Phase Trip",
+      "mandatory": "",
+      "details": "0=Does not have Phase Trip, 1=Has Phase Trip"
+    },
+    "19": {
+      "column": "19",
+      "data_type": "SI",
+      "description": "Has Ground Trip",
+      "mandatory": "",
+      "details": "0=Does not have Ground Trip, 1=Has Ground Trip"
+    },
+    "20": {
+      "column": "20",
+      "data_type": "SI",
+      "description": "Number of Fast Trip Ground",
+      "mandatory": "",
+      "details": "Default=0"
+    },
+    "21": {
+      "column": "21",
+      "data_type": "SI",
+      "description": "Number of Slow Trip Ground",
+      "mandatory": "",
+      "details": "Default=0"
+    }
+  },
+  "protected_device": {
+    "0": {
+      "column": "1",
+      "data_type": "A",
+      "description": "Equipment Identifier",
+      "mandatory": "X",
+      "details": "Unique, alphanumeric, and < 20 characters."
+    },
+    "1": {
+      "column": "2",
+      "data_type": "SI",
+      "description": "Equipment Type",
+      "mandatory": "X",
+      "details": "See Equipment Type Code."
+    },
+    "2": {
+      "column": "50",
+      "data_type": "G",
+      "description": "Equipment GUID",
+      "mandatory": "",
+      "details": ""
+    },
+    "3": {
+      "column": "3",
+      "data_type": "A",
+      "description": "Protected Device Desc.",
+      "mandatory": "",
+      "details": "See Device Description."
+    },
+    "4": {
+      "column": "4",
+      "data_type": "F",
+      "description": "Coordination Point 1",
+      "mandatory": "",
+      "details": ""
+    },
+    "5": {
+      "column": "5",
+      "data_type": "F",
+      "description": "Coordination Point 2",
+      "mandatory": "",
+      "details": ""
+    },
+    "6": {
+      "column": "6",
+      "data_type": "F",
+      "description": "Protected Device kV",
+      "mandatory": "",
+      "details": ""
+    },
+    "7": {
+      "column": "7",
+      "data_type": "F",
+      "description": "Device kV",
+      "mandatory": "",
+      "details": ""
+    },
+    "8": {
+      "column": "8",
+      "data_type": "F",
+      "description": "Transformation Multiplier",
+      "mandatory": "",
+      "details": "Default=1.0"
+    },
+    "9": {
+      "column": "9",
+      "data_type": "SI",
+      "description": "Type of Fault (Coordination Type)",
+      "mandatory": "",
+      "details": "See Type of Fault"
+    }
+  },
+  "assemblies": {
+    "0": {
+      "column": "1",
+      "data_type": "A",
+      "description": "Equipment Identifier",
+      "mandatory": "X",
+      "details": "Unique, alphanumeric, and < 20 characters."
+    },
+    "1": {
+      "column": "2",
+      "data_type": "SI",
+      "description": "Equipment Type",
+      "mandatory": "X",
+      "details": "See Equipment Type Code."
+    },
+    "2": {
+      "column": "50",
+      "data_type": "G",
+      "description": "Equipment GUID",
+      "mandatory": "",
+      "details": ""
+    },
+    "3": {
+      "column": "3",
+      "data_type": "A",
+      "description": "Named Equipment Category",
+      "mandatory": "",
+      "details": "Name of category used to group assemblies in EQDB."
+    },
+    "4": {
+      "column": "4",
+      "data_type": "SI or A",
+      "description": "Assembly Type",
+      "mandatory": "",
+      "details": "See Assembly Type."
+    },
+    "5": {
+      "column": "5",
+      "data_type": "SI or A",
+      "description": "Associated Element Type",
+      "mandatory": "",
+      "details": "See Associated Element Type."
+    },
+    "6": {
+      "column": "6",
+      "data_type": "A",
+      "description": "Assembly Description",
+      "mandatory": "",
+      "details": "Human-readable description of assembly. <=80 chars long."
+    }
+  },
+  "switchgear": {
+    "0": {
+      "column": "1",
+      "data_type": "A",
+      "description": "Equipment Identifier",
+      "mandatory": "X",
+      "details": "Unique, alphanumeric, and < 20 characters."
+    },
+    "1": {
+      "column": "2",
+      "data_type": "SI",
+      "description": "Equipment Type",
+      "mandatory": "X",
+      "details": "See Equipment Type Code."
+    },
+    "2": {
+      "column": "50",
+      "data_type": "G",
+      "description": "Equipment GUID",
+      "mandatory": "",
+      "details": ""
+    },
+    "3": {
+      "column": "3",
+      "data_type": "SI",
+      "description": "Switchgear Type",
+      "mandatory": "",
+      "details": "See Switchgear Type."
+    },
+    "4": {
+      "column": "4",
+      "data_type": "SI",
+      "description": "Cabinet Count",
+      "mandatory": "",
+      "details": ""
+    },
+    "5": {
+      "column": "5",
+      "data_type": "SI",
+      "description": "Cabinet 1 Number",
+      "mandatory": "",
+      "details": ""
+    },
+    "6": {
+      "column": "6",
+      "data_type": "SI",
+      "description": "Cabinet 1 Type",
+      "mandatory": "",
+      "details": "See Cabinet Type."
+    },
+    "7": {
+      "column": "7",
+      "data_type": "A",
+      "description": "Cabinet 1 Eq Phase A NAME",
+      "mandatory": "",
+      "details": ""
+    },
+    "8": {
+      "column": "8",
+      "data_type": "A",
+      "description": "Cabinet 1 Eq Phase B NAME",
+      "mandatory": "",
+      "details": ""
+    },
+    "9": {
+      "column": "9",
+      "data_type": "A",
+      "description": "Cabinet 1 Eq Phase C NAME",
+      "mandatory": "",
+      "details": ""
+    },
+    "10": {
+      "column": "10",
+      "data_type": "SI",
+      "description": "Cabinet 2 Number",
+      "mandatory": "",
+      "details": ""
+    },
+    "11": {
+      "column": "11",
+      "data_type": "SI",
+      "description": "Cabinet 2 Type",
+      "mandatory": "",
+      "details": "See Cabinet Type."
+    },
+    "12": {
+      "column": "12",
+      "data_type": "A",
+      "description": "Cabinet 2 Eq Phase A NAME",
+      "mandatory": "",
+      "details": ""
+    },
+    "13": {
+      "column": "13",
+      "data_type": "A",
+      "description": "Cabinet 2 Eq Phase B NAME",
+      "mandatory": "",
+      "details": ""
+    },
+    "14": {
+      "column": "14",
+      "data_type": "A",
+      "description": "Cabinet 2 Eq Phase C NAME",
+      "mandatory": "",
+      "details": ""
+    },
+    "15": {
+      "column": "15",
+      "data_type": "SI",
+      "description": "Cabinet 3 Number",
+      "mandatory": "",
+      "details": ""
+    },
+    "16": {
+      "column": "16",
+      "data_type": "SI",
+      "description": "Cabinet 3 Type",
+      "mandatory": "",
+      "details": "See Cabinet Type."
+    },
+    "17": {
+      "column": "17",
+      "data_type": "A",
+      "description": "Cabinet 3 Eq Phase A NAME",
+      "mandatory": "",
+      "details": ""
+    },
+    "18": {
+      "column": "18",
+      "data_type": "A",
+      "description": "Cabinet 3 Eq Phase B NAME",
+      "mandatory": "",
+      "details": ""
+    },
+    "19": {
+      "column": "19",
+      "data_type": "A",
+      "description": "Cabinet 3 Eq Phase C NAME",
+      "mandatory": "",
+      "details": ""
+    },
+    "20": {
+      "column": "20",
+      "data_type": "SI",
+      "description": "Cabinet 4 Number",
+      "mandatory": "",
+      "details": ""
+    },
+    "21": {
+      "column": "21",
+      "data_type": "SI",
+      "description": "Cabinet 4 Type",
+      "mandatory": "",
+      "details": "See Cabinet Type."
+    },
+    "22": {
+      "column": "22",
+      "data_type": "A",
+      "description": "Cabinet 4 Eq Phase A NAME",
+      "mandatory": "",
+      "details": ""
+    },
+    "23": {
+      "column": "23",
+      "data_type": "A",
+      "description": "Cabinet 4 Eq Phase B NAME",
+      "mandatory": "",
+      "details": ""
+    },
+    "24": {
+      "column": "24",
+      "data_type": "A",
+      "description": "Cabinet 4 Eq Phase C NAME",
+      "mandatory": "",
+      "details": ""
+    },
+    "25": {
+      "column": "25",
+      "data_type": "SI",
+      "description": "Cabinet 5 Number",
+      "mandatory": "",
+      "details": ""
+    },
+    "26": {
+      "column": "26",
+      "data_type": "SI",
+      "description": "Cabinet 5 Type",
+      "mandatory": "",
+      "details": "See Cabinet Type."
+    },
+    "27": {
+      "column": "27",
+      "data_type": "A",
+      "description": "Cabinet 5 Eq Phase A NAME",
+      "mandatory": "",
+      "details": ""
+    },
+    "28": {
+      "column": "28",
+      "data_type": "A",
+      "description": "Cabinet 5 Eq Phase B NAME",
+      "mandatory": "",
+      "details": ""
+    },
+    "29": {
+      "column": "29",
+      "data_type": "A",
+      "description": "Cabinet 5 Eq Phase C NAME",
+      "mandatory": "",
+      "details": ""
+    },
+    "30": {
+      "column": "30",
+      "data_type": "SI",
+      "description": "Cabinet 6 Number",
+      "mandatory": "",
+      "details": ""
+    },
+    "31": {
+      "column": "31",
+      "data_type": "SI",
+      "description": "Cabinet 6 Type",
+      "mandatory": "",
+      "details": "See Cabinet Type."
+    },
+    "32": {
+      "column": "32",
+      "data_type": "A",
+      "description": "Cabinet 6 Eq Phase A NAME",
+      "mandatory": "",
+      "details": ""
+    },
+    "33": {
+      "column": "33",
+      "data_type": "A",
+      "description": "Cabinet 6 Eq Phase B NAME",
+      "mandatory": "",
+      "details": ""
+    },
+    "34": {
+      "column": "34",
+      "data_type": "A",
+      "description": "Cabinet 6 Eq Phase C NAME",
+      "mandatory": "",
+      "details": ""
+    },
+    "35": {
+      "column": "35",
+      "data_type": "SI",
+      "description": "Cabinet 7 Number",
+      "mandatory": "",
+      "details": ""
+    },
+    "36": {
+      "column": "36",
+      "data_type": "SI",
+      "description": "Cabinet 7 Type",
+      "mandatory": "",
+      "details": "See Cabinet Type."
+    },
+    "37": {
+      "column": "37",
+      "data_type": "A",
+      "description": "Cabinet 7 Eq Phase A NAME",
+      "mandatory": "",
+      "details": ""
+    },
+    "38": {
+      "column": "38",
+      "data_type": "A",
+      "description": "Cabinet 7 Eq Phase B NAME",
+      "mandatory": "",
+      "details": ""
+    },
+    "39": {
+      "column": "39",
+      "data_type": "A",
+      "description": "Cabinet 7 Eq Phase C NAME",
+      "mandatory": "",
+      "details": ""
+    },
+    "40": {
+      "column": "40",
+      "data_type": "SI",
+      "description": "Cabinet 8 Number",
+      "mandatory": "",
+      "details": ""
+    },
+    "41": {
+      "column": "41",
+      "data_type": "SI",
+      "description": "Cabinet 8 Type",
+      "mandatory": "",
+      "details": "See Cabinet Type."
+    },
+    "42": {
+      "column": "42",
+      "data_type": "A",
+      "description": "Cabinet 8 Eq Phase A NAME",
+      "mandatory": "",
+      "details": ""
+    },
+    "43": {
+      "column": "43",
+      "data_type": "A",
+      "description": "Cabinet 8 Eq Phase B NAME",
+      "mandatory": "",
+      "details": ""
+    },
+    "44": {
+      "column": "44",
+      "data_type": "A",
+      "description": "Cabinet 8 Eq Phase C NAME",
+      "mandatory": "",
+      "details": ""
+    },
+    "45": {
+      "column": "45",
+      "data_type": "SI",
+      "description": "Cabinet 9 Number",
+      "mandatory": "",
+      "details": ""
+    },
+    "46": {
+      "column": "46",
+      "data_type": "SI",
+      "description": "Cabinet 9 Type",
+      "mandatory": "",
+      "details": "See Cabinet Type."
+    },
+    "47": {
+      "column": "47",
+      "data_type": "A",
+      "description": "Cabinet 9 Eq Phase A NAME",
+      "mandatory": "",
+      "details": ""
+    },
+    "48": {
+      "column": "48",
+      "data_type": "A",
+      "description": "Cabinet 9 Eq Phase B NAME",
+      "mandatory": "",
+      "details": ""
+    },
+    "49": {
+      "column": "49",
+      "data_type": "A",
+      "description": "Cabinet 9 Eq Phase C NAME",
+      "mandatory": "",
+      "details": ""
+    }
+  }
+}

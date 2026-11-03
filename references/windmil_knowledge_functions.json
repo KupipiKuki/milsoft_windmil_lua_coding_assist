@@ -1,0 +1,3794 @@
+{
+  "schema_version": "1.0",
+  "artifact_count": 362,
+  "artifacts": [
+    {
+      "name": "AddPolygonField",
+      "object": null,
+      "signature": "AddPolygonField( 'FieldName', 'type', 'GroupName' )",
+      "description": "Creates a new field for the given group. Valid types are 'int', 'float', 'bool', 'string', 'datetime', or 'guid'.To call: AddPolygonField( 'FieldName', 'type', 'GroupName' )",
+      "return": "nil",
+      "example": "AddPolygonField( 'NewName', 'string', 'MyGroup' )",
+      "where_used": []
+    },
+    {
+      "name": "AddPolygonGroup",
+      "object": null,
+      "signature": "AddPolygonGroup( 'GroupName' )",
+      "description": "Creates a new Polygon Group.To call: AddPolygonGroup( 'GroupName' )",
+      "return": "nil",
+      "example": "AddPolygonGroup( 'MyGroup' )",
+      "where_used": []
+    },
+    {
+      "name": "Alert",
+      "object": null,
+      "signature": "Alert( \"message\" )",
+      "description": "Displays a popup window with a short message.  Script execution is paused until the \"OK\" button is clicked.To call: Alert( \"message\" )",
+      "return": "nothing",
+      "example": "Alert( \"Consumer added!\" )",
+      "where_used": [
+        "add_prefix_to_map_fields",
+        "add_prefix_to_names",
+        "add_suffix_to_map_fields",
+        "add_suffix_to_names",
+        "apply_reliability_indices",
+        "change_meter_numbers",
+        "change_oh_to_ug",
+        "change_ug_to_oh",
+        "connect_to_active_element",
+        "failure_rate_and_repair_time_csv",
+        "fix_incorrect_coordinates",
+        "fix_invalid_phases",
+        "fix_orphaned_elements",
+        "nullify_invalid_equipment_refs",
+        "output",
+        "read_externals",
+        "recalculate_impedance_lengths",
+        "remove_unnecessary_multiparent_nodes",
+        "remove_unnecessary_transformers",
+        "rename_by_grid_location",
+        "rename_duplicate_elements",
+        "rename_elements_in_file",
+        "repair_invalid_equipment_refs",
+        "reparent_elements_in_file",
+        "rephase_elements_in_file",
+        "ring_children",
+        "run_model_integrity_library",
+        "secondary_lines_utility",
+        "select_element_type",
+        "snap_lines_and_points",
+        "swap_map_and_section_names"
+      ]
+    },
+    {
+      "name": "ApplySLDFile",
+      "object": null,
+      "signature": "ApplySLDFile( 'path', linkBySection, clearLoad )",
+      "description": "Applies the SLD file.  Takes two optional parameters.  The first will determine whether the SLD is linked by section names (true) or billing load (false).  The second will clear the load (true) or apply to current load (false).To call: ApplySLDFile( 'path', linkBySection, clearLoad )",
+      "return": "boolean success",
+      "example": "ApplySLDFile( 'C:\\Models\\model.sld', true, true )",
+      "where_used": []
+    },
+    {
+      "name": "AutoCallSpecialFunctions",
+      "object": null,
+      "signature": "AutoCallSpecialFunctions(true)",
+      "description": "Enables or disables auto calling of special functions.  This is enabled by default.To call: AutoCallSpecialFunctions(true)",
+      "return": "nothing",
+      "example": "AutoCallSpecialFunctions(true)",
+      "where_used": [
+        "secondary_lines_utility"
+      ]
+    },
+    {
+      "name": "CloseDbFiles",
+      "object": null,
+      "signature": "CloseDbFiles()",
+      "description": "Temporarily closes the Faircom database.To call: CloseDbFiles()",
+      "return": "nothing",
+      "example": "CloseDbFiles()",
+      "where_used": []
+    },
+    {
+      "name": "CloseScriptEditor",
+      "object": null,
+      "signature": "CloseScriptEditor()",
+      "description": "Closes the Lua Script Editor.  Will still prompt to save work.To call: CloseScriptEditor()",
+      "return": "nothing",
+      "example": "CloseScriptEditor()",
+      "where_used": []
+    },
+    {
+      "name": "CloseScriptManager",
+      "object": null,
+      "signature": "CloseScriptManager()",
+      "description": "Closes the Lua Script Manager.To call: CloseScriptManager()",
+      "return": "nothing",
+      "example": "CloseScriptManager()",
+      "where_used": []
+    },
+    {
+      "name": "colType",
+      "object": "column",
+      "signature": "colType()",
+      "description": "Get the column type of this column.To call: (column):colType()",
+      "return": "column type integer",
+      "example": "local cType = c:colType()",
+      "where_used": []
+    },
+    {
+      "name": "constraint",
+      "object": "column",
+      "signature": "constraint()",
+      "description": "Get the constraint object for this column.To call: (column):constraint()",
+      "return": "constraint object",
+      "example": "local con = c:constraint()",
+      "where_used": []
+    },
+    {
+      "name": "createConstraint",
+      "object": "column",
+      "signature": "createConstraint( Type, ... )",
+      "description": "Create a constraint. Each constraint type requires different parameters. Type 0 (Range): Range Min, Range Max; Type 1 (Coded Values): Table of Coded Values; Type 3 (String Width): MaxLength, Multiline; Type 4 (Hyperlink): none.To call: (column):createConstraint( Type, ... )",
+      "return": "constraint object",
+      "example": "c:createConstraint( 0, -10, 10 )",
+      "where_used": []
+    },
+    {
+      "name": "descrip",
+      "object": "column",
+      "signature": "descrip()",
+      "description": "Get the description of this column.To call: (column):descrip()",
+      "return": "description string",
+      "example": "local info = c:descrip()",
+      "where_used": []
+    },
+    {
+      "name": "editable",
+      "object": "column",
+      "signature": "editable()",
+      "description": "Get the editable status of this column.To call: (column):editable()",
+      "return": "boolean value",
+      "example": "local canEdit = c:editable()",
+      "where_used": []
+    },
+    {
+      "name": "enabled",
+      "object": "column",
+      "signature": "enabled()",
+      "description": "Get the enabled status of this column.To call: (column):enabled()",
+      "return": "boolean value",
+      "example": "local isEnabled = c:enabled()",
+      "where_used": []
+    },
+    {
+      "name": "enabled",
+      "object": "column",
+      "signature": "enabled()",
+      "description": "Get the enabled status of this column.To call: (column):enabled()",
+      "return": "boolean value",
+      "example": "local isEnabled = c:enabled()",
+      "where_used": []
+    },
+    {
+      "name": "setDescrip",
+      "object": "column",
+      "signature": "setDescrip( 'NewDesc' )",
+      "description": "Set the description for this column.To call: (column):setDescrip( 'NewDesc' )",
+      "return": "new description string",
+      "example": "c:setDescrip( 'This is the new description.' )",
+      "where_used": []
+    },
+    {
+      "name": "setEnabled",
+      "object": "column",
+      "signature": "setEnabled( boolean )",
+      "description": "Set the enabled status of this column.To call: (column):setEnabled( boolean )",
+      "return": "nothing",
+      "example": "c:setEnabled( false )",
+      "where_used": []
+    },
+    {
+      "name": "virtual",
+      "object": "column",
+      "signature": "virtual()",
+      "description": "Get the virtual status of this column.To call: (column):virtual()",
+      "return": "boolean value",
+      "example": "local isVirtual = c:virtual()",
+      "where_used": []
+    },
+    {
+      "name": "Complex",
+      "object": null,
+      "signature": "Complex( real, imag )",
+      "description": "Creates a complex number object. Complex objects can be in the form  real (number), imag (number) or 'real + imag j' (string). This object can be used to perform basic math with other complex objects. Currently supported: +, - (unary and binary), *, /, ^, == and tostring().To call: Complex( real, imag )",
+      "return": "complex object",
+      "example": "Complex( 3, 4 )",
+      "where_used": []
+    },
+    {
+      "name": "abs",
+      "object": "complex",
+      "signature": "abs()",
+      "description": "Calculates the absolute value of the complex. Same as mag.To call: (complex):abs()",
+      "return": "absolute value (magnitude)",
+      "example": "c:abs()",
+      "where_used": []
+    },
+    {
+      "name": "acos",
+      "object": "complex",
+      "signature": "acos()",
+      "description": "Calculates the inverse cosine of the complex.To call: (complex):acos()",
+      "return": "inverse cosine",
+      "example": "c:acos()",
+      "where_used": []
+    },
+    {
+      "name": "acosh",
+      "object": "complex",
+      "signature": "acosh()",
+      "description": "Calculates the inverse hyperbolic cosine of the complex.To call: (complex):acosh()",
+      "return": "inverse hyperbolic cosine",
+      "example": "c:acosh()",
+      "where_used": []
+    },
+    {
+      "name": "asin",
+      "object": "complex",
+      "signature": "asin()",
+      "description": "Calculates the inverse sine of the complex.To call: (complex):asin()",
+      "return": "inverse sine",
+      "example": "c:asin()",
+      "where_used": []
+    },
+    {
+      "name": "asinh",
+      "object": "complex",
+      "signature": "asinh()",
+      "description": "Calculates the inverse hyperbolic sine of the complex.To call: (complex):asinh()",
+      "return": "inverse hyperbolic sine",
+      "example": "c:asinh()",
+      "where_used": []
+    },
+    {
+      "name": "atan",
+      "object": "complex",
+      "signature": "atan()",
+      "description": "Calculates the inverse tangent of the complex.To call: (complex):atan()",
+      "return": "inverse tangent",
+      "example": "c:atan()",
+      "where_used": []
+    },
+    {
+      "name": "atanh",
+      "object": "complex",
+      "signature": "atanh()",
+      "description": "Calculates the inverse hyperbolic tangent of the complex.To call: (complex):atanh()",
+      "return": "inverse hyperbolic tangent",
+      "example": "c:atanh()",
+      "where_used": []
+    },
+    {
+      "name": "conj",
+      "object": "complex",
+      "signature": "conj()",
+      "description": "Calculates the complex conjugate of the complex.To call: (complex):conj()",
+      "return": "complex conjugate",
+      "example": "c:conj()",
+      "where_used": []
+    },
+    {
+      "name": "cos",
+      "object": "complex",
+      "signature": "cos()",
+      "description": "Calculates the cosine of the complex.To call: (complex):cos()",
+      "return": "cosine",
+      "example": "c:cos()",
+      "where_used": []
+    },
+    {
+      "name": "cosh",
+      "object": "complex",
+      "signature": "cosh()",
+      "description": "Calculates the hyperbolic cosine of the complex.To call: (complex):cosh()",
+      "return": "hyperbolic cosine",
+      "example": "c:cosh()",
+      "where_used": []
+    },
+    {
+      "name": "exp",
+      "object": "complex",
+      "signature": "exp()",
+      "description": "Calculates the base-e exponential of the complex.To call: (complex):exp()",
+      "return": "base-e exponential",
+      "example": "c:exp()",
+      "where_used": []
+    },
+    {
+      "name": "imag",
+      "object": "complex",
+      "signature": "imag()",
+      "description": "Retrieves the imaginary part of the complex.To call: (complex):imag()",
+      "return": "imaginary component",
+      "example": "c:imag()",
+      "where_used": []
+    },
+    {
+      "name": "log",
+      "object": "complex",
+      "signature": "log()",
+      "description": "Calculates the natural logarithm of the complex.To call: (complex):log()",
+      "return": "natural logarithm",
+      "example": "c:log()",
+      "where_used": []
+    },
+    {
+      "name": "log10",
+      "object": "complex",
+      "signature": "log10()",
+      "description": "Calculates the common logarithm of the complex.To call: (complex):log10()",
+      "return": "common logarithm",
+      "example": "c:log10()",
+      "where_used": []
+    },
+    {
+      "name": "mag",
+      "object": "complex",
+      "signature": "mag()",
+      "description": "Calculates the magnitude of the complex. Same as abs.To call: (complex):mag()",
+      "return": "magnitude (absolute value)",
+      "example": "c:mag()",
+      "where_used": []
+    },
+    {
+      "name": "norm",
+      "object": "complex",
+      "signature": "norm()",
+      "description": "Calculates the norm value of the complex.To call: (complex):norm()",
+      "return": "norm value",
+      "example": "c:norm()",
+      "where_used": []
+    },
+    {
+      "name": "pow",
+      "object": "complex",
+      "signature": "pow( number )",
+      "description": "Calculates the power of the complex. Can take real or complex numbers.To call: (complex):pow( number )",
+      "return": "power",
+      "example": "c:pow( Complex( 1,1 ) )",
+      "where_used": []
+    },
+    {
+      "name": "real",
+      "object": "complex",
+      "signature": "real()",
+      "description": "Retrieves the real part of the complex.To call: (complex):real()",
+      "return": "real component",
+      "example": "c:real()",
+      "where_used": []
+    },
+    {
+      "name": "sin",
+      "object": "complex",
+      "signature": "sin()",
+      "description": "Calculates the sine of the complex.To call: (complex):sin()",
+      "return": "sine",
+      "example": "c:sin()",
+      "where_used": []
+    },
+    {
+      "name": "sinh",
+      "object": "complex",
+      "signature": "sinh()",
+      "description": "Calculates the hyperbolic sine of the complex.To call: (complex):sinh()",
+      "return": "hyperbolic sine",
+      "example": "c:sinh()",
+      "where_used": []
+    },
+    {
+      "name": "sqrt",
+      "object": "complex",
+      "signature": "sqrt()",
+      "description": "Calculates the square root of the complex.To call: (complex):sqrt()",
+      "return": "square root",
+      "example": "c:sqrt()",
+      "where_used": []
+    },
+    {
+      "name": "tan",
+      "object": "complex",
+      "signature": "tan()",
+      "description": "Calculates the tangent of the complex.To call: (complex):tan()",
+      "return": "tangent",
+      "example": "c:tan()",
+      "where_used": []
+    },
+    {
+      "name": "tanh",
+      "object": "complex",
+      "signature": "tanh()",
+      "description": "Calculates the hyperbolic tangent of the complex.To call: (complex):tanh()",
+      "return": "hyperbolic tangent",
+      "example": "c:tanh()",
+      "where_used": []
+    },
+    {
+      "name": "toPolar",
+      "object": "complex",
+      "signature": "toPolar()",
+      "description": "Converts the complex value to polar form.To call: (complex):toPolar()",
+      "return": "polar form in radians",
+      "example": "c:toPolar()",
+      "where_used": []
+    },
+    {
+      "name": "toRectangular",
+      "object": "complex",
+      "signature": "toRectangular()",
+      "description": "Converts the complex value to rectangular form.To call: (complex):toRectangular()",
+      "return": "rectangular form",
+      "example": "c:toRectangular()",
+      "where_used": []
+    },
+    {
+      "name": "ConnectAll",
+      "object": null,
+      "signature": "ConnectAll()",
+      "description": "Tries to connect all disconnected elements using generic connection rules.To call: ConnectAll()",
+      "return": "nothing",
+      "example": "ConnectAll()",
+      "where_used": []
+    },
+    {
+      "name": "add",
+      "object": "constraint",
+      "signature": "add( Value )",
+      "description": "Add a new coded value to this constraint.To call: (constraint):add( Value )",
+      "return": "boolean success",
+      "example": "con:add( 5 )",
+      "where_used": []
+    },
+    {
+      "name": "codedValues",
+      "object": "constraint",
+      "signature": "codedValues( false )",
+      "description": "Get the values of the coded values for this constraint. Takes an optional boolean value to list only enabled values.To call: (constraint):codedValues( false )",
+      "return": "table of coded values",
+      "example": "local vals = con:codedValues( false )",
+      "where_used": []
+    },
+    {
+      "name": "conType",
+      "object": "constraint",
+      "signature": "conType()",
+      "description": "Get the type of this constraint.To call: (constraint):conType()",
+      "return": "constraint type",
+      "example": "local conType = con:conType()",
+      "where_used": []
+    },
+    {
+      "name": "enable",
+      "object": "constraint",
+      "signature": "enable( Value, true/false )",
+      "description": "Enable or Disable the given valueTo call: (constraint):enable( Value, true/false )",
+      "return": "boolean success",
+      "example": "con:enable( myValue, false )",
+      "where_used": []
+    },
+    {
+      "name": "enabled",
+      "object": "constraint",
+      "signature": "enabled(Value)",
+      "description": "Returns whether the given value is enabledTo call: (constraint):enabled(Value)",
+      "return": "boolean value",
+      "example": "con:enabled( myValue )",
+      "where_used": []
+    },
+    {
+      "name": "locked",
+      "object": "constraint",
+      "signature": "locked()",
+      "description": "Returns whether this constraint is lockedTo call: (constraint):locked()",
+      "return": "boolean value",
+      "example": "con:locked()",
+      "where_used": []
+    },
+    {
+      "name": "maxmax",
+      "object": "constraint",
+      "signature": "maxmax()",
+      "description": "Get the absolute maximum value setable for this constraint.To call: (constraint):maxmax()",
+      "return": "largest value allowed for the range",
+      "example": "local absMax = con:maxmax()",
+      "where_used": []
+    },
+    {
+      "name": "minmin",
+      "object": "constraint",
+      "signature": "minmin()",
+      "description": "Get the absolute minimum value setable for this constraint.To call: (constraint):minmin()",
+      "return": "smallest value allowed for the range",
+      "example": "local absMin = con:minmin()",
+      "where_used": []
+    },
+    {
+      "name": "range",
+      "object": "constraint",
+      "signature": "range()",
+      "description": "Get the range for this constraint if applicable.To call: (constraint):range()",
+      "return": "table with \"max\" and \"min\" values",
+      "example": "local rangeTable = con:range()",
+      "where_used": []
+    },
+    {
+      "name": "removeValue",
+      "object": "constraint",
+      "signature": "removeValue( Value )",
+      "description": "Remove a coded value from this constraint.To call: (constraint):removeValue( Value )",
+      "return": "boolean success",
+      "example": "con:removeValue( 5 )",
+      "where_used": []
+    },
+    {
+      "name": "setMax",
+      "object": "constraint",
+      "signature": "setMax(newMax)",
+      "description": "Set the maximum of this constraintTo call: (constraint):setMax(newMax)",
+      "return": "boolean success",
+      "example": "con:setMax( myNewMax )",
+      "where_used": []
+    },
+    {
+      "name": "setMaxmax",
+      "object": "constraint",
+      "signature": "setMaxmax( Value )",
+      "description": "Set the absolute maximum value for this constraint.To call: (constraint):setMaxmax( Value )",
+      "return": "boolean success",
+      "example": "con:setMaxmax( 2147483646 )",
+      "where_used": []
+    },
+    {
+      "name": "setMin",
+      "object": "constraint",
+      "signature": "setMin(newMin)",
+      "description": "Set the minimum of this constraintTo call: (constraint):setMin(newMin)",
+      "return": "boolean success",
+      "example": "con:setMin( myNewMin )",
+      "where_used": []
+    },
+    {
+      "name": "setMinmin",
+      "object": "constraint",
+      "signature": "setMinmin( Value )",
+      "description": "Set the absolute minimum value for this constraint.To call: (constraint):setMinmin( Value )",
+      "return": "boolean success",
+      "example": "con:setMinmin( -2147483647 )",
+      "where_used": []
+    },
+    {
+      "name": "coordinationTestType",
+      "object": "result",
+      "signature": "coordinationTestType()",
+      "description": "Use to get coordination test type for this pair of coordinated devices.To call: (result):coordinationTestType()",
+      "return": "string representation of the coordination test type",
+      "example": "local type = result:coordinationTestType()",
+      "where_used": []
+    },
+    {
+      "name": "point1",
+      "object": "result",
+      "signature": "point1()",
+      "description": "Use to get the first coordination point for this pair of coordinated devices.To call: (result):point1()",
+      "return": "cooordination point",
+      "example": "local point = result:point1()",
+      "where_used": []
+    },
+    {
+      "name": "point2",
+      "object": "result",
+      "signature": "point2()",
+      "description": "Use to get the second coordination point for this pair of coordinated devices.To call: (result):point2()",
+      "return": "cooordination point",
+      "example": "local point = result:point2()",
+      "where_used": []
+    },
+    {
+      "name": "protectedDeviceId",
+      "object": "result",
+      "signature": "protectedDeviceId()",
+      "description": "Use to get the GUID of the upline device in this pair.To call: (result):protectedDeviceId()",
+      "return": "GUID as a string",
+      "example": "local id = result:protectedDeviceId()",
+      "where_used": []
+    },
+    {
+      "name": "protectedDeviceKV",
+      "object": "result",
+      "signature": "protectedDeviceKV()",
+      "description": "Use to get the kV of the upline device in this pair.To call: (result):protectedDeviceKV()",
+      "return": "base voltage in kV",
+      "example": "local kV = result:protectedDeviceKV()",
+      "where_used": []
+    },
+    {
+      "name": "protectedDeviceName",
+      "object": "result",
+      "signature": "protectedDeviceName()",
+      "description": "Use to get the name of the upline device in this pair.To call: (result):protectedDeviceName()",
+      "return": "string",
+      "example": "local name = result:protectedDeviceName()",
+      "where_used": []
+    },
+    {
+      "name": "protectingDeviceId",
+      "object": "result",
+      "signature": "protectingDeviceId()",
+      "description": "Use to get the GUID of the downline device in this pair.To call: (result):protectingDeviceId()",
+      "return": "GUID as a string",
+      "example": "local id = result:protectingDeviceId()",
+      "where_used": []
+    },
+    {
+      "name": "protectingDeviceKV",
+      "object": "result",
+      "signature": "protectingDeviceKV()",
+      "description": "Use to get the kV of the downline device in this pair.To call: (result):protectingDeviceKV()",
+      "return": "base voltage in kV",
+      "example": "local kV = result:protectingDeviceKV()",
+      "where_used": []
+    },
+    {
+      "name": "protectingDeviceName",
+      "object": "result",
+      "signature": "protectingDeviceName()",
+      "description": "Use to get the name of the downline device in this pair.To call: (result):protectingDeviceName()",
+      "return": "string",
+      "example": "local name = result:protectingDeviceName()",
+      "where_used": []
+    },
+    {
+      "name": "transformerMultiplier",
+      "object": "result",
+      "signature": "transformerMultiplier()",
+      "description": "Use to get the transformer multiplier for this pair of coordinated devices.To call: (result):transformerMultiplier()",
+      "return": "floating point number",
+      "example": "local mult = result:transformerMultiplier()",
+      "where_used": []
+    },
+    {
+      "name": "CoordinationTest.dvcFailBoth",
+      "object": null,
+      "signature": "CoordinationTest.dvcFailBoth()",
+      "description": "Get a string representing this coordination test typeTo call: CoordinationTest.dvcFailBoth()",
+      "return": "a string representing this test type",
+      "example": "local testType = CoordinationTest.dvcFailBoth()",
+      "where_used": []
+    },
+    {
+      "name": "CoordinationTest.dvcFailBothLessThanPt1",
+      "object": null,
+      "signature": "CoordinationTest.dvcFailBothLessThanPt1()",
+      "description": "Get a string representing this coordination test typeTo call: CoordinationTest.dvcFailBothLessThanPt1()",
+      "return": "a string representing this test type",
+      "example": "local testType = CoordinationTest.dvcFailBothLessThanPt1()",
+      "where_used": []
+    },
+    {
+      "name": "CoordinationTest.dvcFailFirst",
+      "object": null,
+      "signature": "CoordinationTest.dvcFailFirst()",
+      "description": "Get a string representing this coordination test typeTo call: CoordinationTest.dvcFailFirst()",
+      "return": "a string representing this test type",
+      "example": "local testType = CoordinationTest.dvcFailFirst()",
+      "where_used": []
+    },
+    {
+      "name": "CoordinationTest.dvcFailSecond",
+      "object": null,
+      "signature": "CoordinationTest.dvcFailSecond()",
+      "description": "Get a string representing this coordination test typeTo call: CoordinationTest.dvcFailSecond()",
+      "return": "a string representing this test type",
+      "example": "local testType = CoordinationTest.dvcFailSecond()",
+      "where_used": []
+    },
+    {
+      "name": "CoordinationTest.dvcFailTooSmall_123Method",
+      "object": null,
+      "signature": "CoordinationTest.dvcFailTooSmall_123Method()",
+      "description": "Get a string representing this coordination test typeTo call: CoordinationTest.dvcFailTooSmall_123Method()",
+      "return": "a string representing this test type",
+      "example": "local testType = CoordinationTest.dvcFailTooSmall_123Method()",
+      "where_used": []
+    },
+    {
+      "name": "CoordinationTest.dvcPassBoth",
+      "object": null,
+      "signature": "CoordinationTest.dvcPassBoth()",
+      "description": "Get a string representing this coordination test typeTo call: CoordinationTest.dvcPassBoth()",
+      "return": "a string representing this test type",
+      "example": "local testType = CoordinationTest.dvcPassBoth()",
+      "where_used": []
+    },
+    {
+      "name": "CoordinationTest.dvcPassFailCoord1phFlt",
+      "object": null,
+      "signature": "CoordinationTest.dvcPassFailCoord1phFlt()",
+      "description": "Get a string representing this coordination test typeTo call: CoordinationTest.dvcPassFailCoord1phFlt()",
+      "return": "a string representing this test type",
+      "example": "local testType = CoordinationTest.dvcPassFailCoord1phFlt()",
+      "where_used": []
+    },
+    {
+      "name": "CoordinationTest.dvcPassFailCoord2phFlt",
+      "object": null,
+      "signature": "CoordinationTest.dvcPassFailCoord2phFlt()",
+      "description": "Get a string representing this coordination test typeTo call: CoordinationTest.dvcPassFailCoord2phFlt()",
+      "return": "a string representing this test type",
+      "example": "local testType = CoordinationTest.dvcPassFailCoord2phFlt()",
+      "where_used": []
+    },
+    {
+      "name": "CoordinationTest.dvcPassFailCoord3phFlt",
+      "object": null,
+      "signature": "CoordinationTest.dvcPassFailCoord3phFlt()",
+      "description": "Get a string representing this coordination test typeTo call: CoordinationTest.dvcPassFailCoord3phFlt()",
+      "return": "a string representing this test type",
+      "example": "local testType = CoordinationTest.dvcPassFailCoord3phFlt()",
+      "where_used": []
+    },
+    {
+      "name": "CoordinationTest.dvcPassFailCoordAllFlt",
+      "object": null,
+      "signature": "CoordinationTest.dvcPassFailCoordAllFlt()",
+      "description": "Get a string representing this coordination test typeTo call: CoordinationTest.dvcPassFailCoordAllFlt()",
+      "return": "a string representing this test type",
+      "example": "local testType = CoordinationTest.dvcPassFailCoordAllFlt()",
+      "where_used": []
+    },
+    {
+      "name": "CoordinationTest.dvcPassFailDelta",
+      "object": null,
+      "signature": "CoordinationTest.dvcPassFailDelta()",
+      "description": "Get a string representing this coordination test typeTo call: CoordinationTest.dvcPassFailDelta()",
+      "return": "a string representing this test type",
+      "example": "local testType = CoordinationTest.dvcPassFailDelta()",
+      "where_used": []
+    },
+    {
+      "name": "CoordinationTest.dvcPassFailFailed",
+      "object": null,
+      "signature": "CoordinationTest.dvcPassFailFailed()",
+      "description": "Get a string representing this coordination test typeTo call: CoordinationTest.dvcPassFailFailed()",
+      "return": "a string representing this test type",
+      "example": "local testType = CoordinationTest.dvcPassFailFailed()",
+      "where_used": []
+    },
+    {
+      "name": "CoordinationTest.dvcPassFailFailed2",
+      "object": null,
+      "signature": "CoordinationTest.dvcPassFailFailed2()",
+      "description": "Get a string representing this coordination test typeTo call: CoordinationTest.dvcPassFailFailed2()",
+      "return": "a string representing this test type",
+      "example": "local testType = CoordinationTest.dvcPassFailFailed2()",
+      "where_used": []
+    },
+    {
+      "name": "CoordinationTest.dvcPassFailFailed3",
+      "object": null,
+      "signature": "CoordinationTest.dvcPassFailFailed3()",
+      "description": "Get a string representing this coordination test typeTo call: CoordinationTest.dvcPassFailFailed3()",
+      "return": "a string representing this test type",
+      "example": "local testType = CoordinationTest.dvcPassFailFailed3()",
+      "where_used": []
+    },
+    {
+      "name": "CoordinationTest.dvcPassFailMultiPhsFlt",
+      "object": null,
+      "signature": "CoordinationTest.dvcPassFailMultiPhsFlt()",
+      "description": "Get a string representing this coordination test typeTo call: CoordinationTest.dvcPassFailMultiPhsFlt()",
+      "return": "a string representing this test type",
+      "example": "local testType = CoordinationTest.dvcPassFailMultiPhsFlt()",
+      "where_used": []
+    },
+    {
+      "name": "CoordinationTest.dvcPassFailNoCurves",
+      "object": null,
+      "signature": "CoordinationTest.dvcPassFailNoCurves()",
+      "description": "Get a string representing this coordination test typeTo call: CoordinationTest.dvcPassFailNoCurves()",
+      "return": "a string representing this test type",
+      "example": "local testType = CoordinationTest.dvcPassFailNoCurves()",
+      "where_used": []
+    },
+    {
+      "name": "CoordinationTest.dvcPassFailNoFast",
+      "object": null,
+      "signature": "CoordinationTest.dvcPassFailNoFast()",
+      "description": "Get a string representing this coordination test typeTo call: CoordinationTest.dvcPassFailNoFast()",
+      "return": "a string representing this test type",
+      "example": "local testType = CoordinationTest.dvcPassFailNoFast()",
+      "where_used": []
+    },
+    {
+      "name": "CoordinationTest.dvcPassFailNoFastPhs",
+      "object": null,
+      "signature": "CoordinationTest.dvcPassFailNoFastPhs()",
+      "description": "Get a string representing this coordination test typeTo call: CoordinationTest.dvcPassFailNoFastPhs()",
+      "return": "a string representing this test type",
+      "example": "local testType = CoordinationTest.dvcPassFailNoFastPhs()",
+      "where_used": []
+    },
+    {
+      "name": "CoordinationTest.dvcPassFailNoPhs",
+      "object": null,
+      "signature": "CoordinationTest.dvcPassFailNoPhs()",
+      "description": "Get a string representing this coordination test typeTo call: CoordinationTest.dvcPassFailNoPhs()",
+      "return": "a string representing this test type",
+      "example": "local testType = CoordinationTest.dvcPassFailNoPhs()",
+      "where_used": []
+    },
+    {
+      "name": "CoordinationTest.dvcPassFailNoSlow",
+      "object": null,
+      "signature": "CoordinationTest.dvcPassFailNoSlow()",
+      "description": "Get a string representing this coordination test typeTo call: CoordinationTest.dvcPassFailNoSlow()",
+      "return": "a string representing this test type",
+      "example": "local testType = CoordinationTest.dvcPassFailNoSlow()",
+      "where_used": []
+    },
+    {
+      "name": "CoordinationTest.dvcPassFailNone",
+      "object": null,
+      "signature": "CoordinationTest.dvcPassFailNone()",
+      "description": "Get a string representing this coordination test typeTo call: CoordinationTest.dvcPassFailNone()",
+      "return": "a string representing this test type",
+      "example": "local testType = CoordinationTest.dvcPassFailNone()",
+      "where_used": []
+    },
+    {
+      "name": "CoordinationTest.dvcPassFailPassed",
+      "object": null,
+      "signature": "CoordinationTest.dvcPassFailPassed()",
+      "description": "Get a string representing this coordination test typeTo call: CoordinationTest.dvcPassFailPassed()",
+      "return": "a string representing this test type",
+      "example": "local testType = CoordinationTest.dvcPassFailPassed()",
+      "where_used": []
+    },
+    {
+      "name": "CoordinationTest.dvcPassFailTooLarge",
+      "object": null,
+      "signature": "CoordinationTest.dvcPassFailTooLarge()",
+      "description": "Get a string representing this coordination test typeTo call: CoordinationTest.dvcPassFailTooLarge()",
+      "return": "a string representing this test type",
+      "example": "local testType = CoordinationTest.dvcPassFailTooLarge()",
+      "where_used": []
+    },
+    {
+      "name": "CoordinationTest.dvcPassFailTooSmall",
+      "object": null,
+      "signature": "CoordinationTest.dvcPassFailTooSmall()",
+      "description": "Get a string representing this coordination test typeTo call: CoordinationTest.dvcPassFailTooSmall()",
+      "return": "a string representing this test type",
+      "example": "local testType = CoordinationTest.dvcPassFailTooSmall()",
+      "where_used": []
+    },
+    {
+      "name": "CoordinationTest.dvcPassFailWarning",
+      "object": null,
+      "signature": "CoordinationTest.dvcPassFailWarning()",
+      "description": "Get a string representing this coordination test typeTo call: CoordinationTest.dvcPassFailWarning()",
+      "return": "a string representing this test type",
+      "example": "local testType = CoordinationTest.dvcPassFailWarning()",
+      "where_used": []
+    },
+    {
+      "name": "CreateProgressBar",
+      "object": null,
+      "signature": "CreateProgressBar( \"Please wait...\", 100 )",
+      "description": "Creates and displays a progress bar dialog.To call: CreateProgressBar( \"Please wait...\", 100 )",
+      "return": "nothing",
+      "example": "CreateProgressBar( \"Connecting elements...\", 100 )",
+      "where_used": [
+        "apply_reliability_indices",
+        "connect_disconnected_transformers",
+        "consumers_connected_to_primary",
+        "consumers_with_no_type",
+        "copy_data_between_fields",
+        "copy_data_from_externals",
+        "copy_data_to_externals",
+        "detect_missing_external",
+        "detect_missing_external_units",
+        "devices_with_no_children",
+        "find_disconnected_sections",
+        "find_duplicate_elements",
+        "find_duplicate_equipment",
+        "find_duplicates",
+        "find_generator_incorrectly_modeled",
+        "find_missing_equipment",
+        "find_transformers_with_invalid_output",
+        "fix_incorrect_coordinates",
+        "fix_invalid_phases",
+        "fix_orphaned_elements",
+        "fix_switch_children",
+        "fix_switch_parent_and_child_issues",
+        "insert_transformer_for_direct_consumers",
+        "lines_with_zero_graphical_length",
+        "lines_with_zero_impedance_length",
+        "mp_nodes_with_missing_parents",
+        "nullify_invalid_equipment_refs",
+        "remove_unnecessary_multiparent_nodes",
+        "remove_unnecessary_transformers",
+        "rename_duplicate_elements",
+        "rename_elements_in_file",
+        "repair_invalid_equipment_refs",
+        "repair_transformers_with_invalid_output",
+        "reparent_elements_in_file",
+        "rephase_elements_in_file",
+        "replace_consumer_leaders_with_line_elements",
+        "ring_children",
+        "secondary_lines_utility",
+        "snap_lines_and_points",
+        "split_and_snap",
+        "stack_elements_on_parents",
+        "switches_with_no_parent",
+        "transformers_with_invalid_output",
+        "transformers_with_second_secondary",
+        "unstacking",
+        "unstacking_from_map_points",
+        "update_meters_from_customer_table"
+      ]
+    },
+    {
+      "name": "CurrentUndoLevel",
+      "object": null,
+      "signature": "CurrentUndoLevel()",
+      "description": "Returns the current undo level which can then be used as an argument to Rollback.To call: CurrentUndoLevel()",
+      "return": "integer representing the undo level",
+      "example": "rollbackPoint = CurrentUndoLevel()<perform some operations>Rollback(rollbackPoint)",
+      "where_used": []
+    },
+    {
+      "name": "Databox.fullText",
+      "object": null,
+      "signature": "Databox.fullText(element, viewMode, compareElement --[[optional]])",
+      "description": "Get the full text generated for a calculated data boxTo call: Databox.fullText(element, viewMode, compareElement --[[optional]])",
+      "return": "a string representing the text for a databox",
+      "example": "local text = Databox.fullText(element, viewMode)",
+      "where_used": []
+    },
+    {
+      "name": "Databox.lines",
+      "object": null,
+      "signature": "Databox.lines(element, viewMode, compareElement --[[optional]])",
+      "description": "Get a table of lines of text generated for a calculated data boxTo call: Databox.lines(element, viewMode, compareElement --[[optional]])",
+      "return": "a table of lines for a databox",
+      "example": "local lines = Databox.lines(element, viewMode)",
+      "where_used": []
+    },
+    {
+      "name": "Databox.width",
+      "object": null,
+      "signature": "Databox.width(element, viewMode, compareElement --[[optional]])",
+      "description": "Get the character width for a calculated data boxTo call: Databox.width(element, viewMode, compareElement --[[optional]])",
+      "return": "an integer representing the character width for a databox",
+      "example": "local width = Databox.width(element, viewMode)",
+      "where_used": []
+    },
+    {
+      "name": "DeleteSelectionSet",
+      "object": null,
+      "signature": "DeleteSelectionSet( setNumber )",
+      "description": "Deletes a selection setTo call: DeleteSelectionSet( setNumber )",
+      "return": "nothing",
+      "example": "DeleteSelectionSet( 1 )",
+      "where_used": [
+        "secondary_lines_utility"
+      ]
+    },
+    {
+      "name": "DeselectAll",
+      "object": null,
+      "signature": "DeselectAll()",
+      "description": "Deselects all elementsTo call: DeselectAll()",
+      "return": "nothing",
+      "example": "DeselectAll()",
+      "where_used": [
+        "add_grid_name_in_map_field",
+        "connect_disconnected_transformers",
+        "consumers_connected_to_primary",
+        "consumers_with_no_type",
+        "copy_data_between_fields",
+        "copy_data_from_externals",
+        "copy_data_to_externals",
+        "detect_missing_external",
+        "detect_missing_external_units",
+        "devices_with_no_children",
+        "find_disconnected_sections",
+        "find_duplicate_elements",
+        "find_duplicate_equipment",
+        "find_duplicates",
+        "find_generator_incorrectly_modeled",
+        "find_missing_equipment",
+        "find_transformers_with_invalid_output",
+        "find_unattached_map_points",
+        "fix_incorrect_coordinates",
+        "fix_invalid_phases",
+        "fix_orphaned_elements",
+        "fix_switch_children",
+        "fix_switch_parent_and_child_issues",
+        "insert_device_between_oh_and_ug",
+        "iterators",
+        "lines_with_zero_graphical_length",
+        "lines_with_zero_impedance_length",
+        "mp_nodes_with_missing_parents",
+        "nullify_invalid_equipment_refs",
+        "output",
+        "remove_unnecessary_multiparent_nodes",
+        "remove_unnecessary_transformers",
+        "rename_duplicate_elements",
+        "repair_invalid_equipment_refs",
+        "repair_transformers_with_invalid_output",
+        "ring_children",
+        "secondary_lines_utility",
+        "snap_lines_and_points",
+        "split_and_snap",
+        "stack_elements_on_parents",
+        "switches_with_no_parent",
+        "transformers_with_invalid_output",
+        "transformers_with_second_secondary",
+        "unstacking",
+        "unstacking_from_map_points",
+        "update_meters_from_customer_table"
+      ]
+    },
+    {
+      "name": "DeselectElement",
+      "object": null,
+      "signature": "DeselectElement( 'element' )",
+      "description": "Deselects the given elementTo call: DeselectElement( 'element' )",
+      "return": "nothing",
+      "example": "DeselectElement( 'OH1' )",
+      "where_used": []
+    },
+    {
+      "name": "DisplayInReportViewer",
+      "object": null,
+      "signature": "DisplayInReportViewer( 'filePath' )",
+      "description": "Displays a file in the report viewer.  Will not display properly in Lua Script Manager without first using CloseScriptManager().To call: DisplayInReportViewer( 'filePath' )",
+      "return": "nothing",
+      "example": "DisplayInReportViewer( 'C:\\Models\\TestModel.wm\\report.txt' )",
+      "where_used": []
+    },
+    {
+      "name": "addElement",
+      "object": "element",
+      "signature": "addElement( elementType )",
+      "description": "Allows you to add a new element after a specified element that already exists in the model. For the elementType argument, you may simply use the type of the element which can be found in the Scripts Manager under constants, or in the Scripts directory. (example: for overhead, you would use OH, and for underground you use UG, and so on)To call: (element):addElement( elementType )",
+      "return": "new element or nil on failure to add",
+      "example": "dofile(\"constants.lua\")local newE = e:addElement( OH )",
+      "where_used": []
+    },
+    {
+      "name": "addSegment",
+      "object": "element",
+      "signature": "addSegment( x coord, y coord )",
+      "description": "Allows you to add a segment to a line segmentTo call: (element):addSegment( x coord, y coord )",
+      "return": "boolean success",
+      "example": "if e:addSegment( 5, 5 ) then ... end",
+      "where_used": []
+    },
+    {
+      "name": "altLocation",
+      "object": "element",
+      "signature": "altLocation()",
+      "description": "Get the alt location of this Element.To call: (element):altLocation()",
+      "return": "altX coordinate, altY Coordinate",
+      "example": "altX, altY = e:altLocation()",
+      "where_used": []
+    },
+    {
+      "name": "backFeed",
+      "object": "element",
+      "signature": "backFeed( element )",
+      "description": "Back feeds an element to the given parentTo call: (element):backFeed( element )",
+      "return": "boolean success",
+      "example": "if e:backFeed( e2 ) then ... end",
+      "where_used": []
+    },
+    {
+      "name": "changeTypeToOverhead",
+      "object": "element",
+      "signature": "changeTypeToOverhead()",
+      "description": "Converts an underground line to an overhead lineTo call: (element):changeTypeToOverhead()",
+      "return": "boolean success",
+      "example": "e:changeTypeToOverhead()",
+      "where_used": []
+    },
+    {
+      "name": "changeTypeToUnderground",
+      "object": "element",
+      "signature": "changeTypeToUnderground()",
+      "description": "Converts an overhead line to an underground lineTo call: (element):changeTypeToUnderground()",
+      "return": "boolean success",
+      "example": "e:changeTypeToUnderground()",
+      "where_used": []
+    },
+    {
+      "name": "children",
+      "object": "element",
+      "signature": "children()",
+      "description": "Get the element's ChildrenTo call: (element):children()",
+      "return": "A table of this element's children",
+      "example": "local children = e:children()",
+      "where_used": []
+    },
+    {
+      "name": "close",
+      "object": "element",
+      "signature": "close( elementName )",
+      "description": "Closes an element that was previously opened.To call: (element):close( elementName )",
+      "return": "boolean success",
+      "example": "if e:close() then ... end",
+      "where_used": []
+    },
+    {
+      "name": "closestPointOnLine",
+      "object": "element",
+      "signature": "closestPointOnLine( X, Y )",
+      "description": "Returns closest point to the given coordinate on the elementTo call: (element):closestPointOnLine( X, Y )",
+      "return": "x, y coordinate",
+      "example": "x, y = e:closestPointOnLine( 138, 210 )",
+      "where_used": []
+    },
+    {
+      "name": "combineLoadOnLines",
+      "object": "element",
+      "signature": "combineLoadOnLines( lineObj )",
+      "description": "Combines the element's load with the given section.To call: (element):combineLoadOnLines( lineObj )",
+      "return": "boolean success",
+      "example": "local result = e:combineLoadOnLines( line )",
+      "where_used": []
+    },
+    {
+      "name": "connect",
+      "object": "element",
+      "signature": "connect( newParentElement )",
+      "description": "Connects a section to a new parent.To call: (element):connect( newParentElement )",
+      "return": "boolean success",
+      "example": "if e:connect( parent ) then ... end",
+      "where_used": []
+    },
+    {
+      "name": "delete",
+      "object": "element",
+      "signature": "delete()",
+      "description": "Removes an element from the circuit model.To call: (element):delete()",
+      "return": "boolean success",
+      "example": "if e:delete() then ... end",
+      "where_used": []
+    },
+    {
+      "name": "deleteSegment",
+      "object": "element",
+      "signature": "deleteSegment( segmentnumber )",
+      "description": "Deletes a segment from a line elementTo call: (element):deleteSegment( segmentnumber )",
+      "return": "boolean success",
+      "example": "if e:deleteSegment( 1 ) then ... end",
+      "where_used": []
+    },
+    {
+      "name": "disconnect",
+      "object": "element",
+      "signature": "disconnect()",
+      "description": "Disconnects a section from its parent.To call: (element):disconnect()",
+      "return": "boolean success",
+      "example": "if e:disconnect() then ... end",
+      "where_used": []
+    },
+    {
+      "name": "elementType",
+      "object": "element",
+      "signature": "elementType()",
+      "description": "Get the element's typeTo call: (element):elementType()",
+      "return": "string of the element's type",
+      "example": "print( e:elementType() )",
+      "where_used": []
+    },
+    {
+      "name": "forceSetAltLocation",
+      "object": "element",
+      "signature": "forceSetAltLocation( x2, y2 )",
+      "description": "Forces the coordinates to be set to the new x2, y2 values. WARNING: This will not effect children or parents of this element.To call: (element):forceSetAltLocation( x2, y2 )",
+      "return": "x2,y2 or nil,nil on failure",
+      "example": "local x2,y2 = e:forceSetAltLocation( 1, 1 )",
+      "where_used": []
+    },
+    {
+      "name": "forceSetLocation",
+      "object": "element",
+      "signature": "forceSetLocation( x, y )",
+      "description": "Forces the coordinates to be set to the new x, y values. WARNING: This will not effect children or parents of this element.To call: (element):forceSetLocation( x, y )",
+      "return": "x,y or nil,nil on failure",
+      "example": "local x,y = e:forceSetLocation( 0, 0 )",
+      "where_used": []
+    },
+    {
+      "name": "getElementField",
+      "object": "element",
+      "signature": "getElementField( 'FieldName', boolAsComplex )",
+      "description": "Get the value of the requested element field on this element. Takes an optional boolean parameter, which is handled differently for each type of field (Complex: returns complex object, Equip: returns GUID).To call: (element):getElementField( 'FieldName', boolAsComplex )",
+      "return": "A string of the value.",
+      "example": "print( e:getElementField( 'ThruAmps', true ) )",
+      "where_used": []
+    },
+    {
+      "name": "getEquipment",
+      "object": "element",
+      "signature": "getEquipment()",
+      "description": "Use to get the equipment used on an Element object.To call: (element):getEquipment()",
+      "return": "Table of Equipment objects",
+      "example": "local t = e:getEquipment()",
+      "where_used": []
+    },
+    {
+      "name": "getFeeder",
+      "object": "element",
+      "signature": "getFeeder()",
+      "description": "Gets the feeder of the element. Takes an optional boolean parameter to return the result as a GUID rather than an object.To call: (element):getFeeder()",
+      "return": "element object or GUID",
+      "example": "local feeder = e:getFeeder()",
+      "where_used": []
+    },
+    {
+      "name": "Element:getGUID",
+      "object": null,
+      "signature": "Element:getGUID()",
+      "description": "Get an Element's GUIDTo call: Element:getGUID()",
+      "return": "GUID as string",
+      "example": "local guidString = e:getGUID()",
+      "where_used": []
+    },
+    {
+      "name": "getGridCellName",
+      "object": "element",
+      "signature": "getGridCellName()",
+      "description": "Gets the name of the grid that the element is located inTo call: (element):getGridCellName()",
+      "return": "grid name or nil on failure",
+      "example": "local name = e:getGridCellName()",
+      "where_used": []
+    },
+    {
+      "name": "getGridCellType",
+      "object": "element",
+      "signature": "getGridCellType()",
+      "description": "Gets the user defined grid type the element belongs toTo call: (element):getGridCellType()",
+      "return": "user-defined grid type or nil on failure",
+      "example": "local type = e:getGridCellType()",
+      "where_used": []
+    },
+    {
+      "name": "getGridData",
+      "object": "element",
+      "signature": "getGridData()",
+      "description": "Gets a table containing the levels, prefix and suffix associated with the element. Accessible by calling .levels, .prefix and .suffix on the table.To call: (element):getGridData()",
+      "return": "array of grid data (levels, prefix, suffix) or nil on failure",
+      "example": "local t = e:getGridData()",
+      "where_used": []
+    },
+    {
+      "name": "getGridLevels",
+      "object": "element",
+      "signature": "getGridLevels()",
+      "description": "Gets a table containing the levels of the grid the element lies in.To call: (element):getGridLevels()",
+      "return": "array of levels or nil on failure",
+      "example": "local lvls = e:getGridLevels()",
+      "where_used": []
+    },
+    {
+      "name": "getGridName",
+      "object": "element",
+      "signature": "getGridName( partnerName )",
+      "description": "Gets the grid-based name generated for the element.  Takes the partner name as an optional second parameter (used for switches).To call: (element):getGridName( partnerName )",
+      "return": "grid-based name or nil on failure",
+      "example": "local name = e:getGridName( partnerName )",
+      "where_used": []
+    },
+    {
+      "name": "getGridPrefix",
+      "object": "element",
+      "signature": "getGridPrefix()",
+      "description": "Gets the grid prefix for an element.To call: (element):getGridPrefix()",
+      "return": "prefix string or nil on failure",
+      "example": "local prefix = e:getGridPrefix()",
+      "where_used": []
+    },
+    {
+      "name": "getGridSuffix",
+      "object": "element",
+      "signature": "getGridSuffix()",
+      "description": "Gets the grid suffix for an element.To call: (element):getGridSuffix()",
+      "return": "suffix string or nil on failure",
+      "example": "local suffix = e:getGridSuffix()",
+      "where_used": []
+    },
+    {
+      "name": "Element:getIllegitimateChildren",
+      "object": null,
+      "signature": "Element:getIllegitimateChildren()",
+      "description": "Get an Element's illegitimate childrenTo call: Element:getIllegitimateChildren()",
+      "return": "table of children elements",
+      "example": "local children = e:getIllegitimateChildren()",
+      "where_used": []
+    },
+    {
+      "name": "getMultiparentGUIDs",
+      "object": "element",
+      "signature": "getMultiparentGUIDs()",
+      "description": "Returns an array containing parent GUIDs or the value false if no parent exists on the phase. Can be used to detect invalid connections.To call: (element):getMultiparentGUIDs()",
+      "return": "a table of precisely 3 GUIDs (parents)",
+      "example": "local parents = e:getMultiparentGUIDs()",
+      "where_used": []
+    },
+    {
+      "name": "getMultiparents",
+      "object": "element",
+      "signature": "getMultiparents()",
+      "description": "Returns an array containing parent elements or the value false if no parent exists on the phase.To call: (element):getMultiparents()",
+      "return": "a table of precisely 3 elements (parents)",
+      "example": "local parents = e:getMultiparents()",
+      "where_used": []
+    },
+    {
+      "name": "getSegmentCoordinates",
+      "object": "element",
+      "signature": "getSegmentCoordinates()",
+      "description": "This function returns the coordinates of each segment of a line. If a line section does not have any segments the beginning and ending point coordinates are returned.To call: (element):getSegmentCoordinates()",
+      "return": "an array of X values and an array of Y values, both in order from first to last segment",
+      "example": "xArray, yArray = e:getSegmentCoordinates()",
+      "where_used": []
+    },
+    {
+      "name": "getSource",
+      "object": "element",
+      "signature": "getSource()",
+      "description": "Gets the source of the element. Takes an optional boolean parameter to return the result as a GUID rather than an object.To call: (element):getSource()",
+      "return": "element object or GUID",
+      "example": "local source = e:getSource()",
+      "where_used": []
+    },
+    {
+      "name": "getSwitchPartner",
+      "object": "element",
+      "signature": "getSwitchPartner()",
+      "description": "Gets the partner of the switch element. Returns nil if not found.To call: (element):getSwitchPartner()",
+      "return": "switch partner element",
+      "example": "local partner = e:getSwitchPartner()",
+      "where_used": []
+    },
+    {
+      "name": "insertNewElementAfter",
+      "object": "element",
+      "signature": "insertNewElementAfter( type )",
+      "description": "Functions the same way as the WindMil toolbar button. Requires the constants script.To call: (element):insertNewElementAfter( type )",
+      "return": "new element",
+      "example": "dofile( 'constants.lua' )local newE = e:insertNewElementAfter( CONSUMER )",
+      "where_used": []
+    },
+    {
+      "name": "insertNewElementBefore",
+      "object": "element",
+      "signature": "insertNewElementBefore( ElementType )",
+      "description": "Functions the same way as the WindMil toolbar button. Requires the constants script.To call: (element):insertNewElementBefore( ElementType )",
+      "return": "new element",
+      "example": "dofile( 'constants.lua' )local newE = e:insertNewElementBefore( TRANSFORMER )",
+      "where_used": []
+    },
+    {
+      "name": "isMultipleSegment",
+      "object": "element",
+      "signature": "isMultipleSegment()",
+      "description": "Check if a line element has multiple segments.To call: (element):isMultipleSegment()",
+      "return": "boolean result",
+      "example": "if e:isMultipleSegment() then ... end",
+      "where_used": []
+    },
+    {
+      "name": "isNil",
+      "object": "element",
+      "signature": "isNil()",
+      "description": "Check if this element is nilTo call: (element):isNil()",
+      "return": "True if this element is nil, false if it is not",
+      "example": "if e:isNil() then ... end",
+      "where_used": []
+    },
+    {
+      "name": "length",
+      "object": "element",
+      "signature": "length()",
+      "description": "Use to get the length of the elementTo call: (element):length()",
+      "return": "length of the element",
+      "example": "local len = e:length()",
+      "where_used": []
+    },
+    {
+      "name": "lengthScaled",
+      "object": "element",
+      "signature": "lengthScaled()",
+      "description": "Use to return an accurate length based on scale as well as coordinate systemsTo call: (element):lengthScaled()",
+      "return": "length of the element",
+      "example": "local scaleLen = e:lengthScaled()",
+      "where_used": []
+    },
+    {
+      "name": "location",
+      "object": "element",
+      "signature": "location()",
+      "description": "Get the location of this elementTo call: (element):location()",
+      "return": "X coordinate, Y Coordinate",
+      "example": "x, y = e:location()",
+      "where_used": []
+    },
+    {
+      "name": "move",
+      "object": "element",
+      "signature": "move( X, Y )",
+      "description": "Allows you to move a single element by an x and y value.  Negative numbers may be used.To call: (element):move( X, Y )",
+      "return": "The new x and y values",
+      "example": "x, y = e:move(5, -2)",
+      "where_used": []
+    },
+    {
+      "name": "move",
+      "object": "element",
+      "signature": "move( X, Y, 'MoveRelativeEnum' )",
+      "description": "Allows you to move a single element by an x and y value and the MoveRelativeEnum as a string. (Accepted strings are MoveRelativeAll, MoveRelativeNone, MoveRelativeUpline, MoveRelativeDownline, MoveRelativeSourceEnd.Negative numbers may be used.To call: (element):move( X, Y, 'MoveRelativeEnum' )",
+      "return": "The new x and y values",
+      "example": "x, y = e:moveTo(5, -2, 'MoveRelativeAll')",
+      "where_used": []
+    },
+    {
+      "name": "name",
+      "object": "element",
+      "signature": "name()",
+      "description": "Gets the element's nameTo call: (element):name()",
+      "return": "A string of the element's name",
+      "example": "print(e:name())",
+      "where_used": []
+    },
+    {
+      "name": "open",
+      "object": "element",
+      "signature": "open()",
+      "description": "Opens the circuit at a given elementTo call: (element):open()",
+      "return": "boolean success",
+      "example": "if e:open() then ... end",
+      "where_used": []
+    },
+    {
+      "name": "parent",
+      "object": "element",
+      "signature": "parent()",
+      "description": "Get this element's parentTo call: (element):parent()",
+      "return": "The parent of this element",
+      "example": "local p = e:parent()",
+      "where_used": []
+    },
+    {
+      "name": "removeEquipment",
+      "object": "element",
+      "signature": "removeEquipment( 'equipment name' )",
+      "description": "Removes an equipment from the element. Takes one parameter, the name of the equipment to remove.To call: (element):removeEquipment( 'equipment name' )",
+      "return": "true if equipment was successfully removed, false otherwise",
+      "example": "e:removeEquipment( 'OHequip1' )",
+      "where_used": []
+    },
+    {
+      "name": "rephase",
+      "object": "element",
+      "signature": "rephase( PHASE_*phase*, moveLoadNumber, boolKeepPhases, boolCheckDownline )",
+      "description": "Allows you to rephase any element. For the phase argument of this function you may simply type in PHASE_A, PHASE_B, PHASE_C, PHASE_AB, PHASE_AC, PHASE_BC, or PHASE_ABC.  Takes 0 to 3 optional parameters that must be included in succession ex) to include keepPhases, a moveLoadEnum must be included.  MoveLoadEnums are given as an integer (0 = split, 1 = moveFirstPhase, 2 = moveSecondPhase, 3 = leaveLoadAlone, 4 = askUser).  Keep phases and check downline are given as boolean values.To call: (element):rephase( PHASE_*phase*, moveLoadNumber, boolKeepPhases, boolCheckDownline )",
+      "return": "boolean success",
+      "example": "dofile( 'constants.lua' )success = e:rephase( PHASE_AB, 4, false, false )",
+      "where_used": []
+    },
+    {
+      "name": "setAltLocation",
+      "object": "element",
+      "signature": "setAltLocation( X, Y )",
+      "description": "NOTE: Only works on disconnected line sections. Noting that the element's alt location is usually its parent's location (or end coordinate), this function allows you to set the x and y values of the alt location. Negative numbers may be used.To call: (element):setAltLocation( X, Y )",
+      "return": "Boolean success",
+      "example": "success = e:setAltLocation( 123, 456 )",
+      "where_used": []
+    },
+    {
+      "name": "setElementField",
+      "object": "element",
+      "signature": "setElementField( 'FieldName', Value )",
+      "description": "Set the value of the requested element field on this elementTo call: (element):setElementField( 'FieldName', Value )",
+      "return": "The new value",
+      "example": "e:setElementField( 'GreenMoldSpores', 42 )",
+      "where_used": []
+    },
+    {
+      "name": "setFeeder",
+      "object": "element",
+      "signature": "setFeeder( feeder )",
+      "description": "Sets the feeder of the element. Takes a feeder element object or GUID.To call: (element):setFeeder( feeder )",
+      "return": "boolean success",
+      "example": "local result = e:SetFeeder( feederObj )",
+      "where_used": []
+    },
+    {
+      "name": "setGridCellName",
+      "object": "element",
+      "signature": "setGridCellName( 'NewName' )",
+      "description": "Sets the name of the grid that the element is located in. Takes one parameter, the new cell name.To call: (element):setGridCellName( 'NewName' )",
+      "return": "new name or nil on failure",
+      "example": "local result = e:getGridCellName( 'NewName' )",
+      "where_used": []
+    },
+    {
+      "name": "setLocation",
+      "object": "element",
+      "signature": "setLocation( X, Y )",
+      "description": "Set the location of this elementTo call: (element):setLocation( X, Y )",
+      "return": "X coordinate, Y Coordinate",
+      "example": "e:setLocation( 123, 456 )",
+      "where_used": []
+    },
+    {
+      "name": "setMultiparents",
+      "object": "element",
+      "signature": "setMultiparents( {parent1,parent2,parent3} )",
+      "description": "Sets an array of parents. Use the value false to set a null connection. The parents must be listed A,B,C. No other order is acceptable.To call: (element):setMultiparents( {parent1,parent2,parent3} )",
+      "return": "boolean success",
+      "example": "e:setMultiparents( {OH1,OH2,OH3} )",
+      "where_used": []
+    },
+    {
+      "name": "setName",
+      "object": "element",
+      "signature": "setName( 'newName' )",
+      "description": "Renames an element.To call: (element):setName( 'newName' )",
+      "return": "boolean success",
+      "example": "success = e:setName( 'OH34' )",
+      "where_used": []
+    },
+    {
+      "name": "setSegmentLocation",
+      "object": "element",
+      "signature": "setSegmentLocation(segmentIndex, x, y)",
+      "description": "Allows you to set a segment's location to a specified x and y value.To call: (element):setSegmentLocation(segmentIndex, x, y)",
+      "return": "The new x and y values",
+      "example": "x, y = e:setSegmentLocation(3, 600, -120)",
+      "where_used": []
+    },
+    {
+      "name": "setSelected",
+      "object": "element",
+      "signature": "setSelected( boolean )",
+      "description": "Selects or deselects the element based on the value of the parameter given.To call: (element):setSelected( boolean )",
+      "return": "nothing",
+      "example": "e:setSelected( true )",
+      "where_used": []
+    },
+    {
+      "name": "setSource",
+      "object": "element",
+      "signature": "setSource( source )",
+      "description": "Sets the source of the element. Takes a source element object or GUID.To call: (element):setSource( source )",
+      "return": "boolean success",
+      "example": "local result = e:SetSource( sourceObj )",
+      "where_used": []
+    },
+    {
+      "name": "setSwitchPartner",
+      "object": "element",
+      "signature": "setSwitchPartner( 'Add Mode', boolRename, 'New Name', 'New Sec Num' )",
+      "description": "Adds or fixes a switch's partner. Takes 4 optional parameters: the add mode: AddNewSection, InsertNewSectionAfter, InsertNewSectionBefore, a boolean to rename the current element, the name or the section number of the new partner.To call: (element):setSwitchPartner( 'Add Mode', boolRename, 'New Name', 'New Sec Num' )",
+      "return": "boolean success",
+      "example": "e:setSwitchPartner( 'InsertNewSectionAfter', true, '', '' ) -- default options",
+      "where_used": []
+    },
+    {
+      "name": "splitElement",
+      "object": "element",
+      "signature": "splitElement( x, y )",
+      "description": "Splits an element into two elements at the coordinate givenTo call: (element):splitElement( x, y )",
+      "return": "new element",
+      "example": "newElement = e:splitElement( 5, 6 )",
+      "where_used": []
+    },
+    {
+      "name": "splitSegment",
+      "object": "element",
+      "signature": "splitSegment( x, y )",
+      "description": "Splits an element into two segments at the coordinate givenTo call: (element):splitSegment( x, y )",
+      "return": "boolean success",
+      "example": "if e:splitSegment( 5, 6 ) then ... end",
+      "where_used": []
+    },
+    {
+      "name": "zoom",
+      "object": "element",
+      "signature": "zoom()",
+      "description": "Focuses the zoom to a particular element.  Useful for requesting user input about an element.To call: (element):zoom()",
+      "return": "nothing",
+      "example": "e:zoom()",
+      "where_used": []
+    },
+    {
+      "name": "ElementExists",
+      "object": null,
+      "signature": "ElementExists( 'element' )",
+      "description": "Checks for an element's existanceTo call: ElementExists( 'element' )",
+      "return": "boolean value",
+      "example": "if ElementExists( 'OH1' ) then ...",
+      "where_used": [
+        "closest_feature",
+        "neutral_current_(amps)",
+        "rename_by_grid_location",
+        "rename_duplicate_elements",
+        "rename_elements_in_file"
+      ]
+    },
+    {
+      "name": "ElementExists",
+      "object": null,
+      "signature": "ElementExists( 'element' )",
+      "description": "Checks for an element's existanceTo call: ElementExists( 'element' )",
+      "return": "boolean value",
+      "example": "if ElementExists( 'OH1' ) then ...",
+      "where_used": [
+        "closest_feature",
+        "neutral_current_(amps)",
+        "rename_by_grid_location",
+        "rename_duplicate_elements",
+        "rename_elements_in_file"
+      ]
+    },
+    {
+      "name": "Equipment.checkAssembly",
+      "object": null,
+      "signature": "Equipment.checkAssembly( 'Assembly Name' )",
+      "description": "Checks to see if assembly equipment already exists.To call: Equipment.checkAssembly( 'Assembly Name' )",
+      "return": "truth value of assembly equipment's existence",
+      "example": "local exist = Equipment.checkAssembly( 'Some Assem' )",
+      "where_used": []
+    },
+    {
+      "name": "Equipment.checkEquipment",
+      "object": null,
+      "signature": "Equipment.checkEquipment( 'Equip Name' )",
+      "description": "Checks to see if equipment already exists.To call: Equipment.checkEquipment( 'Equip Name' )",
+      "return": "truth value of equipments existence",
+      "example": "local exist = Equipment.checkEquipment( 'Some Equip' )",
+      "where_used": []
+    },
+    {
+      "name": "Equipment.createAssembly",
+      "object": null,
+      "signature": "Equipment.createAssembly( 'newName', 'definedType' --[[optional]])",
+      "description": "Creates a new assembly equipment in the eqdb. Takes two parameters, a new name for the assembly and an optional second parameter specifying the defined type.To call: Equipment.createAssembly( 'newName', 'definedType' --[[optional]])",
+      "return": "newly created assembly equipment",
+      "example": "local assem = Equipment.createAssembly( 'newAssembly' )",
+      "where_used": []
+    },
+    {
+      "name": "Equipment.createEquipment",
+      "object": null,
+      "signature": "Equipment.createEquipment( 'newName', type, 'definedType' --[[optional]], 'index' --[[optional]])",
+      "description": "Creates a new equipment in the eqdb. Takes four parameters (two optional), a new name for the equipment, the type, (optional) the defined type and (optional) the equipment index to overwrite the existing equipment. Include constants.lua to use EQ_* like in the example.To call: Equipment.createEquipment( 'newName', type, 'definedType' --[[optional]], 'index' --[[optional]])",
+      "return": "newly created equipment",
+      "example": "local eq = Equipment.createEquipment( 'newEquip', EQ_OVERHEAD, 'AAC' )",
+      "where_used": []
+    },
+    {
+      "name": "Equipment.getAll",
+      "object": null,
+      "signature": "Equipment.getAll()",
+      "description": "Gets all equipment from the equipment database.To call: Equipment.getAll()",
+      "return": "table of equipment objects",
+      "example": "local t = Equipment.getAll()",
+      "where_used": []
+    },
+    {
+      "name": "Equipment.getAllAssemblies",
+      "object": null,
+      "signature": "Equipment.getAllAssemblies()",
+      "description": "Gets all assembly equipment from the equipment database.To call: Equipment.getAllAssemblies()",
+      "return": "table of assembly equipment objects",
+      "example": "local t = Equipment.getAllAssemblies()",
+      "where_used": []
+    },
+    {
+      "name": "Equipment.getAssemblyFromIndex",
+      "object": null,
+      "signature": "Equipment.getAssemblyFromIndex( 'Index UID' )",
+      "description": "Get an assembly equipment based on the EqDB index.To call: Equipment.getAssemblyFromIndex( 'Index UID' )",
+      "return": "assembly equipment object or nil on failure",
+      "example": "local assem = Equipment.getAssemblyFromIndex( '{33740A09-F2EE-4B1A-B63B-01572FC4F6EA}' )",
+      "where_used": []
+    },
+    {
+      "name": "Equipment.getAssemblyFromName",
+      "object": null,
+      "signature": "Equipment.getAssemblyFromName( 'AssemblyName' )",
+      "description": "Get an assembly equipment object from the assembly equipment's name.To call: Equipment.getAssemblyFromName( 'AssemblyName' )",
+      "return": "assembly equipment object",
+      "example": "local eq = Equipment.getAssemblyFromName( 'assem25')",
+      "where_used": []
+    },
+    {
+      "name": "Equipment.getEquipmentFromIndex",
+      "object": null,
+      "signature": "Equipment.getEquipmentFromIndex( 'EquipIndex' )",
+      "description": "Get an equipment object from the equipment's index.To call: Equipment.getEquipmentFromIndex( 'EquipIndex' )",
+      "return": "equipment object or nil on failure",
+      "example": "local eq = Equipment.getEquipmentFromIndex( '0xB')",
+      "where_used": []
+    },
+    {
+      "name": "Equipment.getEquipmentFromName",
+      "object": null,
+      "signature": "Equipment.getEquipmentFromName( 'EquipmentName' )",
+      "description": "Get an equipment object from the equipment's name.To call: Equipment.getEquipmentFromName( 'EquipmentName' )",
+      "return": "equipment object or nil on failure",
+      "example": "local eq = Equipment.getEquipmentFromName( 'equip25')",
+      "where_used": []
+    },
+    {
+      "name": "delete",
+      "object": "equipment",
+      "signature": "delete()",
+      "description": "Deletes an equipment from the eqdb. Note: Cannot be undone!To call: (equipment):delete()",
+      "return": "boolean success",
+      "example": "if eq:delete() then ... end",
+      "where_used": []
+    },
+    {
+      "name": "equipmentType",
+      "object": "equipment",
+      "signature": "equipmentType()",
+      "description": "Use to get the equipment's typeTo call: (equipment):equipmentType()",
+      "return": "string of equipment type",
+      "example": "if eq:equipmentType() == 'Transformer Conductor' then ... end",
+      "where_used": []
+    },
+    {
+      "name": "getDeviceCoordinationResults",
+      "object": "equipment",
+      "signature": "getDeviceCoordinationResults()",
+      "description": "Gets all the coordination results for the provided device equipment.To call: (equipment):getDeviceCoordinationResults()",
+      "return": "An array of CoordinationResult objects",
+      "example": "results = e:getDeviceCoordinationResults():getDeviceCoordinationResults()",
+      "where_used": []
+    },
+    {
+      "name": "getEquipmentField",
+      "object": "equipment",
+      "signature": "getEquipmentField( fieldName )",
+      "description": "Allows access to a large number of equipment fields.Note that some fields return arrays (eg: TransBaseKva)which may need sorted through to get the right data.To call: (equipment):getEquipmentField( fieldName )",
+      "return": "the requested value",
+      "example": "eq:getEquipmentField( 'DefinedType' )",
+      "where_used": []
+    },
+    {
+      "name": "getGUID",
+      "object": "equipment",
+      "signature": "getGUID()",
+      "description": "To call: (equipment):getGUID()",
+      "return": "the equipment's GUID",
+      "example": "print( eq:getGUID() )",
+      "where_used": []
+    },
+    {
+      "name": "name",
+      "object": "equipment",
+      "signature": "name()",
+      "description": "Get this Equipment's nameTo call: (equipment):name()",
+      "return": "A string of the equipment's name",
+      "example": "print(e:name())",
+      "where_used": []
+    },
+    {
+      "name": "setEquipmentField",
+      "object": "equipment",
+      "signature": "setEquipmentField( 'FieldName', Value )",
+      "description": "Set the value of the requested field on this EquipmentTo call: (equipment):setEquipmentField( 'FieldName', Value )",
+      "return": "The value of the requested Equipment field",
+      "example": "e:setEquipmentField( 'Name', 'newName' )",
+      "where_used": []
+    },
+    {
+      "name": "setName",
+      "object": "equipment",
+      "signature": "setName( 'newName' )",
+      "description": "Renames an equipment.To call: (equipment):setName( 'newName' )",
+      "return": "boolean success",
+      "example": "success = e:setName( 'newName' )",
+      "where_used": []
+    },
+    {
+      "name": "Error",
+      "object": null,
+      "signature": "Error( \"message\" )",
+      "description": "This is a special function that never returns. It invokes the error handling routines, stops the script execution, and displays a message in the output window.To call: Error( \"message\" )",
+      "return": "does not return",
+      "example": "Error( \"Unable to convert model\" )",
+      "where_used": []
+    },
+    {
+      "name": "ExternalTable.TableLoaderBegin",
+      "object": null,
+      "signature": "ExternalTable.TableLoaderBegin()",
+      "description": "Creates the table loader to manage column creation.To call: ExternalTable.TableLoaderBegin()",
+      "return": "TableLoader object",
+      "example": "local tableLoader = ExternalTable.TableLoaderBegin()",
+      "where_used": []
+    },
+    {
+      "name": "ExternalTable.TableLoaderEnd",
+      "object": null,
+      "signature": "ExternalTable.TableLoaderEnd( TableLoader object )",
+      "description": "Destroys the table loader.To call: ExternalTable.TableLoaderEnd( TableLoader object )",
+      "return": "nothing",
+      "example": "ExternalTable.TableLoaderEnd( tableLoader )",
+      "where_used": []
+    },
+    {
+      "name": "ExternalTable.getTableFromName",
+      "object": null,
+      "signature": "ExternalTable.getTableFromName( 'TableName')",
+      "description": "Get a table object from the name of the table.To call: ExternalTable.getTableFromName( 'TableName')",
+      "return": "table object",
+      "example": "ExternalTable.getTableFromName('capacitor')",
+      "where_used": []
+    },
+    {
+      "name": "ExternalTable.getTables",
+      "object": null,
+      "signature": "ExternalTable.getTables()",
+      "description": "Get all of the tables for the model.To call: ExternalTable.getTables()",
+      "return": "a table of table objects",
+      "example": "local tables = ExternalTable.getTables()",
+      "where_used": []
+    },
+    {
+      "name": "GetErrorFile",
+      "object": null,
+      "signature": "GetErrorFile()",
+      "description": "Filters the set on a specified element field, operator, and value.For the operator parameter use: OP_EQUAL, OP_NOTEQUAL, OP_LESSTHAN, OP_GREATERTHAN, OP_LESSTHANEQUAL, or OP_GREATERTHANEQUAL. Make sure to include the constants file for this to work.To Call: FliterCurrentSelectionSet( field, operation, value )Returns: nothingExample: dofile( 'constants.lua' )FliterCurrentSelectionSet( 'Base Kv', OP_LESSTHAN, 200 )Returns the name of the current Error File.To call: GetErrorFile()",
+      "return": "name of current error file",
+      "example": "local errorFile = GetErrorFile()",
+      "where_used": []
+    },
+    {
+      "name": "GetExecutablePath",
+      "object": null,
+      "signature": "GetExecutablePath()",
+      "description": "Returns the path to the currently running program.To call: GetExecutablePath()",
+      "return": "string containing executable path",
+      "example": "path = GetExecutablePath()Returns the center coordinate of a provided grid cell.",
+      "where_used": [
+        "model_integrity_library_globals",
+        "run_model_integrity_library"
+      ]
+    },
+    {
+      "name": "GetGridCoordsCenter",
+      "object": null,
+      "signature": "GetGridCoordsCenter( 'Grid-Location-Name' )",
+      "description": "Returns the center point of a gridTo call: GetGridCoordsCenter( 'Grid-Location-Name' )",
+      "return": "a table with the x and y values",
+      "example": "local center = GetGridCoordsCenter( 'Grid-Location-Name' )func( center[\"x\"], center[\"y\"] )",
+      "where_used": []
+    },
+    {
+      "name": "GetGridEditPromptStatus",
+      "object": null,
+      "signature": "GetGridEditPromptStatus()",
+      "description": "Returns the boolean value of Editing Utilities \"Prompt\" boxTo call: GetGridEditPromptStatus()",
+      "return": "boolean value",
+      "example": "local prompt = GetGridEditPromptStatus()",
+      "where_used": [
+        "add_prefix_to_map_fields",
+        "add_prefix_to_names",
+        "add_suffix_to_map_fields",
+        "add_suffix_to_names",
+        "change_oh_to_ug",
+        "change_ug_to_oh",
+        "connect_to_active_element",
+        "recalculate_impedance_lengths",
+        "rename_by_grid_location",
+        "swap_map_and_section_names"
+      ]
+    },
+    {
+      "name": "GetMapNumberLength",
+      "object": null,
+      "signature": "GetMapNumberLength()",
+      "description": "Returns the maximum length of a map number.To call: GetMapNumberLength()",
+      "return": "maximum length of a map number",
+      "example": "local maxLength = GetMapNumberLength()",
+      "where_used": [
+        "add_prefix_to_map_fields",
+        "add_suffix_to_map_fields"
+      ]
+    },
+    {
+      "name": "GetModelPath",
+      "object": null,
+      "signature": "GetModelPath()",
+      "description": "Returns the path to the current model.To call: GetModelPath()",
+      "return": "string containing model path",
+      "example": "path = GetModelPath()",
+      "where_used": [
+        "apply_reliability_indices",
+        "find_duplicates",
+        "model_integrity_library_globals",
+        "rename_by_grid_location",
+        "rename_elements_in_file",
+        "reparent_elements_in_file",
+        "rephase_elements_in_file",
+        "run_model_integrity_library",
+        "update_meters_from_customer_table"
+      ]
+    },
+    {
+      "name": "GetPreference",
+      "object": null,
+      "signature": "GetPreference( 'PrefName', 'Suffix' )",
+      "description": "Get the value of the requested preference.  Dynamic preferences require a suffix (shown in list).  Double click to see a list of preferences.To call: GetPreference( 'PrefName', 'Suffix' )",
+      "return": "A value (coordinates as two).",
+      "example": "print( GetPreference( 'ServerPort' )",
+      "where_used": [
+        "read_externals"
+      ]
+    },
+    {
+      "name": "GetSavedSelectionSetTable",
+      "object": null,
+      "signature": "GetSavedSelectionSetTable()",
+      "description": "Returns a table of stored selection setsTo call: GetSavedSelectionSetTable()",
+      "return": "a table of the stored selection sets, contructed like this: { {setname, index}, {setname, index}, ... }",
+      "example": "local sets = GetSavedSelectionSetTable()",
+      "where_used": [
+        "secondary_lines_utility"
+      ]
+    },
+    {
+      "name": "GetSectionNameLength",
+      "object": null,
+      "signature": "GetSectionNameLength()",
+      "description": "Returns the maximum length of a section name.To call: GetSectionNameLength()",
+      "return": "maximum length of a section name",
+      "example": "local maxLength = GetSectionNameLength()",
+      "where_used": [
+        "add_prefix_to_names",
+        "add_suffix_to_names",
+        "rename_by_grid_location",
+        "rename_duplicate_elements",
+        "rename_elements_in_file"
+      ]
+    },
+    {
+      "name": "GetTickCount",
+      "object": null,
+      "signature": "GetTickCount()",
+      "description": "Returns the tick count.To call: GetTickCount()",
+      "return": "tick count number",
+      "example": "local ticks = GetTickCount()",
+      "where_used": []
+    },
+    {
+      "name": "HideProgressBar",
+      "object": null,
+      "signature": "HideProgressBar()",
+      "description": "Hides the progress bar dialog.To call: HideProgressBar()",
+      "return": "nothing",
+      "example": "HideProgressBar()",
+      "where_used": [
+        "apply_reliability_indices",
+        "connect_disconnected_transformers",
+        "consumers_connected_to_primary",
+        "consumers_with_no_type",
+        "copy_data_between_fields",
+        "copy_data_from_externals",
+        "copy_data_to_externals",
+        "detect_missing_external",
+        "detect_missing_external_units",
+        "devices_with_no_children",
+        "find_disconnected_sections",
+        "find_duplicate_elements",
+        "find_duplicate_equipment",
+        "find_duplicates",
+        "find_generator_incorrectly_modeled",
+        "find_missing_equipment",
+        "find_transformers_with_invalid_output",
+        "fix_incorrect_coordinates",
+        "fix_invalid_phases",
+        "fix_orphaned_elements",
+        "fix_switch_children",
+        "fix_switch_parent_and_child_issues",
+        "insert_transformer_for_direct_consumers",
+        "lines_with_zero_graphical_length",
+        "lines_with_zero_impedance_length",
+        "mp_nodes_with_missing_parents",
+        "nullify_invalid_equipment_refs",
+        "remove_unnecessary_multiparent_nodes",
+        "remove_unnecessary_transformers",
+        "rename_duplicate_elements",
+        "rename_elements_in_file",
+        "repair_invalid_equipment_refs",
+        "repair_transformers_with_invalid_output",
+        "reparent_elements_in_file",
+        "rephase_elements_in_file",
+        "replace_consumer_leaders_with_line_elements",
+        "ring_children",
+        "secondary_lines_utility",
+        "snap_lines_and_points",
+        "split_and_snap",
+        "stack_elements_on_parents",
+        "switches_with_no_parent",
+        "transformers_with_invalid_output",
+        "transformers_with_second_secondary",
+        "unstacking",
+        "unstacking_from_map_points",
+        "update_meters_from_customer_table"
+      ]
+    },
+    {
+      "name": "InPolyLine",
+      "object": null,
+      "signature": "InPolyLine( x, y, {x1, x2, x3}, {y1, y2, y3} )",
+      "description": "This function runs a check to see if a particular x, y point occurs inside a given poly line.To call: InPolyLine( x, y, {x1, x2, x3}, {y1, y2, y3} )",
+      "return": "boolean value whether the point was inside",
+      "example": "InPolyLine( 1, 1, {0,0,2,2}, {0,2,2,0} )",
+      "where_used": []
+    },
+    {
+      "name": "InitializeQuadTrees",
+      "object": null,
+      "signature": "InitializeQuadTrees()",
+      "description": "Refreshes the quad trees.To call: InitializeQuadTrees()",
+      "return": "nothing",
+      "example": "InitializeQuadTrees()",
+      "where_used": [
+        "secondary_lines_utility"
+      ]
+    },
+    {
+      "name": "IsModelModified",
+      "object": null,
+      "signature": "IsModelModified()",
+      "description": "Returns whether or not the model has been modified.To call: IsModelModified()",
+      "return": "boolean status of model's modified status",
+      "example": "local needSave = IsModelModified()",
+      "where_used": []
+    },
+    {
+      "name": "IsUsingGridBasedNaming",
+      "object": null,
+      "signature": "IsUsingGridBasedNaming()",
+      "description": "Returns whether or not the model is using Grid Based Naming.To call: IsUsingGridBasedNaming()",
+      "return": "boolean status of Using Grid Based Naming",
+      "example": "local canUseGrid = IsUsingGridBasedNaming()",
+      "where_used": [
+        "rename_by_grid_location"
+      ]
+    },
+    {
+      "name": "LoadSelectionSet",
+      "object": null,
+      "signature": "LoadSelectionSet( setIndex, overwriteCurrentSet )",
+      "description": "Loads a previously saved selection setTo call: LoadSelectionSet( setIndex, overwriteCurrentSet )",
+      "return": "the set size",
+      "example": "LoadSelectionSet( 0, true )",
+      "where_used": [
+        "secondary_lines_utility"
+      ]
+    },
+    {
+      "name": "MapPoint.add",
+      "object": null,
+      "signature": "MapPoint.add( \"name\", type, x, y )",
+      "description": "Adds a map point.To call: MapPoint.add( \"name\", type, x, y )",
+      "return": "newly created map point",
+      "example": "local p = MapPoint.add( \"name\", 0, 15, 15 )",
+      "where_used": []
+    },
+    {
+      "name": "MapPoint.delete",
+      "object": null,
+      "signature": "MapPoint.delete( \"name\", type )",
+      "description": "Deletes a map point.To call: MapPoint.delete( \"name\", type )",
+      "return": "boolean success",
+      "example": "MapPoint.delete( \"name\", 0 )",
+      "where_used": []
+    },
+    {
+      "name": "MapPoint.getCurrentSelectionSet",
+      "object": null,
+      "signature": "MapPoint.getCurrentSelectionSet()",
+      "description": "Get the current Selection Set's map pointsTo call: MapPoint.getCurrentSelectionSet()",
+      "return": "A table of the currently selected map points",
+      "example": "local t = MapPoint.getCurrentSelectionSet()",
+      "where_used": []
+    },
+    {
+      "name": "MapPoint.getInRadius",
+      "object": null,
+      "signature": "MapPoint.getInRadius( x, y, radius )",
+      "description": "Gets all the map points in the given radiusTo call: MapPoint.getInRadius( x, y, radius )",
+      "return": "table of map points in radius",
+      "example": "local t = MapPoint.getInRadius( 123, 456, 20 )",
+      "where_used": []
+    },
+    {
+      "name": "MapPoint.getMapPointFromName",
+      "object": null,
+      "signature": "MapPoint.getMapPointFromName( 'MapPointName' )",
+      "description": "Get a Map Point object from the Map Point's name.  This function should only be used if you can guarantee a Map Point's name is unique. Otherwise, it will just return the first point found.To call: MapPoint.getMapPointFromName( 'MapPointName' )",
+      "return": "Map Point object or nil if it could not be found",
+      "example": "p = MapPoint.getMapPointFromName( 'Pole 4' )",
+      "where_used": []
+    },
+    {
+      "name": "MapPoint.getMapPointFromNameAndType",
+      "object": null,
+      "signature": "MapPoint.getMapPointFromNameAndType( 'MapPointName', Type )",
+      "description": "Get a Map Point object from the Map Point's name and type (integer or string).To call: MapPoint.getMapPointFromNameAndType( 'MapPointName', Type )",
+      "return": "Map Point object or nil if it could not be found",
+      "example": "p = MapPoint.getMapPointFromNameAndType( 'Pole 4', 0 )",
+      "where_used": []
+    },
+    {
+      "name": "MapPoint.getMapPointsFromName",
+      "object": null,
+      "signature": "MapPoint.getMapPointsFromName( 'MapPointName' )",
+      "description": "Get a table of Map Point objects from the Map Points' name.To call: MapPoint.getMapPointsFromName( 'MapPointName' )",
+      "return": "Map Point object or nil if it could not be found",
+      "example": "t = MapPoint.getMapPointsFromName( 'Pole 4' )",
+      "where_used": []
+    },
+    {
+      "name": "MapPoint.setMapPointsSelected",
+      "object": null,
+      "signature": "MapPoint.setMapPointsSelected( mappointArray, selectedBool )",
+      "description": "Selects or deselects (depending on the value of the second parameter) an array of map pointsTo call: MapPoint.setMapPointsSelected( mappointArray, selectedBool )",
+      "return": "nothing",
+      "example": "MapPoint.setMapPointsSelected( {p1, p2}, true )",
+      "where_used": []
+    },
+    {
+      "name": "addAssembly",
+      "object": "mappoint",
+      "signature": "addAssembly( assemObj )",
+      "description": "Adds an assembly to the give map point.To call: (mappoint):addAssembly( assemObj )",
+      "return": "boolean success",
+      "example": "p:addAssembly( assembly )",
+      "where_used": []
+    },
+    {
+      "name": "appendAssembly",
+      "object": "mappoint",
+      "signature": "appendAssembly()",
+      "description": "Creates a new assembly instance and adds it to the bottom of the list of assemblies on the map point. Returns the assemblyId of the new assembly instance.To call: (mappoint):appendAssembly()",
+      "return": "assemblyIdExample: local assemblyId = p:appendAssembly()",
+      "example": null,
+      "where_used": []
+    },
+    {
+      "name": "delete",
+      "object": "mappoint",
+      "signature": "delete()",
+      "description": "Removes a map point from the circuit model.To call: (mappoint):delete()",
+      "return": "boolean success",
+      "example": "if p:delete() then ... end",
+      "where_used": []
+    },
+    {
+      "name": "getAllAssociated",
+      "object": "mappoint",
+      "signature": "getAllAssociated()",
+      "description": "Gets all elements attached to the map point.To call: (mappoint):getAllAssociated()",
+      "return": "table of element objects",
+      "example": "local sections = p:getAllAssociated()",
+      "where_used": []
+    },
+    {
+      "name": "getAssemblies",
+      "object": "mappoint",
+      "signature": "getAssemblies()",
+      "description": "Use to get the assembly equipment objects of all the assemblies on a Map Point object.To call: (mappoint):getAssemblies()",
+      "return": "Table of Assembly Equipment objects",
+      "example": "local t = p:getAssemblies()",
+      "where_used": []
+    },
+    {
+      "name": "getAssemblyAngle",
+      "object": "mappoint",
+      "signature": "getAssemblyAngle( assemblyId )",
+      "description": "Returns the angle of the assembly. Takes one parameter, the assemblyId of the assembly.To call: (mappoint):getAssemblyAngle( assemblyId )",
+      "return": "angle of assemblyExample: local angle = p:getAssemblyAngle( assemblyId )",
+      "example": null,
+      "where_used": []
+    },
+    {
+      "name": "getAssemblyAssociatedFeature",
+      "object": "mappoint",
+      "signature": "getAssemblyAssociatedFeature( assemblyId )",
+      "description": "Returns the element object of the circuit element this assembly is associated with. Takes one parameter, the assemblyId of the assembly.To call: (mappoint):getAssemblyAssociatedFeature( assemblyId )",
+      "return": "element objectExample: local associatedFeature = p:getAssemblyAssociatedFeature( assemblyId )",
+      "example": null,
+      "where_used": []
+    },
+    {
+      "name": "getAssemblyComment",
+      "object": "mappoint",
+      "signature": "getAssemblyComment( assemblyId )",
+      "description": "Returns the comment field of the assembly. Takes one parameter, the assemblyId of the assembly.To call: (mappoint):getAssemblyComment( assemblyId )",
+      "return": "comment stringExample: local comment = p:getAssemblyComment( assemblyId )",
+      "example": null,
+      "where_used": []
+    },
+    {
+      "name": "getAssemblyDistance",
+      "object": "mappoint",
+      "signature": "getAssemblyDistance( assemblyId )",
+      "description": "Returns the distance field of the assembly. Takes one parameter, the assemblyId of the assembly.To call: (mappoint):getAssemblyDistance( assemblyId )",
+      "return": "floatExample: local distance = p:getAssemblyDistance( assemblyId )",
+      "example": null,
+      "where_used": []
+    },
+    {
+      "name": "getAssemblyEquipment",
+      "object": "mappoint",
+      "signature": "getAssemblyEquipment( assemblyId )",
+      "description": "Returns the equipment object of the assembly. Takes one parameter, the assemblyId of the assembly.To call: (mappoint):getAssemblyEquipment( assemblyId )",
+      "return": "equipment objectExample: local assemblyEquipment = p:getAssemblyEquipment( assemblyId )",
+      "example": null,
+      "where_used": []
+    },
+    {
+      "name": "getAssemblyIdByPosition",
+      "object": "mappoint",
+      "signature": "getAssemblyIdByPosition(position)",
+      "description": "Use to get the GUID assemblyId of all assemblies on a Map Point object. Many of the Lua getAssembly* functions accept an assemblyId.To call: (mappoint):getAssemblyGUIDs()Returns: table of assemblyIdsExample: local t = p:getAssemblyGUIDs()Returns the assemblyId at a particular position in the map point's assembly list. The first assembly in the list is at position 1.To call: (mappoint):getAssemblyIdByPosition(position)",
+      "return": "assemblyIdExample: local assemblyId = p:getAssemblyIdByPosition(3)",
+      "example": null,
+      "where_used": []
+    },
+    {
+      "name": "getAssemblyIndices",
+      "object": "mappoint",
+      "signature": "getAssemblyIndices()",
+      "description": "Use to get the equipment GUIDs from assemblies on a Map Point object. Can be used to detect invalid equipment.To call: (mappoint):getAssemblyIndices()",
+      "return": "table of assembly indices",
+      "example": "local t = p:getAssemblyIndices()",
+      "where_used": []
+    },
+    {
+      "name": "getAssemblyParent",
+      "object": "mappoint",
+      "signature": "getAssemblyParent( assemblyId )",
+      "description": "Returns the assemblyId of the assembly's parent. Takes one parameter, the assemblyId of the assembly.To call: (mappoint):getAssemblyParent( assemblyId )",
+      "return": "assemblyId GUID of parentExample: local parentAssemblyId = p:getAssemblyParent( assemblyId )",
+      "example": null,
+      "where_used": []
+    },
+    {
+      "name": "getAssemblyQuantity",
+      "object": "mappoint",
+      "signature": "getAssemblyQuantity( assemblyId )",
+      "description": "Returns the quantity field of the assembly. Takes one parameter, the assemblyId of the assembly.To call: (mappoint):getAssemblyQuantity( assemblyId )",
+      "return": "integerExample: local quantity = p:getAssemblyQuantity( assemblyId )",
+      "example": null,
+      "where_used": []
+    },
+    {
+      "name": "getAssemblyStatus",
+      "object": "mappoint",
+      "signature": "getAssemblyStatus( assemblyId )",
+      "description": "Returns the status field of the assembly. Takes one parameter, the assemblyId of the assembly.To call: (mappoint):getAssemblyStatus( assemblyId )",
+      "return": "status string (Normal or Damaged)Example: local status = p:getAssemblyStatus( assemblyId )",
+      "example": null,
+      "where_used": []
+    },
+    {
+      "name": "getAssociated",
+      "object": "mappoint",
+      "signature": "getAssociated()",
+      "description": "Gets the line that a map point is associated with.To call: (mappoint):getAssociated()",
+      "return": "Element object or nil on failure",
+      "example": "local e = p:getAssociated()",
+      "where_used": []
+    },
+    {
+      "name": "MapPoint:getGUID",
+      "object": null,
+      "signature": "MapPoint:getGUID()",
+      "description": "Get a Map Point's GUIDTo call: MapPoint:getGUID()",
+      "return": "GUID as string",
+      "example": "local guidString = p:getGUID()",
+      "where_used": []
+    },
+    {
+      "name": "getLocationRow",
+      "object": "mappoint",
+      "signature": "getLocationRow()",
+      "description": "Returns the location row of this Map Point.To call: (mappoint):getLocationRow()",
+      "return": "row object, or else nil.",
+      "example": "p:getLocationRow()",
+      "where_used": []
+    },
+    {
+      "name": "getRowsOnTable",
+      "object": "mappoint",
+      "signature": "getRowsOnTable( Table )",
+      "description": "Returns a table of the rows on this Storage Location Map Point, for a given table.To call: (mappoint):getRowsOnTable( Table )",
+      "return": "a table of the rows",
+      "example": "p:getRowsOnTable(myRowTable)",
+      "where_used": []
+    },
+    {
+      "name": "location",
+      "object": "mappoint",
+      "signature": "location()",
+      "description": "Get the location of this map pointTo call: (mappoint):location()",
+      "return": "X coordinate, Y Coordinate",
+      "example": "x, y = p:location()",
+      "where_used": []
+    },
+    {
+      "name": "name",
+      "object": "mappoint",
+      "signature": "name()",
+      "description": "Gets the map point's nameTo call: (mappoint):name()",
+      "return": "A string of the map point's name",
+      "example": "print(p:name())",
+      "where_used": []
+    },
+    {
+      "name": "numAssemblies",
+      "object": "mappoint",
+      "signature": "numAssemblies()",
+      "description": "Returns the number of assemblies in the map point's assembly list.To call: (mappoint):numAssemblies()",
+      "return": "integerExample: local numAssemblies = p:numAssemblies()",
+      "example": null,
+      "where_used": []
+    },
+    {
+      "name": "pointType",
+      "object": "mappoint",
+      "signature": "pointType()",
+      "description": "Get the map point's typeTo call: (mappoint):pointType()",
+      "return": "string of the map point's type",
+      "example": "print( p:pointType() )",
+      "where_used": []
+    },
+    {
+      "name": "removeAssembly",
+      "object": "mappoint",
+      "signature": "removeAssembly( 'assembly name' )",
+      "description": "Removes an assembly equipment from the map point. Takes one parameter, the name or guid of the assembly equipment to remove.To call: (mappoint):removeAssembly( 'assembly name' )",
+      "return": "true if assembly equipment was successfully removed, false otherwise",
+      "example": "p:removeAssembly( 'assemEq1' )",
+      "where_used": []
+    },
+    {
+      "name": "removeAssemblyById",
+      "object": "mappoint",
+      "signature": "removeAssemblyById(assemblyId)",
+      "description": "Removes the given assembly from the map point's assembly list.This function takes an assemblyId. This is not to be confused with the removeAssembly() function which takes an Equipment GUID.To call: (mappoint):removeAssemblyById(assemblyId)",
+      "return": "nothingExample: p:removeAssemblyById(assemblyId)",
+      "example": null,
+      "where_used": []
+    },
+    {
+      "name": "reorderAssembly",
+      "object": "mappoint",
+      "signature": "reorderAssembly(assemblyId, position)",
+      "description": "Moves an assembly to a given position in the map point's assembly list. The first assembly in the list is at position 1.To call: (mappoint):reorderAssembly(assemblyId, position)",
+      "return": "nothingExample: p:reorderAssembly(assemblyId, 3)",
+      "example": null,
+      "where_used": []
+    },
+    {
+      "name": "setAssemblyAngle",
+      "object": "mappoint",
+      "signature": "setAssemblyAngle( assemblyId, angle )",
+      "description": "Sets the angle field of the assembly. Takes two parameters, the assemblyId of the assembly and the new angle value.To call: (mappoint):setAssemblyAngle( assemblyId, angle )",
+      "return": "boolean successExample: p:setAssemblyAngle( assemblyId, 45.0 )",
+      "example": null,
+      "where_used": []
+    },
+    {
+      "name": "setAssemblyAssociatedFeature",
+      "object": "mappoint",
+      "signature": "setAssemblyAssociatedFeature( assemblyId, element )",
+      "description": "Sets the associated feature of the assembly. Takes two parameters, the assemblyId of the assembly and the element object to associate.To call: (mappoint):setAssemblyAssociatedFeature( assemblyId, element )",
+      "return": "boolean successExample: p:setAssemblyAssociatedFeature( assemblyId, element )",
+      "example": null,
+      "where_used": []
+    },
+    {
+      "name": "setAssemblyEquipment",
+      "object": "mappoint",
+      "signature": "setAssemblyEquipment( assemblyId, assemblyEquipment )",
+      "description": "Sets the comment field of the assembly. Takes two parameters, the assemblyId of the assembly and the new comment string.To call: (mappoint):setAssemblyComment( assemblyId, comment )Returns: boolean successExample: p:setAssemblyComment( assemblyId, \"A comment\" )Sets the distance field of the assembly. Takes two parameters, the assemblyId of the assembly and the new distance.To call: (mappoint):setAssemblyDistance( assemblyId, distance )Returns: boolean successExample: p:setAssemblyDistance( assemblyId, 12.3 )Sets the equipment of the assembly. Takes two parameters, the assemblyId of the assembly and the assembly equipment object.To call: (mappoint):setAssemblyEquipment( assemblyId, assemblyEquipment )",
+      "return": "boolean successExample: p:setAssemblyEquipment( assemblyId, assemblyEquipment )",
+      "example": null,
+      "where_used": []
+    },
+    {
+      "name": "setAssociated",
+      "object": "mappoint",
+      "signature": "setAssociated( element, x, y )",
+      "description": "Makes one assembly a sub-assembly of the other. Takes two parameters, the assemblyId of the child and the assemblyId of its new parent.To call: (mappoint):setAssemblyParent( assemblyId, parentAssemblyId )Returns: boolean successExample: p:setAssemblyParent( assemblyId, parentAssemblyId )Sets the quantity field of the assembly. Takes two parameters, the assemblyId of the assembly and the new quantity.To call: (mappoint):setAssemblyQuantity( assemblyId, quantity )Returns: boolean successExample: p:setAssemblyQuantity( assemblyId, 3 )Sets the status field of the assembly. Takes two parameters, the assemblyId of the assembly and the new status.To call: (mappoint):setAssemblyStatus( assemblyId, status )Returns: boolean successExample: p:setAssemblyStatus( assemblyId, \"Damaged\" )Associates the map point with the given line (or unassociates if given ''). Takes a line name or element object to connect the map point to. Connects to the line's x and y coordinates unless given a new x and y.To call: (mappoint):setAssociated( element, x, y )",
+      "return": "Line name or nil on failure",
+      "example": "local eName = p:setAssociated( 'OH21', 10, 10 )",
+      "where_used": []
+    },
+    {
+      "name": "setLocation",
+      "object": "mappoint",
+      "signature": "setLocation( X, Y, false )",
+      "description": "Set the location of this map point. Takes an optional third parameter specifing whether or not it is disassociated from any elements.To call: (mappoint):setLocation( X, Y, false )",
+      "return": "X coordinate, Y Coordinate",
+      "example": "p:setLocation( 123, 456, false )",
+      "where_used": []
+    },
+    {
+      "name": "setName",
+      "object": "mappoint",
+      "signature": "setName( 'newName' )",
+      "description": "Renames a map point.To call: (mappoint):setName( 'newName' )",
+      "return": "boolean success",
+      "example": "success = p:setName( 'Pole 4' )",
+      "where_used": []
+    },
+    {
+      "name": "setSelected",
+      "object": "mappoint",
+      "signature": "setSelected( boolean )",
+      "description": "Selects or deselects the map point based on the value of the parameter given.To call: (mappoint):setSelected( boolean )",
+      "return": "nothing",
+      "example": "p:setSelected( true )",
+      "where_used": []
+    },
+    {
+      "name": "setType",
+      "object": "mappoint",
+      "signature": "setType( Type )",
+      "description": "Changes the map point's type. Accepts the type as a string or integer. (Accepted integer values are between 0 and 7).To call: (mappoint):setType( Type )",
+      "return": "boolean success",
+      "example": "success = p:setType( 0 )",
+      "where_used": []
+    },
+    {
+      "name": "zoom",
+      "object": "mappoint",
+      "signature": "zoom()",
+      "description": "Focuses the zoom to a particular map point.  Useful for requesting user input about a map point.To call: (mappoint):zoom()",
+      "return": "nothing",
+      "example": "p:zoom()",
+      "where_used": []
+    },
+    {
+      "name": "MapPoint",
+      "object": null,
+      "signature": "MapPoint( 'point', type )",
+      "description": "Checks for a map point's existance.  Can take the type as a string or integer.To call: MapPoint( 'point', type )",
+      "return": "boolean value",
+      "example": "if MapPointExists( 'Pole1', 1 ) then ...",
+      "where_used": []
+    },
+    {
+      "name": "Model.active",
+      "object": null,
+      "signature": "Model.active()",
+      "description": "Gets the element that is currently active, or if no element is active then returns nil.To call: Model.active()",
+      "return": "the active element",
+      "example": "local a = Model.active()",
+      "where_used": []
+    },
+    {
+      "name": "Model.currentSelectionSetContains",
+      "object": null,
+      "signature": "Model.currentSelectionSetContains( element )",
+      "description": "Tests the current selection set to see if it contains a specific element.To call: Model.currentSelectionSetContains( element )",
+      "return": "boolean value, whether the selection set contains the element",
+      "example": "if Model.currentSelectionSetContains( e ) then ... end",
+      "where_used": []
+    },
+    {
+      "name": "Model.getAllElements",
+      "object": null,
+      "signature": "Model.getAllElements()",
+      "description": "Gets all elements (including root, disconnected, and misconnected).To call: Model.getAllElements()",
+      "return": "A table of all elements",
+      "example": "local t = Model.getAllElements()",
+      "where_used": []
+    },
+    {
+      "name": "Model.getAllMapPoints",
+      "object": null,
+      "signature": "Model.getAllMapPoints()",
+      "description": "Gets all map pointsTo call: Model.getAllMapPoints()",
+      "return": "A table of all map points",
+      "example": "local t = Model.getAllMapPoints()",
+      "where_used": []
+    },
+    {
+      "name": "Model.getCurrentSelectionSet",
+      "object": null,
+      "signature": "Model.getCurrentSelectionSet()",
+      "description": "Get the current Selection SetTo call: Model.getCurrentSelectionSet()",
+      "return": "A table of the currently selected elements",
+      "example": "local t = Model.getCurrentSelectionSet()",
+      "where_used": []
+    },
+    {
+      "name": "Model.getCurrentSelectionSetSections",
+      "object": null,
+      "signature": "Model.getCurrentSelectionSetSections()",
+      "description": "Get the current Selection Set's sectionsTo call: Model.getCurrentSelectionSetSections()",
+      "return": "A table of the currently selected section elements",
+      "example": "local t = Model.getCurrentSelectionSetSections()",
+      "where_used": []
+    },
+    {
+      "name": "Model.getElementFromName",
+      "object": null,
+      "signature": "Model.getElementFromName( 'ElementName' , poleType --[[optional]])",
+      "description": "Gets a section object from the Element's name. If an optional pole type is used as a second parameter, it will instead search for a pole with that typeTo call: Model.getElementFromName( 'ElementName' , poleType --[[optional]])",
+      "return": "Element object or nil if it could not be found",
+      "example": "e = Model.getElementFromName( 'OH3' )",
+      "where_used": []
+    },
+    {
+      "name": "Model.getInRadius",
+      "object": null,
+      "signature": "Model.getInRadius( x, y, radius )",
+      "description": "Gets all the elements in the given radiusTo call: Model.getInRadius( x, y, radius )",
+      "return": "table of elements in radius",
+      "example": "local t = Model.getInRadius( 123, 456, 20 )",
+      "where_used": []
+    },
+    {
+      "name": "Model.rootElement",
+      "object": null,
+      "signature": "Model.rootElement()",
+      "description": "Finds the root element of the current model.To call: Model.rootElement()",
+      "return": "the root circuit model element",
+      "example": "Model.rootElement()",
+      "where_used": []
+    },
+    {
+      "name": "Model.setElementsSelected",
+      "object": null,
+      "signature": "Model.setElementsSelected( elementArray, selectedBool )",
+      "description": "Selects or deselects (depending on the value of the second parameter) an array of elementsTo call: Model.setElementsSelected( elementArray, selectedBool )",
+      "return": "nothing",
+      "example": "Model.setElementsSelected( {e1, e2}, true )",
+      "where_used": []
+    },
+    {
+      "name": "MoveLoad",
+      "object": null,
+      "signature": "MoveLoad(elementName, kva_A, kva_B, kva_C, grp, clear_value)",
+      "description": "This function should only be called from the MoveTransLoad Script because it is currently only set up for moving the load of a transformer to a load bearing parent. The elementName argument is the parent, and the kva's and group are calculated in the script. The clear_value argument represents whether the parent's load should be cleared first (1) or not (0) and is set in the script but can be edited.To call: MoveLoad(elementName, kva_A, kva_B, kva_C, grp, clear_value)",
+      "return": "boolean success",
+      "example": "success = MoveLoad(parent, kva_A, kva_B, kva_C, 1)",
+      "where_used": []
+    },
+    {
+      "name": "MultipleChoice",
+      "object": null,
+      "signature": "MultipleChoice( \"Question.\", {\"choice1\" [, ... [, \"choice10\"]] } )",
+      "description": "Invokes a dialogue box that allows the script writer to present a user with a question and several choices in the form of buttons.  The maximum number of choices is 10.To call: MultipleChoice( \"Question.\", {\"choice1\" [, ... [, \"choice10\"]] } )",
+      "return": "An integer indicating the button clicked on",
+      "example": "MultipleChoice( \"What is your favorite color?\",{\"red\", \"blue\", \"yellow\", \"green\", \"orange\", \"purple\", \"other\" } )",
+      "where_used": [
+        "add_prefix_to_map_fields",
+        "add_prefix_to_names",
+        "add_suffix_to_map_fields",
+        "add_suffix_to_names",
+        "change_oh_to_ug",
+        "change_ug_to_oh",
+        "connect_to_active_element",
+        "recalculate_impedance_lengths",
+        "rename_by_grid_location",
+        "rename_elements_in_file",
+        "replace_consumer_leaders_with_line_elements",
+        "secondary_lines_utility",
+        "select_element_type",
+        "swap_map_and_section_names"
+      ]
+    },
+    {
+      "name": "PolygonSave",
+      "object": null,
+      "signature": "PolygonSave()",
+      "description": "Saves in-memory data. Whether this saves to a sqlite or an ADO database depends on the database type.To call: PolygonSave()",
+      "return": "nil",
+      "example": "PolygonSave()",
+      "where_used": []
+    },
+    {
+      "name": "PopDrawingEnabled",
+      "object": null,
+      "signature": "PopDrawingEnabled()",
+      "description": "Pops previously pushed drawing enabled flag.To call: PopDrawingEnabled()",
+      "return": "nothing",
+      "example": "PopDrawingEnabled()",
+      "where_used": [
+        "add_grid_name_in_map_field",
+        "add_prefix_to_map_fields",
+        "add_prefix_to_names",
+        "add_suffix_to_map_fields",
+        "add_suffix_to_names",
+        "apply_reliability_indices",
+        "change_oh_to_ug",
+        "change_ug_to_oh",
+        "connect_disconnected_transformers",
+        "connect_to_active_element",
+        "consumers_connected_to_primary",
+        "consumers_with_no_type",
+        "copy_data_between_fields",
+        "copy_data_from_externals",
+        "copy_data_to_externals",
+        "detect_missing_external",
+        "detect_missing_external_units",
+        "devices_with_no_children",
+        "find_disconnected_sections",
+        "find_duplicate_elements",
+        "find_duplicate_equipment",
+        "find_duplicates",
+        "find_generator_incorrectly_modeled",
+        "find_missing_equipment",
+        "find_transformers_with_invalid_output",
+        "find_unattached_map_points",
+        "fix_incorrect_coordinates",
+        "fix_invalid_phases",
+        "fix_orphaned_elements",
+        "fix_switch_children",
+        "fix_switch_parent_and_child_issues",
+        "insert_transformer_for_direct_consumers",
+        "lines_with_zero_graphical_length",
+        "lines_with_zero_impedance_length",
+        "mp_nodes_with_missing_parents",
+        "nullify_invalid_equipment_refs",
+        "recalculate_impedance_lengths",
+        "remove_unnecessary_multiparent_nodes",
+        "remove_unnecessary_transformers",
+        "rename_by_grid_location",
+        "rename_duplicate_elements",
+        "rename_elements_in_file",
+        "repair_invalid_equipment_refs",
+        "repair_transformers_with_invalid_output",
+        "reparent_elements_in_file",
+        "rephase_elements_in_file",
+        "replace_consumer_leaders_with_line_elements",
+        "ring_children",
+        "secondary_lines_utility",
+        "snap_lines_and_points",
+        "split_and_snap",
+        "stack_elements_on_parents",
+        "swap_map_and_section_names",
+        "switches_with_no_parent",
+        "transformers_with_invalid_output",
+        "transformers_with_second_secondary",
+        "unstacking",
+        "unstacking_from_map_points",
+        "update_meters_from_customer_table",
+        "upline_load_control_point"
+      ]
+    },
+    {
+      "name": "Project:activate",
+      "object": null,
+      "signature": "Project:activate()",
+      "description": "Sets this project to be the active projectTo call: Project:activate()",
+      "return": "error string",
+      "example": "local error = proj:activate()",
+      "where_used": []
+    },
+    {
+      "name": "Project:apply",
+      "object": null,
+      "signature": "Project:apply()",
+      "description": "Applies this project.To call: Project:apply()",
+      "return": "string error message",
+      "example": "local error = proj:apply()",
+      "where_used": []
+    },
+    {
+      "name": "Project:children",
+      "object": null,
+      "signature": "Project:children()",
+      "description": "Gets the children of this projectTo call: Project:children()",
+      "return": "table of child projects",
+      "example": "local children = proj:children()",
+      "where_used": []
+    },
+    {
+      "name": "Project:creationTime",
+      "object": null,
+      "signature": "Project:creationTime()",
+      "description": "Gets the time this project was createdTo call: Project:creationTime()",
+      "return": "string creation datetime",
+      "example": "local creationTime = proj:creationTime()",
+      "where_used": []
+    },
+    {
+      "name": "Project:delete",
+      "object": null,
+      "signature": "Project:delete()",
+      "description": "deletes this projectTo call: Project:delete()",
+      "return": "error string",
+      "example": "local error = proj:delete()",
+      "where_used": []
+    },
+    {
+      "name": "Project:description",
+      "object": null,
+      "signature": "Project:description()",
+      "description": "Gets the description of this projectTo call: Project:description()",
+      "return": "string description",
+      "example": "local desc = proj:description()",
+      "where_used": []
+    },
+    {
+      "name": "Project:getCreatedEquipment",
+      "object": null,
+      "signature": "Project:getCreatedEquipment()",
+      "description": "Gets a list of equipment names created in this projectTo call: Project:getCreatedEquipment()",
+      "return": "table of string equipment names",
+      "example": "local equipmentStrings = proj:getCreatedEquipment()",
+      "where_used": []
+    },
+    {
+      "name": "Project:getDependencies",
+      "object": null,
+      "signature": "Project:getDependencies()",
+      "description": "Gets a table of projects that this project depends onTo call: Project:getDependencies()",
+      "return": "table of projects",
+      "example": "local projDeps = proj:getDependencies()",
+      "where_used": []
+    },
+    {
+      "name": "Project:getElements",
+      "object": null,
+      "signature": "Project:getElements()",
+      "description": "Gets all elements in this project.To call: Project:getElements()",
+      "return": "table of elements",
+      "example": "local elements = proj:getElements()",
+      "where_used": []
+    },
+    {
+      "name": "Project:getJSON",
+      "object": null,
+      "signature": "Project:getJSON()",
+      "description": "Gets the JSON string value for this projectTo call: Project:getJSON()",
+      "return": "string JSON value",
+      "example": "local jsonString = proj:getJSON()",
+      "where_used": []
+    },
+    {
+      "name": "Project:getOperations",
+      "object": null,
+      "signature": "Project:getOperations()",
+      "description": "Gets the list of operations in this projectTo call: Project:getOperations()",
+      "return": "table of operation strings",
+      "example": "local ops = proj:getOperations()",
+      "where_used": []
+    },
+    {
+      "name": "Project:isArchived",
+      "object": null,
+      "signature": "Project:isArchived()",
+      "description": "Gets whether or not this project is archivedTo call: Project:isArchived()",
+      "return": "boolean",
+      "example": "if proj:isArchived() then ... end",
+      "where_used": []
+    },
+    {
+      "name": "Project:isChecked",
+      "object": null,
+      "signature": "Project:isChecked()",
+      "description": "Gets whether or not this project has been appliedTo call: Project:isChecked()",
+      "return": "boolean",
+      "example": "if proj:isChecked() then ... end",
+      "where_used": []
+    },
+    {
+      "name": "Project:isFolder",
+      "object": null,
+      "signature": "Project:isFolder()",
+      "description": "Gets whether or not this project is a folder typeTo call: Project:isFolder()",
+      "return": "boolean",
+      "example": "if proj:isFolder() then ... end",
+      "where_used": []
+    },
+    {
+      "name": "Project:isModified",
+      "object": null,
+      "signature": "Project:isModified()",
+      "description": "Gets whether or not this project has been modifiedTo call: Project:isModified()",
+      "return": "boolean",
+      "example": "if proj:isModified() then ... end",
+      "where_used": []
+    },
+    {
+      "name": "Project:lastOwnerName",
+      "object": null,
+      "signature": "Project:lastOwnerName()",
+      "description": "gets the last owner name in this projectTo call: Project:lastOwnerName()",
+      "return": "string",
+      "example": "local lastOwner = proj:lastOwnerName()",
+      "where_used": []
+    },
+    {
+      "name": "Project:lastUpdateTime",
+      "object": null,
+      "signature": "Project:lastUpdateTime()",
+      "description": "Gets the most recent update time in this projectTo call: Project:lastUpdateTime()",
+      "return": "string update datetime d",
+      "example": "local updateTime = proj:lastUpdateTime()",
+      "where_used": []
+    },
+    {
+      "name": "Project:move",
+      "object": null,
+      "signature": "Project:move(parentProject)",
+      "description": "Moves  this project to be a child of the given project nameTo call: Project:move(parentProject)",
+      "return": "error string",
+      "example": "local error = proj:move('Model Edits')",
+      "where_used": []
+    },
+    {
+      "name": "Project:name",
+      "object": null,
+      "signature": "Project:name()",
+      "description": "Gets the name of this projectTo call: Project:name()",
+      "return": "string name",
+      "example": "local name = proj:name()",
+      "where_used": []
+    },
+    {
+      "name": "Project:operationsCount",
+      "object": null,
+      "signature": "Project:operationsCount()",
+      "description": "Gets the number of operations in this projectTo call: Project:operationsCount()",
+      "return": "integer of operation count",
+      "example": "local opCount = proj:operationsCount()",
+      "where_used": []
+    },
+    {
+      "name": "Project:parent",
+      "object": null,
+      "signature": "Project:parent()",
+      "description": "Gets the parent of this projectTo call: Project:parent()",
+      "return": "project parent",
+      "example": "local parentProj = proj:parent()",
+      "where_used": []
+    },
+    {
+      "name": "Project:removeDependencies",
+      "object": null,
+      "signature": "Project:removeDependencies()",
+      "description": "Clears the list of projects this project depends onTo call: Project:removeDependencies()",
+      "return": "nil",
+      "example": "proj:removeDependencies()",
+      "where_used": []
+    },
+    {
+      "name": "Project:rename",
+      "object": null,
+      "signature": "Project:rename(newName)",
+      "description": "Renames this project to the given nameTo call: Project:rename(newName)",
+      "return": "error string",
+      "example": "local error = proj:rename(newName)",
+      "where_used": []
+    },
+    {
+      "name": "Project:save",
+      "object": null,
+      "signature": "Project:save()",
+      "description": "Saves changes in this projectTo call: Project:save()",
+      "return": "error stringExample: local error = proj:save()",
+      "example": null,
+      "where_used": []
+    },
+    {
+      "name": "Project:setDescription",
+      "object": null,
+      "signature": "Project:setDescription(newDescription)",
+      "description": "Sets the description of this project to the given string. This has a limit of 255 characters.To call: Project:setDescription(newDescription)",
+      "return": "nil",
+      "example": "proj:setDescription('Setting up new transformer.')",
+      "where_used": []
+    },
+    {
+      "name": "Project:setJSON",
+      "object": null,
+      "signature": "Project:setJSON(jsonStr)",
+      "description": "Sets this project's operations from a given JSON stringTo call: Project:setJSON(jsonStr)",
+      "return": "nil",
+      "example": "proj:setJSON(jsonString)",
+      "where_used": []
+    },
+    {
+      "name": "Project:type",
+      "object": null,
+      "signature": "Project:type()",
+      "description": "Gets the project type of this project (To call: Project:type()",
+      "return": "string type",
+      "example": "local type = proj:type()",
+      "where_used": []
+    },
+    {
+      "name": "Project:unapply",
+      "object": null,
+      "signature": "Project:unapply()",
+      "description": "Unapplies this projectTo call: Project:unapply()",
+      "return": "string error message",
+      "example": "local error = proj:unapply()",
+      "where_used": []
+    },
+    {
+      "name": "Projects.create",
+      "object": null,
+      "signature": "Projects.create(projectName, projectParent, isFolder --[[optional]])",
+      "description": "Creates a new project with the specified name and parent.  Can optionally designate if the new project is a folderTo call: Projects.create(projectName, projectParent, isFolder --[[optional]])",
+      "return": "Created project",
+      "example": "local project = Projects.create('NewProject','Model Edits')",
+      "where_used": []
+    },
+    {
+      "name": "Projects.downloadOperations",
+      "object": null,
+      "signature": "Projects.downloadOperations()",
+      "description": "Downloads operations for all posted projects.To call: Projects.downloadOperations()",
+      "return": "error string",
+      "example": "local error = Projects.downloadOperations()",
+      "where_used": []
+    },
+    {
+      "name": "Projects.downloadPostedProjects",
+      "object": null,
+      "signature": "Projects.downloadPostedProjects()",
+      "description": "Downloads posted projects from the server model.To call: Projects.downloadPostedProjects()",
+      "return": "error string",
+      "example": "local error = Projects.downloadPostedProjects()",
+      "where_used": []
+    },
+    {
+      "name": "Projects.generateName",
+      "object": null,
+      "signature": "Projects.generateName()",
+      "description": "Generates a unique name for a new project to use.To call: Projects.generateName()",
+      "return": "String of a new unique project name",
+      "example": "local newName = Projects.generateName()",
+      "where_used": []
+    },
+    {
+      "name": "Projects.getActiveProject",
+      "object": null,
+      "signature": "Projects.getActiveProject()",
+      "description": "Retrieves the model's active projectTo call: Projects.getActiveProject()",
+      "return": "project",
+      "example": "local project = Projects.getActiveProject()",
+      "where_used": []
+    },
+    {
+      "name": "Projects.getAll",
+      "object": null,
+      "signature": "Projects.getAll(FilterName --[[optional]])",
+      "description": "Gets all projects. Takes an optional project or folder name parameter.To call: Projects.getAll(FilterName --[[optional]])",
+      "return": "table of projects",
+      "example": "local projects = Projects.getAll('Model Edits')",
+      "where_used": []
+    },
+    {
+      "name": "Projects.getProjectFromName",
+      "object": null,
+      "signature": "Projects.getProjectFromName(projectName)",
+      "description": "Finds a project that matches the given nameTo call: Projects.getProjectFromName(projectName)",
+      "return": "project",
+      "example": "local project = Projects.getProjectFromName(projectName)",
+      "where_used": []
+    },
+    {
+      "name": "Projects.postAllCheckedProjects",
+      "object": null,
+      "signature": "Projects.postAllCheckedProjects()",
+      "description": "Posts all checked projects.To call: Projects.postAllCheckedProjects()",
+      "return": "error string",
+      "example": "local error = Projects.postAllCheckedProjects()",
+      "where_used": []
+    },
+    {
+      "name": "Projects.purgePostedProjects",
+      "object": null,
+      "signature": "Projects.purgePostedProjects()",
+      "description": "Purges posted project history.To call: Projects.purgePostedProjects()",
+      "return": "error string",
+      "example": "local error = Projects.purgePostedProjects()",
+      "where_used": []
+    },
+    {
+      "name": "Projects.saveModifiedProjects",
+      "object": null,
+      "signature": "Projects.saveModifiedProjects()",
+      "description": "Saves all modified projects.To call: Projects.saveModifiedProjects()",
+      "return": "error string",
+      "example": "local error = Projects.saveModifiedProjects()",
+      "where_used": []
+    },
+    {
+      "name": "Projects.synchronize",
+      "object": null,
+      "signature": "Projects.synchronize()",
+      "description": "Synchronizes posted projects.To call: Projects.synchronize()",
+      "return": "error string",
+      "example": "local error = Projects.synchronize()",
+      "where_used": []
+    },
+    {
+      "name": "Projects.uncheckAllProjects",
+      "object": null,
+      "signature": "Projects.uncheckAllProjects()",
+      "description": "Unchecks all checked projects.To call: Projects.uncheckAllProjects()",
+      "return": "error string",
+      "example": "local error = Projects.uncheckAllProjects()",
+      "where_used": []
+    },
+    {
+      "name": "Projects.uniquifyName",
+      "object": null,
+      "signature": "Projects.uniquifyName(projectName)",
+      "description": "Takes a project name and modifies it to ensure it is uniqueTo call: Projects.uniquifyName(projectName)",
+      "return": "string of a unique project name",
+      "example": "local newName = Projects.uniquifyName(oldProjectName)",
+      "where_used": []
+    },
+    {
+      "name": "PromptOpenFile",
+      "object": null,
+      "signature": "PromptOpenFile( 'title', 'directory', 'filter' )",
+      "description": "Displays a file box. Takes 0 to 3 parameters that must be included in succession ex) to include directory, a title must be included ('' can be given though). The title is the dialog box's title. The directory is the inital location displayed. Filter defines viewable file types (see example for specific usage details).To call: PromptOpenFile( 'title', 'directory', 'filter' )",
+      "return": "string file name or nil",
+      "example": "PromptOpenFile( 'Open...', 'C:\\\\', 'Text Files|*.txt' )",
+      "where_used": [
+        "apply_reliability_indices",
+        "change_meter_numbers",
+        "failure_rate_and_repair_time_csv",
+        "rename_elements_in_file",
+        "reparent_elements_in_file",
+        "rephase_elements_in_file"
+      ]
+    },
+    {
+      "name": "PromptSaveFile",
+      "object": null,
+      "signature": "PromptSaveFile( 'title', 'directory', 'filter', 'file' )",
+      "description": "Displays a file box. Takes 0 to 4 parameters that must be included in succession ex) to include directory, a title must be included ('' can be given though). The title is the dialog box's title. The directory is the inital location displayed. Filter defines viewable file types (see example for specific usage details). File is the file name.To call: PromptSaveFile( 'title', 'directory', 'filter', 'file' )",
+      "return": "string file name or nil",
+      "example": "PromptSaveFile( 'Save...', 'C:\\\\', 'Text Files|*.txt', 'SaveMe.txt' )",
+      "where_used": []
+    },
+    {
+      "name": "PromptString",
+      "object": null,
+      "signature": "PromptString( \"Question\", \"Default answer\" )",
+      "description": "Presents the user with a question with the opportunity to type an answer.To call: PromptString( \"Question\", \"Default answer\" )",
+      "return": "string answer or nil",
+      "example": "PromptString( \"What would you like to name the new consumer?\",\"CONS134\" )",
+      "where_used": [
+        "add_prefix_to_map_fields",
+        "add_prefix_to_names",
+        "add_suffix_to_map_fields",
+        "add_suffix_to_names",
+        "connect_disconnected_transformers",
+        "copy_data_between_fields",
+        "copy_data_from_externals",
+        "copy_data_to_externals",
+        "detect_missing_external",
+        "detect_missing_external_units",
+        "snap_lines_and_points"
+      ]
+    },
+    {
+      "name": "PromptYesNo",
+      "object": null,
+      "signature": "PromptYesNo( \"Question\" )",
+      "description": "Displays a dialogue box with a question and an opportunity to answer yes or no.To call: PromptYesNo( \"Question\" )",
+      "return": "boolean, true for yes, false for no",
+      "example": "if PromptYesNo( \"Would you like to continue?\" )then-- continueelseError( \"stopping...\" )end",
+      "where_used": []
+    },
+    {
+      "name": "PurgeErrorLog",
+      "object": null,
+      "signature": "PurgeErrorLog()",
+      "description": "Clears all errors from the Error Log.To call: PurgeErrorLog()",
+      "return": "boolean success",
+      "example": "local success = PurgeErrorLog()",
+      "where_used": [
+        "detect_missing_external",
+        "detect_missing_external_units"
+      ]
+    },
+    {
+      "name": "PushDrawingEnabled",
+      "object": null,
+      "signature": "PushDrawingEnabled( boolEnabled )",
+      "description": "Pushes circuit model drawing enabled flagsTo call: PushDrawingEnabled( boolEnabled )",
+      "return": "nothing",
+      "example": "PushDrawingEnabled( false )",
+      "where_used": [
+        "add_grid_name_in_map_field",
+        "add_prefix_to_map_fields",
+        "add_prefix_to_names",
+        "add_suffix_to_map_fields",
+        "add_suffix_to_names",
+        "apply_reliability_indices",
+        "change_oh_to_ug",
+        "change_ug_to_oh",
+        "connect_disconnected_transformers",
+        "connect_to_active_element",
+        "consumers_connected_to_primary",
+        "consumers_with_no_type",
+        "copy_data_between_fields",
+        "copy_data_from_externals",
+        "copy_data_to_externals",
+        "detect_missing_external",
+        "detect_missing_external_units",
+        "devices_with_no_children",
+        "find_disconnected_sections",
+        "find_duplicate_elements",
+        "find_duplicate_equipment",
+        "find_duplicates",
+        "find_generator_incorrectly_modeled",
+        "find_missing_equipment",
+        "find_transformers_with_invalid_output",
+        "find_unattached_map_points",
+        "fix_incorrect_coordinates",
+        "fix_invalid_phases",
+        "fix_orphaned_elements",
+        "fix_switch_children",
+        "fix_switch_parent_and_child_issues",
+        "insert_transformer_for_direct_consumers",
+        "lines_with_zero_graphical_length",
+        "lines_with_zero_impedance_length",
+        "mp_nodes_with_missing_parents",
+        "nullify_invalid_equipment_refs",
+        "recalculate_impedance_lengths",
+        "remove_unnecessary_multiparent_nodes",
+        "remove_unnecessary_transformers",
+        "rename_by_grid_location",
+        "rename_duplicate_elements",
+        "rename_elements_in_file",
+        "repair_invalid_equipment_refs",
+        "repair_transformers_with_invalid_output",
+        "reparent_elements_in_file",
+        "rephase_elements_in_file",
+        "replace_consumer_leaders_with_line_elements",
+        "ring_children",
+        "secondary_lines_utility",
+        "snap_lines_and_points",
+        "split_and_snap",
+        "stack_elements_on_parents",
+        "swap_map_and_section_names",
+        "switches_with_no_parent",
+        "transformers_with_invalid_output",
+        "transformers_with_second_secondary",
+        "unstacking",
+        "unstacking_from_map_points",
+        "update_meters_from_customer_table"
+      ]
+    },
+    {
+      "name": "RebuildSelectionSet",
+      "object": null,
+      "signature": "RebuildSelectionSet()",
+      "description": "Rebuilds the selection set after manually selecting elements.Not neccessary when AutoCallSpecialFunctions is enabled.To call: RebuildSelectionSet()",
+      "return": "nothing",
+      "example": "RebuildSelectionSet()",
+      "where_used": []
+    },
+    {
+      "name": "RedrawDisplay",
+      "object": null,
+      "signature": "RedrawDisplay()",
+      "description": "Redraws the model displayTo call: RedrawDisplay()",
+      "return": "nothing",
+      "example": "RedrawDisplay()",
+      "where_used": [
+        "secondary_lines_utility"
+      ]
+    },
+    {
+      "name": "RefreshModel",
+      "object": null,
+      "signature": "RefreshModel()",
+      "description": "Updates the linked model with the latest projects on the server.To call: RefreshModel()",
+      "return": "String error message ('SUCCESS' if it worked)",
+      "example": "errorMsg = RefreshModel()",
+      "where_used": []
+    },
+    {
+      "name": "RegisterDataSetFieldsFromPath",
+      "object": null,
+      "signature": "RegisterDataSetFieldsFromPath(\"path\\to\\dataset\",\"tablename\",\"keyfield\")",
+      "description": "Takes a data set file, table name, and element key field (often EA_link) and creates element fields.To call: RegisterDataSetFieldsFromPath(\"path\\to\\dataset\",\"tablename\",\"keyfield\")",
+      "return": "nothing",
+      "example": "RegisterDataSetFieldsFromPath(\"path\\\\to\\\\dataset\",\"tablename\",\"keyfield\")",
+      "where_used": [
+        "update_meters_from_customer_table"
+      ]
+    },
+    {
+      "name": "Rollback",
+      "object": null,
+      "signature": "Rollback(\"name\")",
+      "description": "Restores the model to a previously saved rollback point.To call: Rollback(\"name\")",
+      "return": "nothing",
+      "example": "rollbackPoint = CurrentUndoLevel()<perform some operations>Rollback(rollbackPoint)",
+      "where_used": []
+    },
+    {
+      "name": "getColumns",
+      "object": "row",
+      "signature": "getColumns( columnObject )",
+      "description": "Get the value of a column of this rowTo call: (row):getColumns( columnObject )",
+      "return": "value of column",
+      "example": "r:getColumn( column )",
+      "where_used": []
+    },
+    {
+      "name": "guid",
+      "object": "row",
+      "signature": "guid()",
+      "description": "Get the guid of this rowTo call: (row):guid()",
+      "return": "GUID string",
+      "example": "r:guid()",
+      "where_used": []
+    },
+    {
+      "name": "setColumn",
+      "object": "row",
+      "signature": "setColumn( column, value )",
+      "description": "Set a column of this rowTo call: (row):setColumn( column, value )",
+      "return": "nothing",
+      "example": "r:setColumn( Owner, \"Bob\" )",
+      "where_used": []
+    },
+    {
+      "name": "RunAnalysisMode",
+      "object": null,
+      "signature": "RunAnalysisMode( 'mode', true )",
+      "description": "Runs the given analysis mode.  Double click to see a list of modes.Takes an optional boolean parameter indicating whether to suppress the analysis report status box that normally appears after each analysis run.To call: RunAnalysisMode( 'mode', true )",
+      "return": "boolean success",
+      "example": "RunAnalysis( 'Voltage Drop', true )",
+      "where_used": []
+    },
+    {
+      "name": "SaveCurrentSelectionSet",
+      "object": null,
+      "signature": "SaveCurrentSelectionSet( setName, true )",
+      "description": "Saves the selection set with a name and optionally a boolean value of if sets with the same name should be overwritten.To call: SaveCurrentSelectionSet( setName, true )",
+      "return": "set index of the created set or -1 on failure",
+      "example": "local affectedSet = SaveCurrentSelectionSet( 'affected elements', true )",
+      "where_used": [
+        "find_transformers_with_invalid_output",
+        "output",
+        "secondary_lines_utility"
+      ]
+    },
+    {
+      "name": "SelectAll",
+      "object": null,
+      "signature": "SelectAll()",
+      "description": "Selects all elementsTo call: SelectAll()",
+      "return": "nothing",
+      "example": "SelectAll()",
+      "where_used": [
+        "add_grid_name_in_map_field",
+        "connect_disconnected_transformers",
+        "consumers_connected_to_primary",
+        "consumers_with_no_type",
+        "copy_data_between_fields",
+        "copy_data_from_externals",
+        "copy_data_to_externals",
+        "detect_missing_external",
+        "detect_missing_external_units",
+        "devices_with_no_children",
+        "find_disconnected_sections",
+        "find_duplicate_elements",
+        "find_duplicate_equipment",
+        "find_duplicates",
+        "find_generator_incorrectly_modeled",
+        "find_missing_equipment",
+        "find_transformers_with_invalid_output",
+        "find_unattached_map_points",
+        "fix_incorrect_coordinates",
+        "fix_invalid_phases",
+        "fix_orphaned_elements",
+        "fix_switch_children",
+        "fix_switch_parent_and_child_issues",
+        "insert_device_between_oh_and_ug",
+        "insert_transformer_for_direct_consumers",
+        "iterators",
+        "lines_with_zero_graphical_length",
+        "lines_with_zero_impedance_length",
+        "mp_nodes_with_missing_parents",
+        "nullify_invalid_equipment_refs",
+        "remove_unnecessary_multiparent_nodes",
+        "remove_unnecessary_transformers",
+        "rename_duplicate_elements",
+        "repair_invalid_equipment_refs",
+        "repair_transformers_with_invalid_output",
+        "replace_consumer_leaders_with_line_elements",
+        "ring_children",
+        "secondary_lines_utility",
+        "snap_lines_and_points",
+        "split_and_snap",
+        "stack_elements_on_parents",
+        "switches_with_no_parent",
+        "transformers_with_invalid_output",
+        "transformers_with_second_secondary",
+        "unstacking",
+        "unstacking_from_map_points",
+        "update_meters_from_customer_table"
+      ]
+    },
+    {
+      "name": "SetErrorFile",
+      "object": null,
+      "signature": "SetErrorFile( 'fileName' )",
+      "description": "Sets the name of the Error File.To call: SetErrorFile( 'fileName' )",
+      "return": "nothing",
+      "example": "SetErrorFile( 'fileName' )",
+      "where_used": []
+    },
+    {
+      "name": "SetPreference",
+      "object": null,
+      "signature": "SetPreference( 'PrefName', 'Suffix', value )",
+      "description": "Set the value of the requested preference.  Dynamic preferences require a suffix (shown in list).  Double click to see a list of preferences.To call: SetPreference( 'PrefName', 'Suffix', value )",
+      "return": "A value (coordinates as two).",
+      "example": "print( SetPreference( 'ServerPort', 1337 )",
+      "where_used": []
+    },
+    {
+      "name": "SetProgressBar",
+      "object": null,
+      "signature": "SetProgressBar( 50 )",
+      "description": "Sets the progress bar to the specified locationTo call: SetProgressBar( 50 )",
+      "return": "nothing",
+      "example": "SetProgressBar( 50 )",
+      "where_used": []
+    },
+    {
+      "name": "SetScriptWindowVisibility",
+      "object": null,
+      "signature": "SetScriptWindowVisibility( boolValue )",
+      "description": "Allows the script writer to hide the editor to prevent it from obscuring the view of the WindMil main windows when trying to draw attention to it.To call: SetScriptWindowVisibility( boolValue )",
+      "return": "nothing",
+      "example": "SetScriptWindowVisibility( false )",
+      "where_used": [
+        "secondary_lines_utility"
+      ]
+    },
+    {
+      "name": "StepProgressBar",
+      "object": null,
+      "signature": "StepProgressBar( 1 )",
+      "description": "Increments the progress bar by the specified amountTo call: StepProgressBar( 1 )",
+      "return": "nothing",
+      "example": "StepProgressBar( 1 )",
+      "where_used": [
+        "apply_reliability_indices",
+        "connect_disconnected_transformers",
+        "consumers_connected_to_primary",
+        "consumers_with_no_type",
+        "copy_data_between_fields",
+        "copy_data_from_externals",
+        "copy_data_to_externals",
+        "detect_missing_external",
+        "detect_missing_external_units",
+        "devices_with_no_children",
+        "find_disconnected_sections",
+        "find_duplicate_elements",
+        "find_duplicate_equipment",
+        "find_duplicates",
+        "find_generator_incorrectly_modeled",
+        "find_missing_equipment",
+        "find_transformers_with_invalid_output",
+        "fix_incorrect_coordinates",
+        "fix_invalid_phases",
+        "fix_orphaned_elements",
+        "fix_switch_children",
+        "fix_switch_parent_and_child_issues",
+        "insert_transformer_for_direct_consumers",
+        "lines_with_zero_graphical_length",
+        "lines_with_zero_impedance_length",
+        "mp_nodes_with_missing_parents",
+        "nullify_invalid_equipment_refs",
+        "remove_unnecessary_multiparent_nodes",
+        "remove_unnecessary_transformers",
+        "rename_duplicate_elements",
+        "rename_elements_in_file",
+        "repair_invalid_equipment_refs",
+        "repair_transformers_with_invalid_output",
+        "reparent_elements_in_file",
+        "rephase_elements_in_file",
+        "replace_consumer_leaders_with_line_elements",
+        "ring_children",
+        "secondary_lines_utility",
+        "snap_lines_and_points",
+        "split_and_snap",
+        "stack_elements_on_parents",
+        "switches_with_no_parent",
+        "transformers_with_invalid_output",
+        "transformers_with_second_secondary",
+        "unstacking",
+        "unstacking_from_map_points",
+        "update_meters_from_customer_table"
+      ]
+    },
+    {
+      "name": "SubtractSelectionSet",
+      "object": null,
+      "signature": "SubtractSelectionSet( setIndex )",
+      "description": "Removes elements in the saved set from the current setTo call: SubtractSelectionSet( setIndex )",
+      "return": "set size",
+      "example": "SubtractSelectionSet( 5 )",
+      "where_used": []
+    },
+    {
+      "name": "alias",
+      "object": "table",
+      "signature": "alias()",
+      "description": "Get the alias of this table.To call: (table):alias()",
+      "return": "alias string",
+      "example": "local alias = t:alias()",
+      "where_used": []
+    },
+    {
+      "name": "columnByName",
+      "object": "table",
+      "signature": "columnByName( 'name' )",
+      "description": "Get the column by name.To call: (table):columnByName( 'name' )",
+      "return": "column object",
+      "example": "local column = t:columnByName( 'BankPosition' )",
+      "where_used": []
+    },
+    {
+      "name": "columns",
+      "object": "table",
+      "signature": "columns()",
+      "description": "Get the columns in this tableTo call: (table):columns()",
+      "return": "table of column objects",
+      "example": "t:columns()",
+      "where_used": []
+    },
+    {
+      "name": "createChildRow",
+      "object": "table",
+      "signature": "createChildRow( parentRow )",
+      "description": "Add a row as a child of another row in this table.To call: (table):createChildRow( parentRow )",
+      "return": "row object",
+      "example": "local newRow = t:createChildRow( pRow )",
+      "where_used": []
+    },
+    {
+      "name": "createColumn",
+      "object": "table",
+      "signature": "createColumn( 'ColumnName' )",
+      "description": "Add a new field to this table.To call: (table):createColumn( 'ColumnName' )",
+      "return": "column object",
+      "example": "local column = t:createColumn( 'NewColumn' )",
+      "where_used": []
+    },
+    {
+      "name": "createRow",
+      "object": "table",
+      "signature": "createRow( element )",
+      "description": "Add a new row to this table. Can specify an element association.To call: (table):createRow( element )",
+      "return": "row object",
+      "example": "local newRow = t:createRow( e )",
+      "where_used": []
+    },
+    {
+      "name": "getRowsForGuid",
+      "object": "table",
+      "signature": "getRowsForGuid(guid)",
+      "description": "Get the rows on this table which have a cmid of the given GUIDTo call: (table):getRowsForGuid(guid)",
+      "return": "table of row objects",
+      "example": "t:getRowsForGuid( myGuid )",
+      "where_used": []
+    },
+    {
+      "name": "getRowsForMappoint",
+      "object": "table",
+      "signature": "getRowsForMappoint(mappoint)",
+      "description": "Get the rows on this table which belong to the given MappointTo call: (table):getRowsForMappoint(mappoint)",
+      "return": "table of row objects",
+      "example": "t:getRowsForMappoint( myMappoint )",
+      "where_used": []
+    },
+    {
+      "name": "name",
+      "object": "table",
+      "signature": "name()",
+      "description": "Get the name of this tableTo call: (table):name()",
+      "return": "name string",
+      "example": "t:name()",
+      "where_used": []
+    },
+    {
+      "name": "reassociateRow",
+      "object": "table",
+      "signature": "reassociateRow(row, element)",
+      "description": "Changes the element association of a rowTo call: (table):reassociateRow(row, element)",
+      "return": "nothing",
+      "example": "t:reassociateRow(a,e)",
+      "where_used": []
+    },
+    {
+      "name": "rows",
+      "object": "table",
+      "signature": "rows( element )",
+      "description": "Get the rows on this table which belong to the given elementTo call: (table):rows( element )",
+      "return": "table of row objects",
+      "example": "t:rows( myElement )",
+      "where_used": []
+    },
+    {
+      "name": "ToLatLong",
+      "object": null,
+      "signature": "ToLatLong( xcoord, ycoord )",
+      "description": "Converts coordinates into latitude and longitude.To call: ToLatLong( xcoord, ycoord )",
+      "return": "Latitude and longitude",
+      "example": "lat,long = ToLatLong( 123456, 123456 )",
+      "where_used": []
+    },
+    {
+      "name": "ToXYcoords",
+      "object": null,
+      "signature": "ToXYcoords( latitude, longitude )",
+      "description": "Converts latitude and longitude into coordinates.To call: ToXYcoords( latitude, longitude )",
+      "return": "X and Y coordinates",
+      "example": "x,y = ToXYcoords( 12.3456, 12.3456 )",
+      "where_used": []
+    },
+    {
+      "name": "Tokenize",
+      "object": null,
+      "signature": "Tokenize( 'string', delimiter )",
+      "description": "Takes a string and delimeter, and returns table of tokensTo call: Tokenize( 'string', delimiter )",
+      "return": "table of tokens",
+      "example": "local letters = Tokenize( 'a,b,c,d,e', ',' )",
+      "where_used": []
+    },
+    {
+      "name": "UpdateQuadTreeOnElement",
+      "object": null,
+      "signature": "UpdateQuadTreeOnElement( 'ElementName' )",
+      "description": "Updates the quad tree listing for the given element.To call: UpdateQuadTreeOnElement( 'ElementName' )",
+      "return": "nothing",
+      "example": "UpdateQuadTreeOnElement( 'OH1' )",
+      "where_used": []
+    },
+    {
+      "name": "UpdateQuadTreeOnMapPoint",
+      "object": null,
+      "signature": "UpdateQuadTreeOnMapPoint( 'MapPointName', Type )",
+      "description": "Updates the quad tree listing for the given map point.To call: UpdateQuadTreeOnMapPoint( 'MapPointName', Type )",
+      "return": "nothing",
+      "example": "UpdateQuadTreeOnMapPoint( 'Pole_0100', 0 )",
+      "where_used": []
+    },
+    {
+      "name": "WorkEnvironment.check",
+      "object": null,
+      "signature": "WorkEnvironment.check( node )",
+      "description": "Sets the checked state on the given work environment node.If an element or string is passed in place of a node, the work environment will be depth-first searched for a node that matches the given element, name, or GUID.To call: WorkEnvironment.check( node )",
+      "return": "nil",
+      "example": "WorkEnvironment.check( node )",
+      "where_used": []
+    },
+    {
+      "name": "WorkEnvironment.checkAll",
+      "object": null,
+      "signature": "WorkEnvironment.checkAll()",
+      "description": "Sets the checked state on all work environment nodes.To call: WorkEnvironment.checkAll()",
+      "return": "nil",
+      "example": "WorkEnvironment.checkAll()",
+      "where_used": []
+    },
+    {
+      "name": "WorkEnvironment.find",
+      "object": null,
+      "signature": "WorkEnvironment.find( element )",
+      "description": "Searches the work environment for a node matching the given element, GUID, or name, and returns the node or nil if none is found.To call: WorkEnvironment.find( element )",
+      "return": "a WorkEnvironmentNode or nil",
+      "example": "local node = WorkEnvironment.find( element )",
+      "where_used": []
+    },
+    {
+      "name": "WorkEnvironment.getAll",
+      "object": null,
+      "signature": "WorkEnvironment.getAll()",
+      "description": "Gets a flat, 1-indexed table of work environment nodes.All checked nodes will appear before all unchecked nodes.To call: WorkEnvironment.getAll()",
+      "return": "a 1-indexed table of work environment nodes",
+      "example": "local nodes = WorkEnvironment.getAll()",
+      "where_used": []
+    },
+    {
+      "name": "WorkEnvironment.getAllChecked",
+      "object": null,
+      "signature": "WorkEnvironment.getAllChecked()",
+      "description": "Gets a flat, 1-indexed table of all checked work environment nodes.To call: WorkEnvironment.getAllChecked()",
+      "return": "a 1-indexed table of checked work environment nodes",
+      "example": "local checkedNodes = WorkEnvironment.getAllChecked()",
+      "where_used": []
+    },
+    {
+      "name": "WorkEnvironment.getAllUnchecked",
+      "object": null,
+      "signature": "WorkEnvironment.getAllUnchecked()",
+      "description": "Gets a flat, 1-indexed table of unchecked work environment nodes.To call: WorkEnvironment.getAllUnchecked()",
+      "return": "a 1-indexed table of unchecked work environment nodes",
+      "example": "local uncheckedNodes = WorkEnvironment.getAllUnchecked()",
+      "where_used": []
+    },
+    {
+      "name": "WorkEnvironment.getRoot",
+      "object": null,
+      "signature": "WorkEnvironment.getRoot()",
+      "description": "Gets the root node of the model's current work environment.To call: WorkEnvironment.getRoot()",
+      "return": "the root node of the current work environment",
+      "example": "local root = WorkEnvironment.getRoot()",
+      "where_used": []
+    },
+    {
+      "name": "WorkEnvironment.uncheck",
+      "object": null,
+      "signature": "WorkEnvironment.uncheck( node )",
+      "description": "Clears the checked state on the given work environment node.If an element or string is passed in place of a node, the work environment will be depth-first searched for a node that matches the given element, name, or GUID.To call: WorkEnvironment.uncheck( node )",
+      "return": "nil",
+      "example": "WorkEnvironment.uncheck( node )",
+      "where_used": []
+    },
+    {
+      "name": "WorkEnvironment.uncheckAll",
+      "object": null,
+      "signature": "WorkEnvironment.uncheckAll()",
+      "description": "Clears the checked state on all work environment nodes.To call: WorkEnvironment.uncheckAll()",
+      "return": "nil",
+      "example": "WorkEnvironment.uncheckAll()",
+      "where_used": []
+    },
+    {
+      "name": "WriteErrorLogToErrorFile",
+      "object": null,
+      "signature": "WriteErrorLogToErrorFile( true )",
+      "description": "Writes the Error Log to the current Error File.  Can take an optional paramater (if the new entries should overwrite previous data in the error file).To call: WriteErrorLogToErrorFile( true )",
+      "return": "nothing",
+      "example": "WriteErrorLogToErrorFile( true )",
+      "where_used": []
+    },
+    {
+      "name": "WriteToErrorLog",
+      "object": null,
+      "signature": "WriteToErrorLog( errorTable, true, false )",
+      "description": "Writes an error table (line, file, errCode, message, (optional) GUID) to the Error Log.  Can take two optional boolean parameters (to write to the error file and if the new entries should overwrite previous data in the error file).  The line is where the error occurred.  The file is where the error occurred.  The errCode is a value 1 to 5 (1 = Message, 2 = Warning, 3 = Error, 4 = Fatal Error, 5 = Debug).  The message describes the error.  The GUID is the GUID of the affected element.To call: WriteToErrorLog( errorTable, true, false )",
+      "return": "nothing",
+      "example": "local guid = element:getGUID()local errorTable = {line = 2694, file = 'clua_functions.cpp', errCode = 3, message = '', GUID = guid}WriteToErrorLog( errorTable, true, false )",
+      "where_used": [
+        "add_prefix_to_map_fields",
+        "add_prefix_to_names",
+        "add_suffix_to_map_fields",
+        "add_suffix_to_names",
+        "apply_reliability_indices",
+        "change_meter_numbers",
+        "connect_to_active_element",
+        "detect_missing_external",
+        "detect_missing_external_units",
+        "failure_rate_and_repair_time_csv",
+        "fix_incorrect_coordinates",
+        "fix_invalid_phases",
+        "fix_orphaned_elements",
+        "fix_switch_children",
+        "fix_switch_parent_and_child_issues",
+        "nullify_invalid_equipment_refs",
+        "remove_unnecessary_multiparent_nodes",
+        "remove_unnecessary_transformers",
+        "rename_by_grid_location",
+        "rename_duplicate_elements",
+        "rename_elements_in_file",
+        "repair_invalid_equipment_refs",
+        "reparent_elements_in_file",
+        "rephase_elements_in_file",
+        "ring_children",
+        "snap_lines_and_points"
+      ]
+    },
+    {
+      "name": "ZoomToFit",
+      "object": null,
+      "signature": "ZoomToFit()",
+      "description": "Zooms the display on the WindMil main window to fit the whole model.To call: ZoomToFit()",
+      "return": "nothing",
+      "example": "ZoomToFit()",
+      "where_used": []
+    },
+    {
+      "name": "__PreferredNeutral",
+      "object": null,
+      "signature": "__PreferredNeutral( Section, Phase )",
+      "description": "Determines if the element is using the default preferred neutral.To call: __PreferredNeutral( Section, Phase )",
+      "return": "True if element is using the default preferred neutral and false otherwise.",
+      "example": "__PreferredNeutral( \"Section Name\", PHASE_*phase* )",
+      "where_used": []
+    },
+    {
+      "name": "dofile",
+      "object": null,
+      "signature": "dofile('filename.lua')",
+      "description": "Use this function to include the contents of another lua file into the current script.To call: dofile('filename.lua')",
+      "return": "nothing",
+      "example": "dofile('constants.lua')if element == OH then ... end",
+      "where_used": []
+    },
+    {
+      "name": "fromPolar",
+      "object": null,
+      "signature": "fromPolar( rho, theta )",
+      "description": "Creates a complex number from polar form.To call: fromPolar( rho, theta )",
+      "return": "complex object",
+      "example": "fromPolar( 2.0, 0.5 )",
+      "where_used": []
+    },
+    {
+      "name": "print",
+      "object": null,
+      "signature": "print( arg1 [, arg2 [, ..., arg20 ]] )",
+      "description": "Output will appear in box below script in the Script Editor.  You can pass several arguments at one time, up to 20.  The function will accept variable of type string, number, boolean, and nil.To call: print( arg1 [, arg2 [, ..., arg20 ]] )",
+      "return": "nothing",
+      "example": "print(\"Hello \", name, \"\\n\")",
+      "where_used": []
+    },
+    {
+      "name": "toDegrees",
+      "object": null,
+      "signature": "toDegrees( radians )",
+      "description": "Converts radians to degrees.To call: toDegrees( radians )",
+      "return": "degrees",
+      "example": "toDegrees( 1.5707 )",
+      "where_used": []
+    },
+    {
+      "name": "toRadians",
+      "object": null,
+      "signature": "toRadians( degrees )",
+      "description": "Converts degrees to radians.To call: toRadians( degrees )",
+      "return": "radians",
+      "example": "toRadians( 90 )",
+      "where_used": []
+    }
+  ],
+  "cross_reference_notes": {
+    "where_used_source": "windmil_knowledge_base.json artifacts[].analysis.windmil_functions",
+    "matching": "Exact, case-sensitive name match",
+    "coverage_note": "Source analysis currently includes API calls and script-defined helpers; inspect artifact source before treating a match as a WindMil API call."
+  }
+}

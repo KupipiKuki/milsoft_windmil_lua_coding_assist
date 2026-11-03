@@ -1,0 +1,517 @@
+{
+  "lcp_file_format": {
+    "details": "This file allows you to import information about load control points, which are elements in a circuit that contain load information for multiple elements downline.",
+    "0": {
+      "column": "1",
+      "data_type": "A",
+      "description": "Section Identifier",
+      "mandatory": "X",
+      "details": ""
+    },
+    "1": {
+      "column": "2",
+      "data_type": "SI",
+      "description": "Source Option 1",
+      "mandatory": "",
+      "details": "1=total, 2=per phase"
+    },
+    "2": {
+      "column": "3",
+      "data_type": "SI",
+      "description": "Source Option 2",
+      "mandatory": "",
+      "details": "0=kW, 1=kVA, 2=Amps"
+    },
+    "3": {
+      "column": "4",
+      "data_type": "SI",
+      "description": "Source PF Option",
+      "mandatory": "",
+      "details": "0 = swing, 1 = set"
+    },
+    "4": {
+      "column": "5",
+      "data_type": "F",
+      "description": "Source Load (Total or PhA)",
+      "mandatory": "",
+      "details": ""
+    },
+    "5": {
+      "column": "6",
+      "data_type": "F",
+      "description": "Source Load (Phase B)",
+      "mandatory": "",
+      "details": ""
+    },
+    "6": {
+      "column": "7",
+      "data_type": "F",
+      "description": "Source Load (Phase C)",
+      "mandatory": "",
+      "details": ""
+    },
+    "7": {
+      "column": "8",
+      "data_type": "F",
+      "description": "Source PF (Total or PhA)",
+      "mandatory": "",
+      "details": ""
+    },
+    "8": {
+      "column": "9",
+      "data_type": "F",
+      "description": "Source PF (Phase B)",
+      "mandatory": "",
+      "details": ""
+    },
+    "9": {
+      "column": "10",
+      "data_type": "F",
+      "description": "Source PF (Phase C)",
+      "mandatory": "",
+      "details": ""
+    },
+    "10": {
+      "column": "11",
+      "data_type": "SI",
+      "description": "(Group 1) Allocated Load Using",
+      "mandatory": "",
+      "details": "See Source Option 1."
+    },
+    "11": {
+      "column": "12",
+      "data_type": "SI",
+      "description": "(Group 1) UNUSED",
+      "mandatory": "",
+      "details": ""
+    },
+    "12": {
+      "column": "13",
+      "data_type": "SI",
+      "description": "(Group 1) UNUSED",
+      "mandatory": "",
+      "details": ""
+    },
+    "13": {
+      "column": "14",
+      "data_type": "SI",
+      "description": "(Group 1) Group Allocation Method",
+      "mandatory": "",
+      "details": "See Source Option 2."
+    },
+    "14": {
+      "column": "15",
+      "data_type": "SI",
+      "description": "(Group 1) Group PF Option",
+      "mandatory": "",
+      "details": ""
+    },
+    "15": {
+      "column": "16",
+      "data_type": "F",
+      "description": "(Group 1) Group Power Factor",
+      "mandatory": "",
+      "details": ""
+    },
+    "16": {
+      "column": "17",
+      "data_type": "F",
+      "description": "(Group 1)",
+      "mandatory": "",
+      "details": ""
+    },
+    "17": {
+      "column": "18",
+      "data_type": "F",
+      "description": "(Group 1) Group Coincidental Factor",
+      "mandatory": "",
+      "details": ""
+    },
+    "18": {
+      "column": "19",
+      "data_type": "F",
+      "description": "(Group 1) Group Loading Factor",
+      "mandatory": "",
+      "details": ""
+    },
+    "19": {
+      "column": "20",
+      "data_type": "F",
+      "description": "(Group 1) Group Xfmr Loading Factor",
+      "mandatory": "",
+      "details": ""
+    },
+    "20": {
+      "column": "21",
+      "data_type": "SI",
+      "description": "(Group 2) Allocated Load Using",
+      "mandatory": "",
+      "details": ""
+    },
+    "21": {
+      "column": "22",
+      "data_type": "SI",
+      "description": "(Group 2) UNUSED",
+      "mandatory": "",
+      "details": ""
+    },
+    "22": {
+      "column": "23",
+      "data_type": "SI",
+      "description": "(Group 2) Load Key",
+      "mandatory": "",
+      "details": ""
+    },
+    "23": {
+      "column": "24",
+      "data_type": "SI",
+      "description": "(Group 2) Allocation Method",
+      "mandatory": "",
+      "details": ""
+    },
+    "24": {
+      "column": "25",
+      "data_type": "SI",
+      "description": "(Group 2) PF Option",
+      "mandatory": "",
+      "details": ""
+    },
+    "25": {
+      "column": "26",
+      "data_type": "F",
+      "description": "(Group 2) Power Factor",
+      "mandatory": "",
+      "details": ""
+    },
+    "26": {
+      "column": "27",
+      "data_type": "F",
+      "description": "(Group 2) UNUSED",
+      "mandatory": "",
+      "details": ""
+    },
+    "27": {
+      "column": "28",
+      "data_type": "F",
+      "description": "(Group 2) Coincidental Factor",
+      "mandatory": "",
+      "details": ""
+    },
+    "28": {
+      "column": "29",
+      "data_type": "F",
+      "description": "(Group 2) Loading Factor",
+      "mandatory": "",
+      "details": ""
+    },
+    "29": {
+      "column": "30",
+      "data_type": "F",
+      "description": "(Group 2) Xfmr Loading Factor",
+      "mandatory": "",
+      "details": ""
+    },
+    "30": {
+      "column": "31",
+      "data_type": "SI",
+      "description": "(Group 3) Allocated Load Using",
+      "mandatory": "",
+      "details": ""
+    },
+    "31": {
+      "column": "32",
+      "data_type": "SI",
+      "description": "(Group 3) UNUSED",
+      "mandatory": "",
+      "details": ""
+    },
+    "32": {
+      "column": "33",
+      "data_type": "SI",
+      "description": "(Group 3) Load Key",
+      "mandatory": "",
+      "details": ""
+    },
+    "33": {
+      "column": "34",
+      "data_type": "SI",
+      "description": "(Group 3) Allocation Method",
+      "mandatory": "",
+      "details": ""
+    },
+    "34": {
+      "column": "35",
+      "data_type": "SI",
+      "description": "(Group 3) PF Option",
+      "mandatory": "",
+      "details": ""
+    },
+    "35": {
+      "column": "36",
+      "data_type": "SI",
+      "description": "(Group 3) Power Factor",
+      "mandatory": "",
+      "details": ""
+    },
+    "36": {
+      "column": "37",
+      "data_type": "F",
+      "description": "(Group 3) UNUSED",
+      "mandatory": "",
+      "details": ""
+    },
+    "37": {
+      "column": "38",
+      "data_type": "F",
+      "description": "(Group 3) Coincidental Factor",
+      "mandatory": "",
+      "details": ""
+    },
+    "38": {
+      "column": "39",
+      "data_type": "F",
+      "description": "(Group 3) Loading Factor",
+      "mandatory": "",
+      "details": ""
+    },
+    "39": {
+      "column": "40",
+      "data_type": "F",
+      "description": "(Group 3) Xfmr Loading Factor",
+      "mandatory": "",
+      "details": ""
+    },
+    "40": {
+      "column": "41",
+      "data_type": "SI",
+      "description": "(Group 4) Allocated Load Using",
+      "mandatory": "",
+      "details": ""
+    },
+    "41": {
+      "column": "42",
+      "data_type": "SI",
+      "description": "(Group 4) UNUSED",
+      "mandatory": "",
+      "details": ""
+    },
+    "42": {
+      "column": "43",
+      "data_type": "SI",
+      "description": "(Group 4) Load Key",
+      "mandatory": "",
+      "details": ""
+    },
+    "43": {
+      "column": "44",
+      "data_type": "SI",
+      "description": "(Group 4) Allocation Method",
+      "mandatory": "",
+      "details": ""
+    },
+    "44": {
+      "column": "45",
+      "data_type": "SI",
+      "description": "(Group 4) PF Option",
+      "mandatory": "",
+      "details": ""
+    },
+    "45": {
+      "column": "46",
+      "data_type": "F",
+      "description": "(Group 4) Power Factor",
+      "mandatory": "",
+      "details": ""
+    },
+    "46": {
+      "column": "47",
+      "data_type": "F",
+      "description": "(Group 4) UNUSED",
+      "mandatory": "",
+      "details": ""
+    },
+    "47": {
+      "column": "48",
+      "data_type": "F",
+      "description": "(Group 4) Coincidental Factor",
+      "mandatory": "",
+      "details": ""
+    },
+    "48": {
+      "column": "49",
+      "data_type": "F",
+      "description": "(Group 4) Loading Factor",
+      "mandatory": "",
+      "details": ""
+    },
+    "49": {
+      "column": "50",
+      "data_type": "F",
+      "description": "(Group 4) Xfmr Loading Factor",
+      "mandatory": "",
+      "details": ""
+    },
+    "50": {
+      "column": "51",
+      "data_type": "SI",
+      "description": "Same as Upline",
+      "mandatory": "",
+      "details": ""
+    },
+    "51": {
+      "column": "52",
+      "data_type": "SI",
+      "description": "Allocate Consumers",
+      "mandatory": "",
+      "details": ""
+    },
+    "52": {
+      "column": "53",
+      "data_type": "F",
+      "description": "(Group 1) kW per Consumer",
+      "mandatory": "",
+      "details": ""
+    },
+    "53": {
+      "column": "54",
+      "data_type": "F",
+      "description": "(Group 2) kW per Consumer",
+      "mandatory": "",
+      "details": ""
+    },
+    "54": {
+      "column": "55",
+      "data_type": "F",
+      "description": "(Group 3) kW per Consumer",
+      "mandatory": "",
+      "details": ""
+    },
+    "55": {
+      "column": "56",
+      "data_type": "F",
+      "description": "(Group 4) kW per Consumer",
+      "mandatory": "",
+      "details": ""
+    }
+  },
+  "cld_file_format": {
+    "details": "This file provides a mechanism for archiving the calculated load on a model. It contains only kVA and consumer data. See the CLD Standard Fields table for a breakdown of the .cld fields.",
+    "0": {
+      "column": "1",
+      "data_type": "A",
+      "description": "Section Identifier",
+      "mandatory": "X"
+    },
+    "1": {
+      "column": "2",
+      "data_type": "F",
+      "description": "kW (Phase A)",
+      "mandatory": ""
+    },
+    "2": {
+      "column": "3",
+      "data_type": "F",
+      "description": "kW (Phase B)",
+      "mandatory": ""
+    },
+    "3": {
+      "column": "4",
+      "data_type": "F",
+      "description": "kW (Phase C)",
+      "mandatory": ""
+    },
+    "4": {
+      "column": "5",
+      "data_type": "F",
+      "description": "kvar (Phase A)",
+      "mandatory": ""
+    },
+    "5": {
+      "column": "6",
+      "data_type": "F",
+      "description": "kvar (Phase B)",
+      "mandatory": ""
+    },
+    "6": {
+      "column": "7",
+      "data_type": "F",
+      "description": "kvar (Phase C)",
+      "mandatory": ""
+    },
+    "7": {
+      "column": "8",
+      "data_type": "F",
+      "description": "Consumers (Phase A)",
+      "mandatory": ""
+    },
+    "8": {
+      "column": "9",
+      "data_type": "F",
+      "description": "Consumers (Phase B)",
+      "mandatory": ""
+    },
+    "9": {
+      "column": "10",
+      "data_type": "F",
+      "description": "Consumers (Phase C)",
+      "mandatory": ""
+    }
+  },
+  "acc_file_format": {
+    "details": "This is also known as the Account-Based Load File. The Billing Load Wizard will request this file so that it can import billing load information. \n\nThe account based load file can be fixed-width or comma-delimited. The file may have any extension, but must be an ASCII file.",
+    "0": {
+      "start_column": "1",
+      "length": "6",
+      "data_type": "SI",
+      "description": "Billing Reference"
+    },
+    "1": {
+      "start_column": "7",
+      "length": "6",
+      "data_type": "SI",
+      "description": "kWh Usage"
+    },
+    "2": {
+      "start_column": "13",
+      "length": "5",
+      "data_type": "SI",
+      "description": "kW Demand"
+    },
+    "3": {
+      "start_column": "23",
+      "length": "5",
+      "data_type": "SI",
+      "description": "kvar Demand"
+    },
+    "4": {
+      "start_column": "28",
+      "length": "5",
+      "data_type": "SI",
+      "description": "Security Light kWh"
+    },
+    "5": {
+      "start_column": "34",
+      "length": "1",
+      "data_type": "SI",
+      "description": "Phase Configuration"
+    },
+    "6": {
+      "start_column": "35",
+      "length": "2",
+      "data_type": "SI",
+      "description": "Rate Class"
+    },
+    "7": {
+      "start_column": "37",
+      "length": "2",
+      "data_type": "SI",
+      "description": "Revenue Class"
+    },
+    "8": {
+      "start_column": "66",
+      "length": "6",
+      "data_type": "SI",
+      "description": "Transformer kVA"
+    }
+  }
+}

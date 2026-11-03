@@ -1,0 +1,2651 @@
+{
+  "lines": {
+    "0": {
+      "column": "1",
+      "data_type": "A",
+      "description": "Element Name*",
+      "three_phase": "",
+      "details": "Unique, alphanumeric identifier <= 25 char."
+    },
+    "1": {
+      "column": "2",
+      "data_type": "SI",
+      "description": "Element Type*",
+      "three_phase": "",
+      "details": "See Element Type Code."
+    },
+    "2": {
+      "column": "3",
+      "data_type": "A",
+      "description": "Phase Configuration*",
+      "three_phase": "",
+      "details": "See Element Phase Configuration."
+    },
+    "3": {
+      "column": "4",
+      "data_type": "A",
+      "description": "Parent Element Name",
+      "three_phase": "",
+      "details": "See Parent Element Identifier."
+    },
+    "4": {
+      "column": "5",
+      "data_type": "A",
+      "description": "Map Number",
+      "three_phase": "",
+      "details": "User-definable, alphanumeric field < 32 char."
+    },
+    "5": {
+      "column": "6",
+      "data_type": "D",
+      "description": "X Coordinate",
+      "three_phase": "",
+      "details": "See X and Y Coordinates."
+    },
+    "6": {
+      "column": "7",
+      "data_type": "D",
+      "description": "Y Coordinate",
+      "three_phase": "",
+      "details": "See X and Y Coordinates."
+    },
+    "7": {
+      "column": "8",
+      "data_type": "A",
+      "description": "User Tag",
+      "three_phase": "",
+      "details": "See User Tag."
+    },
+    "8": {
+      "column": "9",
+      "data_type": "A",
+      "description": "Conductor Description, Phase A",
+      "three_phase": "X",
+      "details": "See Conductor Description."
+    },
+    "9": {
+      "column": "10",
+      "data_type": "A",
+      "description": "Conductor Description, Phase B",
+      "three_phase": "X",
+      "details": "See Conductor Description."
+    },
+    "10": {
+      "column": "11",
+      "data_type": "A",
+      "description": "Conductor Description, Phase C",
+      "three_phase": "X",
+      "details": "See Conductor Description."
+    },
+    "11": {
+      "column": "12",
+      "data_type": "A",
+      "description": "Conductor Description, neutral",
+      "three_phase": "",
+      "details": "See Conductor Description."
+    },
+    "12": {
+      "column": "13",
+      "data_type": "F",
+      "description": "Impedance Length",
+      "three_phase": "",
+      "details": "Length is in feet. Default is 0."
+    },
+    "13": {
+      "column": "14",
+      "data_type": "A",
+      "description": "Construction Description",
+      "three_phase": "",
+      "details": "See Construction Description."
+    },
+    "14": {
+      "column": "15",
+      "data_type": "A",
+      "description": "Load Mix Description",
+      "three_phase": "",
+      "details": "See Load Mix Description."
+    },
+    "15": {
+      "column": "16",
+      "data_type": "A",
+      "description": "Load Zone Description",
+      "three_phase": "",
+      "details": "See Load Zone Description."
+    },
+    "16": {
+      "column": "17",
+      "data_type": "A",
+      "description": "Load Location",
+      "three_phase": "",
+      "details": "See Load Location."
+    },
+    "17": {
+      "column": "18",
+      "data_type": "F",
+      "description": "Load Growth",
+      "three_phase": "",
+      "details": "The default is 0.0."
+    },
+    "18": {
+      "column": "19",
+      "data_type": "L",
+      "description": "Billing Reference",
+      "three_phase": "",
+      "details": "See Billing Reference."
+    },
+    "19": {
+      "column": "20",
+      "data_type": "F",
+      "description": "Allocated kW, Ph A",
+      "three_phase": "",
+      "details": "See Allocated kW."
+    },
+    "20": {
+      "column": "21",
+      "data_type": "F",
+      "description": "Allocated kW, Ph B",
+      "three_phase": "",
+      "details": "See Allocated kW."
+    },
+    "21": {
+      "column": "22",
+      "data_type": "F",
+      "description": "Allocated kW, Ph C",
+      "three_phase": "",
+      "details": "See Allocated kW."
+    },
+    "22": {
+      "column": "23",
+      "data_type": "F",
+      "description": "Allocated kvar, Ph A",
+      "three_phase": "",
+      "details": ""
+    },
+    "23": {
+      "column": "24",
+      "data_type": "F",
+      "description": "Allocated kvar, Ph B",
+      "three_phase": "",
+      "details": ""
+    },
+    "24": {
+      "column": "25",
+      "data_type": "F",
+      "description": "Allocated kvar, Ph C",
+      "three_phase": "",
+      "details": ""
+    },
+    "25": {
+      "column": "26",
+      "data_type": "F",
+      "description": "Allocated Consumers, Phase A",
+      "three_phase": "",
+      "details": "See Allocated Consumers."
+    },
+    "26": {
+      "column": "27",
+      "data_type": "F",
+      "description": "Allocated Consumers, Phase B",
+      "three_phase": "",
+      "details": "See Allocated Consumers."
+    },
+    "27": {
+      "column": "28",
+      "data_type": "F",
+      "description": "Allocated Consumers, Phase C",
+      "three_phase": "",
+      "details": "See Allocated Consumers."
+    },
+    "28": {
+      "column": "29",
+      "data_type": "F",
+      "description": "Load Interruptible Type",
+      "three_phase": "",
+      "details": "See Load Interruptible Type."
+    },
+    "29": {
+      "column": "30",
+      "data_type": "F",
+      "description": "Failure Rate",
+      "three_phase": "",
+      "details": "Failure per mile per year."
+    },
+    "30": {
+      "column": "31",
+      "data_type": "F",
+      "description": "Repair Time",
+      "three_phase": "",
+      "details": "In hours."
+    },
+    "31": {
+      "column": "32",
+      "data_type": "F",
+      "description": "Upline X Coordinate",
+      "three_phase": "",
+      "details": "See Upline Coordinate."
+    },
+    "32": {
+      "column": "33",
+      "data_type": "F",
+      "description": "Upline Y Coordinate",
+      "three_phase": "",
+      "details": "See Upline Coordinate."
+    },
+    "33": {
+      "column": "34",
+      "data_type": "SI",
+      "description": "Number of Neutrals",
+      "three_phase": "",
+      "details": ""
+    },
+    "34": {
+      "column": "35",
+      "data_type": "F",
+      "description": "Conductor Graphical Length (8.6.5)",
+      "three_phase": "",
+      "details": "Length is in feet. Default is 0."
+    },
+    "35": {
+      "column": "36",
+      "data_type": "A",
+      "description": "Parallel With Name",
+      "three_phase": "",
+      "details": ""
+    },
+    "36": {
+      "column": "37",
+      "data_type": "SI",
+      "description": "Per-Phase Conductors",
+      "three_phase": "",
+      "details": ""
+    },
+    "37": {
+      "column": "49",
+      "data_type": "G",
+      "description": "Parallel With GUID",
+      "three_phase": "",
+      "details": ""
+    }
+  },
+  "capacitors": {
+    "0": {
+      "column": "1",
+      "data_type": "A",
+      "description": "Element Name*",
+      "three_phase": "",
+      "details": "Unique, alphanumeric identifier <= 25 char."
+    },
+    "1": {
+      "column": "2",
+      "data_type": "SI",
+      "description": "Element Type*",
+      "three_phase": "",
+      "details": "See Element Type Code."
+    },
+    "2": {
+      "column": "3",
+      "data_type": "A",
+      "description": "Phase Configuration*",
+      "three_phase": "",
+      "details": "See Element Phase Configuration."
+    },
+    "3": {
+      "column": "4",
+      "data_type": "A",
+      "description": "Parent Element Name",
+      "three_phase": "",
+      "details": "See Parent Element Identifier."
+    },
+    "4": {
+      "column": "5",
+      "data_type": "A",
+      "description": "Map Number",
+      "three_phase": "",
+      "details": "User-definable, alphanumeric field < 32 char."
+    },
+    "5": {
+      "column": "6",
+      "data_type": "D",
+      "description": "X Coordinate",
+      "three_phase": "",
+      "details": "See X and Y Coordinates."
+    },
+    "6": {
+      "column": "7",
+      "data_type": "D",
+      "description": "Y Coordinate",
+      "three_phase": "",
+      "details": "See X and Y Coordinates."
+    },
+    "7": {
+      "column": "8",
+      "data_type": "A",
+      "description": "User Tag",
+      "three_phase": "",
+      "details": "See User Tag."
+    },
+    "8": {
+      "column": "9",
+      "data_type": "F",
+      "description": "kvar, Phase A",
+      "three_phase": "X",
+      "details": "Default=0"
+    },
+    "9": {
+      "column": "10",
+      "data_type": "F",
+      "description": "kvar, Phase B",
+      "three_phase": "X",
+      "details": "Default=0"
+    },
+    "10": {
+      "column": "11",
+      "data_type": "F",
+      "description": "kvar, Phase C",
+      "three_phase": "X",
+      "details": "Default=0"
+    },
+    "11": {
+      "column": "12",
+      "data_type": "F",
+      "description": "Voltage Rating",
+      "three_phase": "",
+      "details": "See Capacitor Voltage Rating."
+    },
+    "12": {
+      "column": "13",
+      "data_type": "SI",
+      "description": "Switch Type Code",
+      "three_phase": "",
+      "details": "See Capacitor Switch Type Code."
+    },
+    "13": {
+      "column": "14",
+      "data_type": "SI",
+      "description": "Switch Status Code",
+      "three_phase": "",
+      "details": "See Capacitor Switch Status Code."
+    },
+    "14": {
+      "column": "15",
+      "data_type": "F",
+      "description": "Switch On Setting",
+      "three_phase": "",
+      "details": "See Capacitor Switch On Off Settings."
+    },
+    "15": {
+      "column": "16",
+      "data_type": "F",
+      "description": "Switch Off Setting",
+      "three_phase": "",
+      "details": "See Capacitor Switch On Off Settings."
+    },
+    "16": {
+      "column": "17",
+      "data_type": "A",
+      "description": "Control Element",
+      "three_phase": "",
+      "details": "See Control Circuit Element."
+    },
+    "17": {
+      "column": "18",
+      "data_type": "SI",
+      "description": "Connection",
+      "three_phase": "",
+      "details": "See Capacitor Connection."
+    },
+    "18": {
+      "column": "19",
+      "data_type": "F",
+      "description": "Unit Size kvar",
+      "three_phase": "",
+      "details": "Default=0"
+    },
+    "19": {
+      "column": "20",
+      "data_type": "A",
+      "description": "Control Phase",
+      "three_phase": "",
+      "details": "A,B, or C"
+    },
+    "20": {
+      "column": "21",
+      "data_type": "F",
+      "description": "Failure Rate",
+      "three_phase": "",
+      "details": "Failures/Yr"
+    },
+    "21": {
+      "column": "22",
+      "data_type": "F",
+      "description": "Repair Time",
+      "three_phase": "",
+      "details": "In hours."
+    },
+    "22": {
+      "column": "23",
+      "data_type": "F",
+      "description": "Bypass Time",
+      "three_phase": "",
+      "details": "In hours."
+    }
+  },
+  "regulators": {
+    "0": {
+      "column": "1",
+      "data_type": "A",
+      "description": "Element Name*",
+      "three_phase": "",
+      "details": "Unique, alphanumeric identifier <= 25 char."
+    },
+    "1": {
+      "column": "2",
+      "data_type": "SI",
+      "description": "Element Type*",
+      "three_phase": "",
+      "details": "See Element Type Code."
+    },
+    "2": {
+      "column": "3",
+      "data_type": "A",
+      "description": "Phase Configuration*",
+      "three_phase": "",
+      "details": "See Element Phase Configuration."
+    },
+    "3": {
+      "column": "4",
+      "data_type": "A",
+      "description": "Parent Element Name",
+      "three_phase": "",
+      "details": "See Parent Element Identifier."
+    },
+    "4": {
+      "column": "5",
+      "data_type": "A",
+      "description": "Map Number",
+      "three_phase": "",
+      "details": "User-definable, alphanumeric field < 32 char."
+    },
+    "5": {
+      "column": "6",
+      "data_type": "D",
+      "description": "X Coordinate",
+      "three_phase": "",
+      "details": "See X and Y Coordinates."
+    },
+    "6": {
+      "column": "7",
+      "data_type": "D",
+      "description": "Y Coordinate",
+      "three_phase": "",
+      "details": "See X and Y Coordinates."
+    },
+    "7": {
+      "column": "8",
+      "data_type": "A",
+      "description": "User Tag",
+      "three_phase": "",
+      "details": "See User Tag."
+    },
+    "8": {
+      "column": "9",
+      "data_type": "",
+      "description": "Regulator Type",
+      "three_phase": "",
+      "details": "See Regulator Type."
+    },
+    "9": {
+      "column": "10",
+      "data_type": "SI",
+      "description": "Controlling Phase",
+      "three_phase": "",
+      "details": "See Regulator Controlled Phase."
+    },
+    "10": {
+      "column": "11",
+      "data_type": "SI",
+      "description": "Regulator Winding Connection",
+      "three_phase": "",
+      "details": "See Regulator Form Code."
+    },
+    "11": {
+      "column": "12",
+      "data_type": "A",
+      "description": "Regulator Description, Phase A",
+      "three_phase": "X",
+      "details": "See Regulator Description."
+    },
+    "12": {
+      "column": "13",
+      "data_type": "A",
+      "description": "Regulator Description, Phase B",
+      "three_phase": "X",
+      "details": "See Regulator Description."
+    },
+    "13": {
+      "column": "14",
+      "data_type": "A",
+      "description": "Regulator Description, Phase C",
+      "three_phase": "X",
+      "details": "See Regulator Description."
+    },
+    "14": {
+      "column": "15",
+      "data_type": "F",
+      "description": "Output Voltage, Phase A",
+      "three_phase": "X",
+      "details": "See Regulator Output Voltage."
+    },
+    "15": {
+      "column": "16",
+      "data_type": "F",
+      "description": "Output Voltage, Phase B",
+      "three_phase": "X",
+      "details": "See Regulator Output Voltage."
+    },
+    "16": {
+      "column": "17",
+      "data_type": "F",
+      "description": "Output Voltage, Phase C",
+      "three_phase": "X",
+      "details": "See Regulator Output Voltage."
+    },
+    "17": {
+      "column": "18",
+      "data_type": "F",
+      "description": "LDC R Setting, Phase A",
+      "three_phase": "X",
+      "details": "See LDC Line Drop Compensation."
+    },
+    "18": {
+      "column": "19",
+      "data_type": "F",
+      "description": "LDC R Setting, Phase B",
+      "three_phase": "X",
+      "details": "See LDC Line Drop Compensation."
+    },
+    "19": {
+      "column": "20",
+      "data_type": "F",
+      "description": "LDC R Setting, Phase C",
+      "three_phase": "X",
+      "details": "See LDC Line Drop Compensation."
+    },
+    "20": {
+      "column": "21",
+      "data_type": "F",
+      "description": "LDC X Setting, Phase A",
+      "three_phase": "X",
+      "details": "See LDC Line Drop Compensation."
+    },
+    "21": {
+      "column": "22",
+      "data_type": "F",
+      "description": "LDC X Setting, Phase B",
+      "three_phase": "X",
+      "details": "See LDC Line Drop Compensation."
+    },
+    "22": {
+      "column": "23",
+      "data_type": "F",
+      "description": "LDC X Setting, Phase C",
+      "three_phase": "X",
+      "details": "See LDC Line Drop Compensation."
+    },
+    "23": {
+      "column": "24",
+      "data_type": "F",
+      "description": "House High Protector, Ph A",
+      "three_phase": "X",
+      "details": "See First House Protector."
+    },
+    "24": {
+      "column": "25",
+      "data_type": "F",
+      "description": "1st House High Protector, Ph B",
+      "three_phase": "X",
+      "details": "See First House Protector."
+    },
+    "25": {
+      "column": "26",
+      "data_type": "F",
+      "description": "1st House High Protector, Ph C",
+      "three_phase": "X",
+      "details": "See First House Protector."
+    },
+    "26": {
+      "column": "27",
+      "data_type": "F",
+      "description": "1st House Low Protector, Ph A",
+      "three_phase": "X",
+      "details": "See First House Protector."
+    },
+    "27": {
+      "column": "28",
+      "data_type": "F",
+      "description": "1st House Low Protector, Ph B",
+      "three_phase": "X",
+      "details": "See First House Protector."
+    },
+    "28": {
+      "column": "29",
+      "data_type": "F",
+      "description": "1st House Low Protector, Ph C",
+      "three_phase": "X",
+      "details": "See First House Protector."
+    },
+    "29": {
+      "column": "30",
+      "data_type": "F",
+      "description": "Failure Rate",
+      "three_phase": "",
+      "details": ""
+    },
+    "30": {
+      "column": "31",
+      "data_type": "F",
+      "description": "Repair Time",
+      "three_phase": "",
+      "details": ""
+    },
+    "31": {
+      "column": "32",
+      "data_type": "F",
+      "description": "Bypass Time",
+      "three_phase": "",
+      "details": ""
+    },
+    "32": {
+      "column": "33",
+      "data_type": "SI",
+      "description": "Regulator Bypass A",
+      "three_phase": "",
+      "details": "See Regulator Bypass Field."
+    },
+    "33": {
+      "column": "34",
+      "data_type": "SI",
+      "description": "Regulator Bypass B",
+      "three_phase": "",
+      "details": "See Regulator Bypass Field."
+    },
+    "34": {
+      "column": "35",
+      "data_type": "SI",
+      "description": "Regulator Bypass C",
+      "three_phase": "",
+      "details": "See Regulator Bypass Field."
+    },
+    "35": {
+      "column": "36",
+      "data_type": "SI",
+      "description": "All Phases Same",
+      "three_phase": "",
+      "details": "0 = False, 1 = True"
+    },
+    "36": {
+      "column": "37",
+      "data_type": "A",
+      "description": "Control Element",
+      "three_phase": "",
+      "details": "A section name."
+    },
+    "37": {
+      "column": "49",
+      "data_type": "G",
+      "description": "Control Element GUID",
+      "three_phase": "",
+      "details": ""
+    }
+  },
+  "transformers": {
+    "0": {
+      "column": "1",
+      "data_type": "A",
+      "description": "Element Name*",
+      "three_phase": "",
+      "details": "Unique, alphanumeric identifier <= 25 char."
+    },
+    "1": {
+      "column": "2",
+      "data_type": "SI",
+      "description": "Element Type*",
+      "three_phase": "",
+      "details": "See Element Type Code."
+    },
+    "2": {
+      "column": "3",
+      "data_type": "A",
+      "description": "Phase Configuration*",
+      "three_phase": "",
+      "details": "See Element Phase Configuration."
+    },
+    "3": {
+      "column": "4",
+      "data_type": "A",
+      "description": "Parent Element Name",
+      "three_phase": "",
+      "details": "See Parent Element Identifier."
+    },
+    "4": {
+      "column": "5",
+      "data_type": "A",
+      "description": "Map Number",
+      "three_phase": "",
+      "details": "User-definable, alphanumeric field < 32 char."
+    },
+    "5": {
+      "column": "6",
+      "data_type": "D",
+      "description": "X Coordinate",
+      "three_phase": "",
+      "details": "See X and Y Coordinates."
+    },
+    "6": {
+      "column": "7",
+      "data_type": "D",
+      "description": "Y Coordinate",
+      "three_phase": "",
+      "details": "See X and Y Coordinates."
+    },
+    "7": {
+      "column": "8",
+      "data_type": "A",
+      "description": "User Tag",
+      "three_phase": "",
+      "details": "See User Tag."
+    },
+    "8": {
+      "column": "9",
+      "data_type": "SI",
+      "description": "Transformer Winding Connection",
+      "three_phase": "",
+      "details": "See Transformer Winding Code."
+    },
+    "9": {
+      "column": "10",
+      "data_type": "A",
+      "description": "UNUSED",
+      "three_phase": "",
+      "details": "Replaced by T25 through T27 below."
+    },
+    "10": {
+      "column": "11",
+      "data_type": "F",
+      "description": "Primary Tap Voltage (Src Side)",
+      "three_phase": "X",
+      "details": "See Transformer Voltage."
+    },
+    "11": {
+      "column": "12",
+      "data_type": "F",
+      "description": "Primary Rated Voltage (Src Side)",
+      "three_phase": "",
+      "details": ""
+    },
+    "12": {
+      "column": "13",
+      "data_type": "F",
+      "description": "UNUSED",
+      "three_phase": "",
+      "details": ""
+    },
+    "13": {
+      "column": "14",
+      "data_type": "F",
+      "description": "Rated Output Voltage (Load Side)",
+      "three_phase": "",
+      "details": "See Transformer Voltage."
+    },
+    "14": {
+      "column": "15",
+      "data_type": "SI",
+      "description": "APCNF (Source Side Config)",
+      "three_phase": "",
+      "details": "See APCNF Source Side Configuration."
+    },
+    "15": {
+      "column": "16",
+      "data_type": "F",
+      "description": "Rated Tertiary Output Voltage",
+      "three_phase": "",
+      "details": "See Transformer Voltage."
+    },
+    "16": {
+      "column": "17",
+      "data_type": "A",
+      "description": "Tertiary Child Identifier",
+      "three_phase": "",
+      "details": "Alphanumeric string up to 20 char."
+    },
+    "17": {
+      "column": "18",
+      "data_type": "F",
+      "description": "Nominal Output Voltage In kV.",
+      "three_phase": "",
+      "details": "See Transformer Voltage."
+    },
+    "18": {
+      "column": "19",
+      "data_type": "F",
+      "description": "Nominal Output Voltage of Tertiary In kV.",
+      "three_phase": "",
+      "details": ""
+    },
+    "19": {
+      "column": "20",
+      "data_type": "F",
+      "description": "Tran kVA A (Export Only)",
+      "three_phase": "",
+      "details": ""
+    },
+    "20": {
+      "column": "21",
+      "data_type": "F",
+      "description": "Tran kVA B (Export Only)",
+      "three_phase": "",
+      "details": ""
+    },
+    "21": {
+      "column": "22",
+      "data_type": "F",
+      "description": "Tran kVA C (Export Only)",
+      "three_phase": "",
+      "details": ""
+    },
+    "22": {
+      "column": "23",
+      "data_type": "F",
+      "description": "Failure Rate",
+      "three_phase": "",
+      "details": ""
+    },
+    "23": {
+      "column": "24",
+      "data_type": "F",
+      "description": "Repair Time",
+      "three_phase": "",
+      "details": ""
+    },
+    "24": {
+      "column": "25",
+      "data_type": "A",
+      "description": "Xfmr Cond Desc. Ph A",
+      "three_phase": "",
+      "details": "See Conductor Description."
+    },
+    "25": {
+      "column": "26",
+      "data_type": "A",
+      "description": "Xfmr Cond Desc. Ph B",
+      "three_phase": "",
+      "details": "See Conductor Description."
+    },
+    "26": {
+      "column": "27",
+      "data_type": "A",
+      "description": "Xfmr Cond Desc. Ph C",
+      "three_phase": "",
+      "details": "See Conductor Description."
+    },
+    "27": {
+      "column": "28",
+      "data_type": "SI",
+      "description": "Is Center Tap",
+      "three_phase": "",
+      "details": "See Is Center Tap."
+    },
+    "28": {
+      "column": "29",
+      "data_type": "SI",
+      "description": "Transformer Mounting (8.6.5)",
+      "three_phase": "",
+      "details": "See Transformer Mounting Codes"
+    }
+  },
+  "switches": {
+    "0": {
+      "column": "1",
+      "data_type": "A",
+      "description": "Element Name*",
+      "three_phase": "",
+      "details": "Unique, alphanumeric identifier <= 25 char."
+    },
+    "1": {
+      "column": "2",
+      "data_type": "SI",
+      "description": "Element Type*",
+      "three_phase": "",
+      "details": "See Element Type Code."
+    },
+    "2": {
+      "column": "3",
+      "data_type": "A",
+      "description": "Phase Configuration*",
+      "three_phase": "",
+      "details": "See Element Phase Configuration."
+    },
+    "3": {
+      "column": "4",
+      "data_type": "A",
+      "description": "Parent Element Name",
+      "three_phase": "",
+      "details": "See Parent Element Identifier."
+    },
+    "4": {
+      "column": "5",
+      "data_type": "A",
+      "description": "Map Number",
+      "three_phase": "",
+      "details": "User-definable, alphanumeric field < 32 char."
+    },
+    "5": {
+      "column": "6",
+      "data_type": "D",
+      "description": "X Coordinate",
+      "three_phase": "",
+      "details": "See X and Y Coordinates."
+    },
+    "6": {
+      "column": "7",
+      "data_type": "D",
+      "description": "Y Coordinate",
+      "three_phase": "",
+      "details": "See X and Y Coordinates."
+    },
+    "7": {
+      "column": "8",
+      "data_type": "A",
+      "description": "User Tag",
+      "three_phase": "",
+      "details": "See User Tag."
+    },
+    "8": {
+      "column": "9",
+      "data_type": "A",
+      "description": "Switch Status",
+      "details": "See Electric Switch Status Code."
+    },
+    "9": {
+      "column": "10",
+      "data_type": "A",
+      "description": "Switch ID",
+      "details": "Up to 15 characters, Default=NULL"
+    },
+    "10": {
+      "column": "11",
+      "data_type": "A",
+      "description": "Partner Identifier",
+      "details": "See Partner Identifier."
+    },
+    "11": {
+      "column": "12",
+      "data_type": "F",
+      "description": "Failure Rate",
+      "details": ""
+    },
+    "12": {
+      "column": "13",
+      "data_type": "F",
+      "description": "Repair Time",
+      "details": ""
+    },
+    "13": {
+      "column": "14",
+      "data_type": "F",
+      "description": "Bypass Time In Hours",
+      "details": ""
+    },
+    "14": {
+      "column": "15",
+      "data_type": "F",
+      "description": "Close Time In Hours",
+      "details": ""
+    },
+    "15": {
+      "column": "16",
+      "data_type": "F",
+      "description": "Open Time In Hours",
+      "details": ""
+    },
+    "16": {
+      "column": "49",
+      "data_type": "G",
+      "description": "Switch Partner GUID",
+      "details": "See Switch Partner GUID."
+    }
+  },
+  "nodes": {
+    "0": {
+      "column": "1",
+      "data_type": "A",
+      "description": "Element Name*",
+      "three_phase": "",
+      "details": "Unique, alphanumeric identifier <= 25 char."
+    },
+    "1": {
+      "column": "2",
+      "data_type": "SI",
+      "description": "Element Type*",
+      "three_phase": "",
+      "details": "See Element Type Code."
+    },
+    "2": {
+      "column": "3",
+      "data_type": "A",
+      "description": "Phase Configuration*",
+      "three_phase": "",
+      "details": "See Element Phase Configuration."
+    },
+    "3": {
+      "column": "4",
+      "data_type": "A",
+      "description": "Parent Element Name",
+      "three_phase": "",
+      "details": "See Parent Element Identifier."
+    },
+    "4": {
+      "column": "5",
+      "data_type": "A",
+      "description": "Map Number",
+      "three_phase": "",
+      "details": "User-definable, alphanumeric field < 32 char."
+    },
+    "5": {
+      "column": "6",
+      "data_type": "D",
+      "description": "X Coordinate",
+      "three_phase": "",
+      "details": "See X and Y Coordinates."
+    },
+    "6": {
+      "column": "7",
+      "data_type": "D",
+      "description": "Y Coordinate",
+      "three_phase": "",
+      "details": "See X and Y Coordinates."
+    },
+    "7": {
+      "column": "8",
+      "data_type": "A",
+      "description": "User Tag",
+      "three_phase": "",
+      "details": "See User Tag."
+    },
+    "8": {
+      "column": "9",
+      "data_type": "SI",
+      "description": "Feeder Number",
+      "details": "See Feeder Number."
+    },
+    "9": {
+      "column": "10",
+      "data_type": "SI",
+      "description": "Load Allocation Control Point",
+      "details": "See Load Allocation Control Point."
+    },
+    "10": {
+      "column": "11",
+      "data_type": "A",
+      "description": "Load Mix Description",
+      "details": "See Load Mix Description."
+    },
+    "11": {
+      "column": "12",
+      "data_type": "A",
+      "description": "Load Zone Description",
+      "details": "See Load Zone Description."
+    },
+    "12": {
+      "column": "13",
+      "data_type": "A",
+      "description": "Load Location",
+      "details": "See Load Location."
+    },
+    "13": {
+      "column": "14",
+      "data_type": "F",
+      "description": "Load Growth",
+      "details": "The default is 0.0."
+    },
+    "14": {
+      "column": "15",
+      "data_type": "L",
+      "description": "Billing Reference",
+      "details": "See Billing References."
+    },
+    "15": {
+      "column": "16",
+      "data_type": "F",
+      "description": "Allocated kW, Phase A",
+      "details": "See Allocated kW."
+    },
+    "16": {
+      "column": "17",
+      "data_type": "F",
+      "description": "Allocated kW, Phase B",
+      "details": "See Allocated kW."
+    },
+    "17": {
+      "column": "18",
+      "data_type": "F",
+      "description": "Allocated kW, Phase C",
+      "details": "See Allocated kW."
+    },
+    "18": {
+      "column": "19",
+      "data_type": "F",
+      "description": "Allocated kvar, Phase A",
+      "details": ""
+    },
+    "19": {
+      "column": "20",
+      "data_type": "F",
+      "description": "Allocated kvar, Phase B",
+      "details": ""
+    },
+    "20": {
+      "column": "21",
+      "data_type": "F",
+      "description": "Allocated kvar, Phase C",
+      "details": ""
+    },
+    "21": {
+      "column": "22",
+      "data_type": "F",
+      "description": "Allocated Consumers, Ph A",
+      "details": "See Allocated Consumers."
+    },
+    "22": {
+      "column": "23",
+      "data_type": "F",
+      "description": "Allocated Consumers, Ph B",
+      "details": "See Allocated Consumers."
+    },
+    "23": {
+      "column": "24",
+      "data_type": "F",
+      "description": "Allocated Consumers, Ph C",
+      "details": "See Allocated Consumers."
+    },
+    "24": {
+      "column": "25",
+      "data_type": "SI",
+      "description": "Node Is Mandatory",
+      "details": "See Mandatory Node."
+    },
+    "25": {
+      "column": "26",
+      "data_type": "SI",
+      "description": "Circuit Level",
+      "details": "See Circuit Level."
+    },
+    "26": {
+      "column": "27",
+      "data_type": "SI",
+      "description": "Load Interruptible Type",
+      "details": "See Load Interruptible Type."
+    },
+    "27": {
+      "column": "28",
+      "data_type": "A",
+      "description": "A Phase Parent",
+      "details": "The name of the A phase parent of a multi-parent node."
+    },
+    "28": {
+      "column": "29",
+      "data_type": "A",
+      "description": "B Phase Parent",
+      "details": "The name of the B phase parent of a multi-parent node."
+    },
+    "29": {
+      "column": "30",
+      "data_type": "A",
+      "description": "C Phase Parent",
+      "details": "The name of the C phase parent of a multi-parent node."
+    },
+    "30": {
+      "column": "31",
+      "data_type": "SI",
+      "description": "IsMultiParent",
+      "details": "0=False, 1=True"
+    },
+    "31": {
+      "column": "32",
+      "data_type": "SI",
+      "description": "Consumer Type",
+      "details": "See Consumer Type."
+    },
+    "32": {
+      "column": "33",
+      "data_type": "L",
+      "description": "Feeder Color",
+      "details": "0x00rrggbb"
+    },
+    "33": {
+      "column": "34",
+      "data_type": "G",
+      "description": "A Phase Parent GUID",
+      "details": "See Parent Element GUID."
+    },
+    "34": {
+      "column": "35",
+      "data_type": "G",
+      "description": "B Phase Parent GUID",
+      "details": "See Parent Element GUID."
+    },
+    "35": {
+      "column": "36",
+      "data_type": "G",
+      "description": "C Phase Parent GUID",
+      "details": "See Parent Element GUID."
+    }
+  },
+  "sources": {
+    "0": {
+      "column": "1",
+      "data_type": "A",
+      "description": "Element Name*",
+      "three_phase": "",
+      "details": "Unique, alphanumeric identifier <= 25 char."
+    },
+    "1": {
+      "column": "2",
+      "data_type": "SI",
+      "description": "Element Type*",
+      "three_phase": "",
+      "details": "See Element Type Code."
+    },
+    "2": {
+      "column": "3",
+      "data_type": "A",
+      "description": "Phase Configuration*",
+      "three_phase": "",
+      "details": "See Element Phase Configuration."
+    },
+    "3": {
+      "column": "4",
+      "data_type": "A",
+      "description": "Parent Element Name",
+      "three_phase": "",
+      "details": "See Parent Element Identifier."
+    },
+    "4": {
+      "column": "5",
+      "data_type": "A",
+      "description": "Map Number",
+      "three_phase": "",
+      "details": "User-definable, alphanumeric field < 32 char."
+    },
+    "5": {
+      "column": "6",
+      "data_type": "D",
+      "description": "X Coordinate",
+      "three_phase": "",
+      "details": "See X and Y Coordinates."
+    },
+    "6": {
+      "column": "7",
+      "data_type": "D",
+      "description": "Y Coordinate",
+      "three_phase": "",
+      "details": "See X and Y Coordinates."
+    },
+    "7": {
+      "column": "8",
+      "data_type": "A",
+      "description": "User Tag",
+      "three_phase": "",
+      "details": "See User Tag."
+    },
+    "8": {
+      "column": "9",
+      "data_type": "A",
+      "description": "Zsm Impedance Desc Minimum",
+      "details": "See Conductor Description."
+    },
+    "9": {
+      "column": "10",
+      "data_type": "AI",
+      "description": "Zsm Impedance Desc Maximum",
+      "details": "See Conductor Description."
+    },
+    "10": {
+      "column": "11",
+      "data_type": "SI",
+      "description": "Substation Number",
+      "details": "See Substation Number."
+    },
+    "11": {
+      "column": "12",
+      "data_type": "F",
+      "description": "Bus Voltage",
+      "details": "See Bus Volts."
+    },
+    "12": {
+      "column": "13",
+      "data_type": "F",
+      "description": "OH Ground Ohms for Min Fault",
+      "details": "See Ground Ohms."
+    },
+    "13": {
+      "column": "14",
+      "data_type": "F",
+      "description": "UG Ground Ohms for Min Fault",
+      "details": "See Ground Ohms."
+    },
+    "14": {
+      "column": "15",
+      "data_type": "F",
+      "description": "Nominal Voltage",
+      "details": "See Rated Nominal Voltage."
+    },
+    "15": {
+      "column": "16",
+      "data_type": "SI",
+      "description": "Load Allocation Control Point",
+      "details": "0 = Node or Overcurrent Device, 1 = Source (Default)"
+    },
+    "16": {
+      "column": "17",
+      "data_type": "A",
+      "description": "Wye or Delta Connection Code",
+      "details": "See Load Connection."
+    },
+    "17": {
+      "column": "18",
+      "data_type": "A",
+      "description": "Regulation Code",
+      "details": "See Source Regulation Code."
+    },
+    "18": {
+      "column": "19",
+      "data_type": "F",
+      "description": "Failure Rate",
+      "details": ""
+    },
+    "19": {
+      "column": "20",
+      "data_type": "F",
+      "description": "Repair Time",
+      "details": ""
+    },
+    "20": {
+      "column": "21",
+      "data_type": "F",
+      "description": "Close Time",
+      "details": ""
+    },
+    "21": {
+      "column": "22",
+      "data_type": "F",
+      "description": "Open Time",
+      "details": ""
+    },
+    "22": {
+      "column": "23",
+      "data_type": "L",
+      "description": "Feeder Color 0x00RRGGBB",
+      "details": ""
+    }
+  },
+  "devices": {
+    "0": {
+      "column": "1",
+      "data_type": "A",
+      "description": "Element Name*",
+      "three_phase": "",
+      "details": "Unique, alphanumeric identifier <= 25 char."
+    },
+    "1": {
+      "column": "2",
+      "data_type": "SI",
+      "description": "Element Type*",
+      "three_phase": "",
+      "details": "See Element Type Code."
+    },
+    "2": {
+      "column": "3",
+      "data_type": "A",
+      "description": "Phase Configuration*",
+      "three_phase": "",
+      "details": "See Element Phase Configuration."
+    },
+    "3": {
+      "column": "4",
+      "data_type": "A",
+      "description": "Parent Element Name",
+      "three_phase": "",
+      "details": "See Parent Element Identifier."
+    },
+    "4": {
+      "column": "5",
+      "data_type": "A",
+      "description": "Map Number",
+      "three_phase": "",
+      "details": "User-definable, alphanumeric field < 32 char."
+    },
+    "5": {
+      "column": "6",
+      "data_type": "D",
+      "description": "X Coordinate",
+      "three_phase": "",
+      "details": "See X and Y Coordinates."
+    },
+    "6": {
+      "column": "7",
+      "data_type": "D",
+      "description": "Y Coordinate",
+      "three_phase": "",
+      "details": "See X and Y Coordinates."
+    },
+    "7": {
+      "column": "8",
+      "data_type": "A",
+      "description": "User Tag",
+      "three_phase": "",
+      "details": "See User Tag."
+    },
+    "8": {
+      "column": "9",
+      "data_type": "A",
+      "description": "Description, Ph A",
+      "three_phase": "X",
+      "details": "See Overcurrent Device Description."
+    },
+    "9": {
+      "column": "10",
+      "data_type": "A",
+      "description": "Description, Ph B",
+      "three_phase": "X",
+      "details": "See Overcurrent Device Description. "
+    },
+    "10": {
+      "column": "11",
+      "data_type": "A",
+      "description": "Description, Ph C",
+      "three_phase": "X",
+      "details": "See Overcurrent Device Description."
+    },
+    "11": {
+      "column": "12",
+      "data_type": "SI",
+      "description": "Is Closed, Phase A",
+      "three_phase": "",
+      "details": "See Overcurrent Device Connectivity."
+    },
+    "12": {
+      "column": "13",
+      "data_type": "SI",
+      "description": "Is Closed, Phase B",
+      "three_phase": "",
+      "details": "See Overcurrent Device Connectivity."
+    },
+    "13": {
+      "column": "14",
+      "data_type": "SI",
+      "description": "Is Closed, Phase C",
+      "three_phase": "",
+      "details": "See Overcurrent Device Connectivity."
+    },
+    "14": {
+      "column": "15",
+      "data_type": "SI",
+      "description": "Close All Phases Same as First Existing Phase",
+      "three_phase": "",
+      "details": "See Overcurrent Device Connectivity."
+    },
+    "15": {
+      "column": "16",
+      "data_type": "SI",
+      "description": "Load Allocation Control Point",
+      "three_phase": "",
+      "details": "See Load Allocation Control Point."
+    },
+    "16": {
+      "column": "17",
+      "data_type": "SI",
+      "description": "Is Feeder Bay",
+      "three_phase": "",
+      "details": "No=0, Yes=1"
+    },
+    "17": {
+      "column": "18",
+      "data_type": "L",
+      "description": "Feeder Number",
+      "three_phase": "",
+      "details": ""
+    },
+    "18": {
+      "column": "19",
+      "data_type": "L",
+      "description": "Feeder Color",
+      "three_phase": "",
+      "details": "0x00BBGGRR"
+    },
+    "19": {
+      "column": "20",
+      "data_type": "A",
+      "description": "Feeder Name",
+      "three_phase": "",
+      "details": ""
+    },
+    "20": {
+      "column": "21",
+      "data_type": "F",
+      "description": "Failure Rate",
+      "three_phase": "",
+      "details": ""
+    },
+    "21": {
+      "column": "22",
+      "data_type": "F",
+      "description": "Repair Time",
+      "three_phase": "",
+      "details": ""
+    },
+    "22": {
+      "column": "23",
+      "data_type": "F",
+      "description": "Bypass Time",
+      "three_phase": "",
+      "details": ""
+    },
+    "23": {
+      "column": "24",
+      "data_type": "F",
+      "description": "Close Time",
+      "three_phase": "",
+      "details": ""
+    },
+    "24": {
+      "column": "25",
+      "data_type": "F",
+      "description": "Open Time",
+      "three_phase": "",
+      "details": ""
+    },
+    "25": {
+      "column": "26",
+      "data_type": "F",
+      "description": "Coordination Failure Rate Failures/Yr",
+      "three_phase": "",
+      "details": ""
+    },
+    "26": {
+      "column": "27",
+      "data_type": "SI",
+      "description": "Fuse Coordination Method",
+      "three_phase": "",
+      "details": "See Fuse Coordination Method."
+    },
+    "27": {
+      "column": "63",
+      "data_type": "A",
+      "description": "Upline Feeder GUID (8.6.5)",
+      "three_phase": "",
+      "details": ""
+    },
+    "28": {
+      "column": "64",
+      "data_type": "A",
+      "description": "Upline Feeder Name (Alias) (8.6.5)",
+      "three_phase": "",
+      "details": ""
+    }
+  },
+  "motors": {
+    "0": {
+      "column": "1",
+      "data_type": "A",
+      "description": "Element Name*",
+      "three_phase": "",
+      "details": "Unique, alphanumeric identifier <= 25 char."
+    },
+    "1": {
+      "column": "2",
+      "data_type": "SI",
+      "description": "Element Type*",
+      "three_phase": "",
+      "details": "See Element Type Code."
+    },
+    "2": {
+      "column": "3",
+      "data_type": "A",
+      "description": "Phase Configuration*",
+      "three_phase": "",
+      "details": "See Element Phase Configuration."
+    },
+    "3": {
+      "column": "4",
+      "data_type": "A",
+      "description": "Parent Element Name",
+      "three_phase": "",
+      "details": "See Parent Element Identifier."
+    },
+    "4": {
+      "column": "5",
+      "data_type": "A",
+      "description": "Map Number",
+      "three_phase": "",
+      "details": "User-definable, alphanumeric field < 32 char."
+    },
+    "5": {
+      "column": "6",
+      "data_type": "D",
+      "description": "X Coordinate",
+      "three_phase": "",
+      "details": "See X and Y Coordinates."
+    },
+    "6": {
+      "column": "7",
+      "data_type": "D",
+      "description": "Y Coordinate",
+      "three_phase": "",
+      "details": "See X and Y Coordinates."
+    },
+    "7": {
+      "column": "8",
+      "data_type": "A",
+      "description": "User Tag",
+      "three_phase": "",
+      "details": "See User Tag."
+    },
+    "8": {
+      "column": "9",
+      "data_type": "A",
+      "description": "Steady State Cond. Description",
+      "details": "See the Conductor Description section."
+    },
+    "9": {
+      "column": "10",
+      "data_type": "A",
+      "description": "Transient Cond. Description",
+      "details": "See the Conductor Description section."
+    },
+    "10": {
+      "column": "11",
+      "data_type": "A",
+      "description": "Sub Transident Cond. Desc.",
+      "details": "See the Conductor Description section."
+    },
+    "11": {
+      "column": "12",
+      "data_type": "F",
+      "description": "Rated Voltage",
+      "details": "In kV."
+    },
+    "12": {
+      "column": "13",
+      "data_type": "A",
+      "description": "Load Mix Description",
+      "details": "See the Load Mix Description section."
+    },
+    "13": {
+      "column": "14",
+      "data_type": "A",
+      "description": "Load Zone Description",
+      "details": "See the Load Zone Description section."
+    },
+    "14": {
+      "column": "15",
+      "data_type": "A",
+      "description": "Load Location",
+      "details": "See the Load Location section."
+    },
+    "15": {
+      "column": "16",
+      "data_type": "F",
+      "description": "Load Growth",
+      "details": "The default is 0.0."
+    },
+    "16": {
+      "column": "17",
+      "data_type": "F",
+      "description": "Allocated kW, Phase A",
+      "details": "See the Allocated kW section."
+    },
+    "17": {
+      "column": "18",
+      "data_type": "F",
+      "description": "Allocated kW, Phase B",
+      "details": "See the Allocated kW section."
+    },
+    "18": {
+      "column": "19",
+      "data_type": "F",
+      "description": "Allocated kW, Phase C",
+      "details": "See the Allocated kW section."
+    },
+    "19": {
+      "column": "20",
+      "data_type": "F",
+      "description": "Allocated kvar, Phase A",
+      "details": ""
+    },
+    "20": {
+      "column": "21",
+      "data_type": "F",
+      "description": "Allocated kvar, Phase B",
+      "details": ""
+    },
+    "21": {
+      "column": "22",
+      "data_type": "F",
+      "description": "Allocated kvar, Phase C",
+      "details": ""
+    },
+    "22": {
+      "column": "23",
+      "data_type": "F",
+      "description": "Allocated Consumers, Phase A",
+      "details": "See the Allocated Consumers section."
+    },
+    "23": {
+      "column": "24",
+      "data_type": "F",
+      "description": "Allocated Consumers, Phase B",
+      "details": "See the Allocated Consumers section."
+    },
+    "24": {
+      "column": "25",
+      "data_type": "F",
+      "description": "Allocated Consumers, Phase C",
+      "details": "See the Allocated Consumers section."
+    },
+    "25": {
+      "column": "26",
+      "data_type": "SI",
+      "description": "Model",
+      "details": "Deprecated"
+    },
+    "26": {
+      "column": "27",
+      "data_type": "SI",
+      "description": "Motor Status",
+      "details": "See Motor Status."
+    },
+    "27": {
+      "column": "28",
+      "data_type": "F",
+      "description": "Horse Power",
+      "details": ""
+    },
+    "28": {
+      "column": "29",
+      "data_type": "F",
+      "description": "Running Power Factor",
+      "details": "In PU, Default=0"
+    },
+    "29": {
+      "column": "30",
+      "data_type": "F",
+      "description": "% Efficiency",
+      "details": "In PU, Default=0"
+    },
+    "30": {
+      "column": "31",
+      "data_type": "F",
+      "description": "Rated LG kV",
+      "details": "Default=0"
+    },
+    "31": {
+      "column": "32",
+      "data_type": "F",
+      "description": "Drop Out Limit",
+      "details": ""
+    },
+    "32": {
+      "column": "33",
+      "data_type": "SI",
+      "description": "NEMA Type",
+      "details": "See NEMA Type."
+    },
+    "33": {
+      "column": "34",
+      "data_type": "F",
+      "description": "Motor Start Limit",
+      "details": ""
+    },
+    "34": {
+      "column": "35",
+      "data_type": "SI",
+      "description": "Motor Start Limited By",
+      "details": "Deprecated"
+    },
+    "35": {
+      "column": "36",
+      "data_type": "SI",
+      "description": "Soft Start Type",
+      "details": "See Soft Start Type."
+    },
+    "36": {
+      "column": "37",
+      "data_type": "F",
+      "description": "Soft Start Impedance",
+      "details": "Real"
+    },
+    "37": {
+      "column": "38",
+      "data_type": "F",
+      "description": "Soft Start Impedance",
+      "details": "Imag"
+    },
+    "38": {
+      "column": "39",
+      "data_type": "F",
+      "description": "Soft Start Tap",
+      "details": ""
+    },
+    "39": {
+      "column": "40",
+      "data_type": "F",
+      "description": "Soft Start Winding",
+      "details": "Deprecated"
+    },
+    "40": {
+      "column": "41",
+      "data_type": "F",
+      "description": "Locked Rotor Power",
+      "details": ""
+    },
+    "41": {
+      "column": "42",
+      "data_type": "F",
+      "description": "Locked Rotor Multiplier",
+      "details": ""
+    },
+    "42": {
+      "column": "43",
+      "data_type": "F",
+      "description": "Failure Rate",
+      "details": "Failures/Y"
+    },
+    "43": {
+      "column": "44",
+      "data_type": "F",
+      "description": "Repair Time",
+      "details": ""
+    },
+    "44": {
+      "column": "45",
+      "data_type": "SI",
+      "description": "Using advanced model",
+      "details": ""
+    },
+    "45": {
+      "column": "46",
+      "data_type": "A",
+      "description": "Advanced conductor equipment",
+      "details": ""
+    },
+    "46": {
+      "column": "47",
+      "data_type": "F",
+      "description": "Advanced input power",
+      "details": "In kW"
+    },
+    "47": {
+      "column": "48",
+      "data_type": "F",
+      "description": "Percent Utilization",
+      "details": "In Percent"
+    }
+  },
+  "generators": {
+    "0": {
+      "column": "1",
+      "data_type": "A",
+      "description": "Element Name*",
+      "three_phase": "",
+      "details": "Unique, alphanumeric identifier <= 25 char."
+    },
+    "1": {
+      "column": "2",
+      "data_type": "SI",
+      "description": "Element Type*",
+      "three_phase": "",
+      "details": "See Element Type Code."
+    },
+    "2": {
+      "column": "3",
+      "data_type": "A",
+      "description": "Phase Configuration*",
+      "three_phase": "",
+      "details": "See Element Phase Configuration."
+    },
+    "3": {
+      "column": "4",
+      "data_type": "A",
+      "description": "Parent Element Name",
+      "three_phase": "",
+      "details": "See Parent Element Identifier."
+    },
+    "4": {
+      "column": "5",
+      "data_type": "A",
+      "description": "Map Number",
+      "three_phase": "",
+      "details": "User-definable, alphanumeric field < 32 char."
+    },
+    "5": {
+      "column": "6",
+      "data_type": "D",
+      "description": "X Coordinate",
+      "three_phase": "",
+      "details": "See X and Y Coordinates."
+    },
+    "6": {
+      "column": "7",
+      "data_type": "D",
+      "description": "Y Coordinate",
+      "three_phase": "",
+      "details": "See X and Y Coordinates."
+    },
+    "7": {
+      "column": "8",
+      "data_type": "A",
+      "description": "User Tag",
+      "three_phase": "",
+      "details": "See User Tag."
+    },
+    "8": {
+      "column": "9",
+      "data_type": "A",
+      "description": "Steady State Cond. Description",
+      "details": "See the Conductor Description section."
+    },
+    "9": {
+      "column": "10",
+      "data_type": "A",
+      "description": "Transient Cond. Description",
+      "details": "See the Conductor Description section."
+    },
+    "10": {
+      "column": "11",
+      "data_type": "A",
+      "description": "Sub Transident Cond. Desc.",
+      "details": "See the Conductor Description section."
+    },
+    "11": {
+      "column": "12",
+      "data_type": "F",
+      "description": "Rated Voltage",
+      "details": "In kV."
+    },
+    "12": {
+      "column": "13",
+      "data_type": "A",
+      "description": "Load Mix Description",
+      "details": "See the Load Mix Description section."
+    },
+    "13": {
+      "column": "14",
+      "data_type": "A",
+      "description": "Load Zone Description",
+      "details": "See the Load Zone Description section."
+    },
+    "14": {
+      "column": "15",
+      "data_type": "A",
+      "description": "Load Location",
+      "details": "See the Load Location section."
+    },
+    "15": {
+      "column": "16",
+      "data_type": "F",
+      "description": "Load Growth",
+      "details": "The default is 0.0."
+    },
+    "16": {
+      "column": "17",
+      "data_type": "F",
+      "description": "Allocated kW, Phase A",
+      "details": "See the Allocated kW section."
+    },
+    "17": {
+      "column": "18",
+      "data_type": "F",
+      "description": "Allocated kW, Phase B",
+      "details": "See the Allocated kW section."
+    },
+    "18": {
+      "column": "19",
+      "data_type": "F",
+      "description": "Allocated kW, Phase C",
+      "details": "See the Allocated kW section."
+    },
+    "19": {
+      "column": "20",
+      "data_type": "F",
+      "description": "Allocated kvar, Phase A",
+      "details": ""
+    },
+    "20": {
+      "column": "21",
+      "data_type": "F",
+      "description": "Allocated kvar, Phase B",
+      "details": ""
+    },
+    "21": {
+      "column": "22",
+      "data_type": "F",
+      "description": "Allocated kvar, Phase C",
+      "details": ""
+    },
+    "22": {
+      "column": "23",
+      "data_type": "F",
+      "description": "Allocated Consumers, Phase A",
+      "details": "See the Allocated Consumers section."
+    },
+    "23": {
+      "column": "24",
+      "data_type": "F",
+      "description": "Allocated Consumers, Phase B",
+      "details": "See the Allocated Consumers section."
+    },
+    "24": {
+      "column": "25",
+      "data_type": "F",
+      "description": "Allocated Consumers, Phase C",
+      "details": "See the Allocated Consumers section."
+    },
+    "25": {
+      "column": "26",
+      "data_type": "SI",
+      "description": "Model",
+      "details": "See Generator Model."
+    },
+    "26": {
+      "column": "27",
+      "data_type": "F",
+      "description": "Voltage to Hold",
+      "details": "Real"
+    },
+    "27": {
+      "column": "28",
+      "data_type": "F",
+      "description": "Voltage to Hold",
+      "details": "Imag"
+    },
+    "28": {
+      "column": "29",
+      "data_type": "A",
+      "description": "Section to Hold Voltage At",
+      "details": "Deprecated"
+    },
+    "29": {
+      "column": "30",
+      "data_type": "F",
+      "description": "kW Out",
+      "details": ""
+    },
+    "30": {
+      "column": "31",
+      "data_type": "F",
+      "description": "Maximum kW Out",
+      "details": ""
+    },
+    "31": {
+      "column": "32",
+      "data_type": "F",
+      "description": "Maximum kvar Lead Output",
+      "details": ""
+    },
+    "32": {
+      "column": "33",
+      "data_type": "F",
+      "description": "Maximum kvar Lagg Output",
+      "details": ""
+    },
+    "33": {
+      "column": "34",
+      "data_type": "F",
+      "description": "Rated Voltage for Gen. as Source",
+      "details": "Deprecated"
+    },
+    "34": {
+      "column": "35",
+      "data_type": "SI",
+      "description": "Wye or Delta Connection",
+      "details": "See Generator Connection."
+    },
+    "35": {
+      "column": "36",
+      "data_type": "F",
+      "description": "Failure Rate",
+      "details": ""
+    },
+    "36": {
+      "column": "37",
+      "data_type": "F",
+      "description": "Repair Time",
+      "details": ""
+    },
+    "37": {
+      "column": "41",
+      "data_type": "A",
+      "description": "Control Element",
+      "details": "A section name."
+    },
+    "38": {
+      "column": "49",
+      "data_type": "G",
+      "description": "Control Element GUID",
+      "details": ""
+    }
+  },
+  "consumers": {
+    "0": {
+      "column": "1",
+      "data_type": "A",
+      "description": "Element Name*",
+      "three_phase": "",
+      "details": "Unique, alphanumeric identifier <= 25 char."
+    },
+    "1": {
+      "column": "2",
+      "data_type": "SI",
+      "description": "Element Type*",
+      "three_phase": "",
+      "details": "See Element Type Code."
+    },
+    "2": {
+      "column": "3",
+      "data_type": "A",
+      "description": "Phase Configuration*",
+      "three_phase": "",
+      "details": "See Element Phase Configuration."
+    },
+    "3": {
+      "column": "4",
+      "data_type": "A",
+      "description": "Parent Element Name",
+      "three_phase": "",
+      "details": "See Parent Element Identifier."
+    },
+    "4": {
+      "column": "5",
+      "data_type": "A",
+      "description": "Map Number",
+      "three_phase": "",
+      "details": "User-definable, alphanumeric field < 32 char."
+    },
+    "5": {
+      "column": "6",
+      "data_type": "D",
+      "description": "X Coordinate",
+      "three_phase": "",
+      "details": "See X and Y Coordinates."
+    },
+    "6": {
+      "column": "7",
+      "data_type": "D",
+      "description": "Y Coordinate",
+      "three_phase": "",
+      "details": "See X and Y Coordinates."
+    },
+    "7": {
+      "column": "8",
+      "data_type": "A",
+      "description": "User Tag",
+      "three_phase": "",
+      "details": "See User Tag."
+    },
+    "8": {
+      "column": "9",
+      "data_type": "A",
+      "description": "Load Mix Description",
+      "details": ""
+    },
+    "9": {
+      "column": "10",
+      "data_type": "A",
+      "description": "Load Zone Description",
+      "details": ""
+    },
+    "10": {
+      "column": "11",
+      "data_type": "F",
+      "description": "Load Growth",
+      "details": ""
+    },
+    "11": {
+      "column": "12",
+      "data_type": "L",
+      "description": "Billing Code",
+      "details": ""
+    },
+    "12": {
+      "column": "13",
+      "data_type": "F",
+      "description": "Allocated kW (Ph A)",
+      "details": ""
+    },
+    "13": {
+      "column": "14",
+      "data_type": "F",
+      "description": "Allocated kW (Ph B)",
+      "details": ""
+    },
+    "14": {
+      "column": "15",
+      "data_type": "F",
+      "description": "Allocated kW (Ph C)",
+      "details": ""
+    },
+    "15": {
+      "column": "16",
+      "data_type": "F",
+      "description": "Allocated kvar (Ph A)",
+      "details": ""
+    },
+    "16": {
+      "column": "17",
+      "data_type": "F",
+      "description": "Allocated kvar (Ph B)",
+      "details": ""
+    },
+    "17": {
+      "column": "18",
+      "data_type": "F",
+      "description": "Allocated kvar (Ph C)",
+      "details": ""
+    },
+    "18": {
+      "column": "19",
+      "data_type": "F",
+      "description": "Allocated Consumers (Ph A)",
+      "details": ""
+    },
+    "19": {
+      "column": "20",
+      "data_type": "F",
+      "description": "Allocated Consumers (Ph B)",
+      "details": ""
+    },
+    "20": {
+      "column": "21",
+      "data_type": "F",
+      "description": "Allocated Consumers (Ph C)",
+      "details": ""
+    },
+    "21": {
+      "column": "22",
+      "data_type": "SI",
+      "description": "Load Interruptible Type",
+      "details": ""
+    },
+    "22": {
+      "column": "23",
+      "data_type": "SI",
+      "description": "Is Consumer Active 0=Inactive, 1=Active",
+      "details": ""
+    },
+    "23": {
+      "column": "24",
+      "data_type": "SI",
+      "description": "Consumer Type",
+      "details": "See Consumer Type."
+    },
+    "24": {
+      "column": "25",
+      "data_type": "A",
+      "description": "Meter Number",
+      "details": ""
+    },
+    "25": {
+      "column": "26",
+      "data_type": "F",
+      "description": "Generated kW (Ph A)",
+      "details": ""
+    },
+    "26": {
+      "column": "27",
+      "data_type": "F",
+      "description": "Generated kW (Ph B)",
+      "details": ""
+    },
+    "27": {
+      "column": "28",
+      "data_type": "F",
+      "description": "Generated kW (Ph C)",
+      "details": ""
+    },
+    "28": {
+      "column": "29",
+      "data_type": "F",
+      "description": "Generated kvar (Ph A)",
+      "details": ""
+    },
+    "29": {
+      "column": "30",
+      "data_type": "F",
+      "description": "Generated kvar (Ph B)",
+      "details": ""
+    },
+    "30": {
+      "column": "31",
+      "data_type": "F",
+      "description": "Generated kvar (Ph C)",
+      "details": ""
+    },
+    "31": {
+      "column": "32",
+      "data_type": "SI",
+      "description": "Use Consumer Generation 0=No, 1=Yes",
+      "details": ""
+    },
+    "32": {
+      "column": "33",
+      "data_type": "F",
+      "description": "Generated Output Percent",
+      "details": ""
+    },
+    "33": {
+      "column": "34",
+      "data_type": "A",
+      "description": "CIS Link",
+      "details": ""
+    }
+  },
+  "solar_pv": {
+    "0": {
+      "column": "1",
+      "data_type": "A",
+      "description": "Element Name*",
+      "three_phase": "",
+      "details": "Unique, alphanumeric identifier <= 25 char."
+    },
+    "1": {
+      "column": "2",
+      "data_type": "SI",
+      "description": "Element Type*",
+      "three_phase": "",
+      "details": "See Element Type Code."
+    },
+    "2": {
+      "column": "3",
+      "data_type": "A",
+      "description": "Phase Configuration*",
+      "three_phase": "",
+      "details": "See Element Phase Configuration."
+    },
+    "3": {
+      "column": "4",
+      "data_type": "A",
+      "description": "Parent Element Name",
+      "three_phase": "",
+      "details": "See Parent Element Identifier."
+    },
+    "4": {
+      "column": "5",
+      "data_type": "A",
+      "description": "Map Number",
+      "three_phase": "",
+      "details": "User-definable, alphanumeric field < 32 char."
+    },
+    "5": {
+      "column": "6",
+      "data_type": "D",
+      "description": "X Coordinate",
+      "three_phase": "",
+      "details": "See X and Y Coordinates."
+    },
+    "6": {
+      "column": "7",
+      "data_type": "D",
+      "description": "Y Coordinate",
+      "three_phase": "",
+      "details": "See X and Y Coordinates."
+    },
+    "7": {
+      "column": "8",
+      "data_type": "A",
+      "description": "User Tag",
+      "three_phase": "",
+      "details": "See User Tag."
+    },
+    "8": {
+      "column": "9",
+      "data_type": "A",
+      "description": "Array Manufacturer",
+      "details": ""
+    },
+    "9": {
+      "column": "10",
+      "data_type": "A",
+      "description": "Array Model",
+      "details": ""
+    },
+    "10": {
+      "column": "11",
+      "data_type": "A",
+      "description": "Panel Manufacturer",
+      "details": ""
+    },
+    "11": {
+      "column": "12",
+      "data_type": "A",
+      "description": "Panel Model",
+      "details": ""
+    },
+    "12": {
+      "column": "13",
+      "data_type": "F",
+      "description": "Panel Rated Watts",
+      "details": ""
+    },
+    "13": {
+      "column": "14",
+      "data_type": "F",
+      "description": "Panel Max Power-Point Voltage",
+      "details": ""
+    },
+    "14": {
+      "column": "15",
+      "data_type": "F",
+      "description": "Panel Max Power-Point Current",
+      "details": ""
+    },
+    "15": {
+      "column": "16",
+      "data_type": "F",
+      "description": "Total Array DC Loss",
+      "details": ""
+    },
+    "16": {
+      "column": "17",
+      "data_type": "SI",
+      "description": "Array Tilt Type",
+      "details": "See table below for acceptable tilt types."
+    },
+    "17": {
+      "column": "18",
+      "data_type": "F",
+      "description": "Array Tilt Degrees",
+      "details": "Tilt generally matches latitude for maximum sunlight."
+    },
+    "18": {
+      "column": "19",
+      "data_type": "F",
+      "description": "Azimuth Degrees",
+      "details": "Azimuth measures tilt along the east-west axis."
+    },
+    "19": {
+      "column": "20",
+      "data_type": "SI",
+      "description": "Array Tilt Is Always Equal to Latitude",
+      "details": "If true, tilt degrees field ignored and array element latitude is used."
+    },
+    "20": {
+      "column": "21",
+      "data_type": "SI",
+      "description": "Array number of panels per string",
+      "details": ""
+    },
+    "21": {
+      "column": "22",
+      "data_type": "SI",
+      "description": "Array number of strings",
+      "details": ""
+    },
+    "22": {
+      "column": "23",
+      "data_type": "A",
+      "description": "Inverter Manufacturer",
+      "details": ""
+    },
+    "23": {
+      "column": "24",
+      "data_type": "A",
+      "description": "Inverter Model",
+      "details": ""
+    },
+    "24": {
+      "column": "25",
+      "data_type": "SI",
+      "description": "Inverter Operating Mode",
+      "details": "See table below for valid mode values."
+    },
+    "25": {
+      "column": "26",
+      "data_type": "F",
+      "description": "Inverter Hold Voltage",
+      "details": ""
+    },
+    "26": {
+      "column": "27",
+      "data_type": "A",
+      "description": "Control Element",
+      "details": "Name of an element (default is for inverter to control itself)"
+    },
+    "27": {
+      "column": "28",
+      "data_type": "F",
+      "description": "Min Lag Power Factor",
+      "details": ""
+    },
+    "28": {
+      "column": "29",
+      "data_type": "F",
+      "description": "Min Lead Power Factor",
+      "details": ""
+    },
+    "29": {
+      "column": "30",
+      "data_type": "SI",
+      "description": "Allow Exceeding Max kVAR Limit",
+      "details": "If true, prioritize meeting hold voltage over limiting kVAR."
+    },
+    "30": {
+      "column": "31",
+      "data_type": "SI",
+      "description": "Inverter is Single-Phase",
+      "details": "If true, inverter is single-phase. Otherwise, it is three-phase."
+    },
+    "31": {
+      "column": "32",
+      "data_type": "F",
+      "description": "Inverter Rated kVA",
+      "details": ""
+    },
+    "32": {
+      "column": "33",
+      "data_type": "F",
+      "description": "Inverter Rated AC Voltage",
+      "details": ""
+    },
+    "33": {
+      "column": "34",
+      "data_type": "F",
+      "description": "Inverter Full-load AC Current",
+      "details": ""
+    },
+    "34": {
+      "column": "35",
+      "data_type": "F",
+      "description": "Inverter Rated DC Watts",
+      "details": ""
+    },
+    "35": {
+      "column": "36",
+      "data_type": "F",
+      "description": "Inverter Rated DC Voltage",
+      "details": ""
+    },
+    "36": {
+      "column": "37",
+      "data_type": "F",
+      "description": "Inverter Full-load DC Current",
+      "details": ""
+    },
+    "37": {
+      "column": "38",
+      "data_type": "F",
+      "description": "AC-DC Conversion Efficiency",
+      "details": ""
+    },
+    "38": {
+      "column": "39",
+      "data_type": "F",
+      "description": "Inverter Power Factor",
+      "details": ""
+    },
+    "39": {
+      "column": "40",
+      "data_type": "F",
+      "description": "Fault X/R Ratio",
+      "details": ""
+    },
+    "40": {
+      "column": "41",
+      "data_type": "F",
+      "description": "Fault Multiplier",
+      "details": ""
+    },
+    "41": {
+      "column": "42",
+      "data_type": "F",
+      "description": "Output kW",
+      "details": "The total real power output by the generator. Used only if power is not calculated from array data."
+    },
+    "42": {
+      "column": "43",
+      "data_type": "F",
+      "description": "Output kVAR",
+      "details": "The total reactive power output by the generator. Used only if not calculated from array and inverter data."
+    },
+    "43": {
+      "column": "44",
+      "data_type": "SI",
+      "description": "Output kW is Calculated",
+      "details": "If true, output power is determined by array data."
+    },
+    "44": {
+      "column": "45",
+      "data_type": "SI",
+      "description": "Output kVAR is Calculated",
+      "details": "If true, output reactive power is determined by array and inverter data."
+    },
+    "45": {
+      "column": "46",
+      "data_type": "SI",
+      "description": "Generator is On",
+      "details": "If true, the solar generator is active."
+    },
+    "46": {
+      "column": "47",
+      "data_type": "SI",
+      "description": "Connection Type",
+      "details": "Set to 0 if wye-connected or 1 if delta-connected."
+    },
+    "47": {
+      "column": "49",
+      "data_type": "G",
+      "description": "Control Element GUID",
+      "details": "Used if 'Import by GUID' option is selected"
+    }
+  }
+}

@@ -1,0 +1,1430 @@
+{
+  "data_types": {
+    "0": {
+      "symbol": "A",
+      "type": "Alphanumeric String",
+      "description": "Any combination of characters and digits."
+    },
+    "1": {
+      "symbol": "G",
+      "type": "Globally Unique Identifier",
+      "description": "An ID in this format (12345678-1234-123456789123) that will contain numbers and letters."
+    },
+    "2": {
+      "symbol": "L",
+      "type": "Long Integer (4 bytes)",
+      "description": "An integer type that can hold numbers from -2,147,483,648 to 2,147,483,647."
+    },
+    "3": {
+      "symbol": "F",
+      "type": "Floating Point Real",
+      "description": "An integer type that can hold numbers from 3.4x10^-38 to 3.4x10^38."
+    },
+    "4": {
+      "symbol": "R",
+      "type": "Restricted String",
+      "description": "A string that can only be input as a few options. These options will be explained in the field's detail note(s)."
+    },
+    "5": {
+      "symbol": "SI",
+      "type": "Short Integer (2 bytes)",
+      "description": "An integer type that can hold numbers from -32,768 to 32,767."
+    }
+  },
+  "lcp_source": {
+    "1": {
+      "0": {
+        "Value": 0,
+        "Description": "None"
+      },
+      "1": {
+        "Value": 1,
+        "Description": "kW"
+      },
+      "2": {
+        "Value": 2,
+        "Description": "kvar"
+      },
+      "3": {
+        "Value": 3,
+        "Description": "kWH"
+      },
+      "4": {
+        "Value": 4,
+        "Description": "Cons"
+      },
+      "5": {
+        "Value": 5,
+        "Description": "Transformer kVA"
+      },
+      "6": {
+        "Value": 6,
+        "Description": "Horsepower"
+      },
+      "7": {
+        "Value": 7,
+        "Description": "REAkW"
+      },
+      "8": {
+        "Value": 8,
+        "Description": "Low key Length"
+      }
+    },
+    "2": {
+      "0": {
+        "Value": 0,
+        "Description": "REA"
+      },
+      "1": {
+        "Value": 1,
+        "Description": "kWH"
+      },
+      "2": {
+        "Value": 2,
+        "Description": "Transformer kVA"
+      },
+      "3": {
+        "Value": 3,
+        "Description": "Diversity"
+      },
+      "4": {
+        "Value": 4,
+        "Description": "Seasonal"
+      },
+      "5": {
+        "Value": 5,
+        "Description": "Horsepower"
+      },
+      "6": {
+        "Value": 6,
+        "Description": "Length"
+      }
+    }
+  },
+  "phase": {
+    "1": "A",
+    "2": "B",
+    "3": "C",
+    "4": "AB",
+    "5": "AC",
+    "6": "BC",
+    "7": "ABC"
+  },
+  "SEQ_format": {
+    "assembly_type": {
+      "0": {
+        "Value": 0,
+        "Description": "None"
+      },
+      "1": {
+        "Value": 1,
+        "Description": "Pole Top"
+      },
+      "2": {
+        "Value": 2,
+        "Description": "Guying"
+      },
+      "3": {
+        "Value": 3,
+        "Description": "Anchor"
+      },
+      "4": {
+        "Value": 4,
+        "Description": "Transformer"
+      },
+      "5": {
+        "Value": 5,
+        "Description": "Grounding"
+      },
+      "6": {
+        "Value": 6,
+        "Description": "Secondary"
+      },
+      "7": {
+        "Value": 7,
+        "Description": "Tying"
+      },
+      "8": {
+        "Value": 8,
+        "Description": "Misc"
+      },
+      "9": {
+        "Value": 9,
+        "Description": "Neutral"
+      },
+      "10": {
+        "Value": 10,
+        "Description": "Protection"
+      },
+      "11": {
+        "Value": 11,
+        "Description": "Metering"
+      },
+      "12": {
+        "Value": 12,
+        "Description": "Oil Circuit Recloser"
+      },
+      "13": {
+        "Value": 13,
+        "Description": "Sectionalizing"
+      },
+      "14": {
+        "Value": 14,
+        "Description": "Wood"
+      },
+      "15": {
+        "Value": 15,
+        "Description": "Voltage Altering Equipment"
+      },
+      "16": {
+        "Value": 16,
+        "Description": "Security Light"
+      },
+      "17": {
+        "Value": 17,
+        "Description": "Street Light"
+      },
+      "18": {
+        "Value": 18,
+        "Description": "Traffic Light"
+      }
+    },
+    "element_type": {
+      "0": {
+        "Value": 0,
+        "Description": "None"
+      },
+      "1": {
+        "Value": 1,
+        "Description": "Overhead"
+      },
+      "2": {
+        "Value": 2,
+        "Description": "Capacitor"
+      },
+      "3": {
+        "Value": 3,
+        "Description": "Underground"
+      },
+      "4": {
+        "Value": 4,
+        "Description": "Regulator"
+      },
+      "5": {
+        "Value": 5,
+        "Description": "Transformer"
+      },
+      "6": {
+        "Value": 6,
+        "Description": "Switch"
+      },
+      "7": {
+        "Value": 7,
+        "Description": "UNUSED"
+      },
+      "8": {
+        "Value": 8,
+        "Description": "Node"
+      },
+      "9": {
+        "Value": 9,
+        "Description": "Source"
+      },
+      "10": {
+        "Value": 10,
+        "Description": "Device"
+      },
+      "11": {
+        "Value": 11,
+        "Description": "Motor"
+      },
+      "12": {
+        "Value": 12,
+        "Description": "Generator"
+      },
+      "13": {
+        "Value": 13,
+        "Description": "Consumer"
+      }
+    },
+    "cabinet_type": {
+      "0": {
+        "Value": 0,
+        "Description": "Empty"
+      },
+      "1": {
+        "Value": 1,
+        "Description": "Bus"
+      },
+      "2": {
+        "Value": 2,
+        "Description": "Switch"
+      },
+      "3": {
+        "Value": 3,
+        "Description": "Overcurrent Device"
+      }
+    },
+    "conductor_type": {
+      "0": {
+        "Value": 1,
+        "Description": "Anaconda"
+      },
+      "1": {
+        "Value": 2,
+        "Description": "ACSR"
+      },
+      "2": {
+        "Value": 3,
+        "Description": "Alum"
+      },
+      "3": {
+        "Value": 4,
+        "Description": "AAC"
+      },
+      "4": {
+        "Value": 5,
+        "Description": "Copper"
+      },
+      "5": {
+        "Value": 6,
+        "Description": "CW"
+      },
+      "6": {
+        "Value": 7,
+        "Description": "CWC"
+      },
+      "7": {
+        "Value": 8,
+        "Description": "HdAlum"
+      },
+      "8": {
+        "Value": 9,
+        "Description": "HD Copper"
+      },
+      "9": {
+        "Value": 10,
+        "Description": "HHHC"
+      },
+      "10": {
+        "Value": 11,
+        "Description": "Steel"
+      },
+      "11": {
+        "Value": 12,
+        "Description": "User-Defined (Default)"
+      }
+    },
+    "device_type": {
+      "0": {
+        "Value": 0,
+        "Description": "None"
+      },
+      "1": {
+        "Value": 1,
+        "Description": "Source"
+      },
+      "2": {
+        "Value": 2,
+        "Description": "Bay (Default)"
+      },
+      "3": {
+        "Value": 3,
+        "Description": "OCR"
+      },
+      "4": {
+        "Value": 4,
+        "Description": "Recloser"
+      },
+      "5": {
+        "Value": 5,
+        "Description": "Fuse"
+      },
+      "6": {
+        "Value": 6,
+        "Description": "Sectionalizer"
+      },
+      "7": {
+        "Value": 7,
+        "Description": "Circuit Breaker"
+      }
+    },
+    "equipment_type": {
+      "0": {
+        "Value": 1,
+        "Description": "Overhead Conductor"
+      },
+      "1": {
+        "Value": 2,
+        "Description": "Underground Conductor"
+      },
+      "2": {
+        "Value": 3,
+        "Description": "Zsm Conductor"
+      },
+      "3": {
+        "Value": 4,
+        "Description": "Zabc Conductor"
+      },
+      "4": {
+        "Value": 5,
+        "Description": "Transformer Conductor"
+      },
+      "5": {
+        "Value": 6,
+        "Description": "Regulator"
+      },
+      "6": {
+        "Value": 7,
+        "Description": "Load Mix"
+      },
+      "7": {
+        "Value": 8,
+        "Description": "Construction Code"
+      },
+      "8": {
+        "Value": 9,
+        "Description": "Load Zone"
+      },
+      "9": {
+        "Value": 10,
+        "Description": "Device"
+      },
+      "10": {
+        "Value": 11,
+        "Description": "Protected Device"
+      },
+      "11": {
+        "Value": 12,
+        "Description": "Assemblies"
+      },
+      "12": {
+        "Value": 13,
+        "Description": "Switchgear"
+      }
+    },
+    "display_units": {
+      "0": {
+        "Value": 0,
+        "Description": "Total"
+      },
+      "1": {
+        "Value": 1,
+        "Description": "Mile"
+      },
+      "2": {
+        "Value": 2,
+        "Description": "Kilometer"
+      },
+      "3": {
+        "Value": 3,
+        "Description": "Mft"
+      },
+      "4": {
+        "Value": 4,
+        "Description": "Feet"
+      },
+      "5": {
+        "Value": 5,
+        "Description": "Meter"
+      },
+      "6": {
+        "Value": 6,
+        "Description": "Inches"
+      },
+      "7": {
+        "Value": 7,
+        "Description": "Centimeters"
+      }
+    },
+    "impedance_units": {
+      "0": {
+        "Value": 0,
+        "Description": "Ohms (Default)"
+      },
+      "1": {
+        "Value": 1,
+        "Description": "Percent"
+      },
+      "2": {
+        "Value": 2,
+        "Description": "Per Unit"
+      },
+      "3": {
+        "Value": 3,
+        "Description": "Total"
+      }
+    },
+    "spacing_values": {
+      "0": {
+        "Value": 0,
+        "Description": "Triangular OH (Default)"
+      },
+      "1": {
+        "Value": 1,
+        "Description": "Vertical OH"
+      },
+      "2": {
+        "Value": 2,
+        "Description": "Random UG"
+      },
+      "3": {
+        "Value": 3,
+        "Description": "Specified UG"
+      }
+    },
+    "transformer_type": {
+      "0": {
+        "Value": 0,
+        "Description": "Single Phase Balanced (Default)"
+      },
+      "1": {
+        "Value": 1,
+        "Description": "Single Phase Unbalanced"
+      },
+      "2": {
+        "Value": 2,
+        "Description": "3 Phase"
+      },
+      "3": {
+        "Value": 3,
+        "Description": "3 Winding"
+      }
+    },
+    "underground_cable_type": {
+      "0": {
+        "Value": 0,
+        "Description": "Concentric (Default)"
+      },
+      "1": {
+        "Value": 1,
+        "Description": "Tape Shield"
+      },
+      "2": {
+        "Value": 2,
+        "Description": "No Concentric"
+      }
+    },
+    "units": {
+      "0": {
+        "Value": 0,
+        "Description": "Total (Default)"
+      },
+      "1": {
+        "Value": 1,
+        "Description": "Mile"
+      },
+      "2": {
+        "Value": 2,
+        "Description": "Kilometer"
+      },
+      "3": {
+        "Value": 3,
+        "Description": "Mft"
+      },
+      "4": {
+        "Value": 4,
+        "Description": "Feet"
+      },
+      "5": {
+        "Value": 5,
+        "Description": "Meter"
+      }
+    }
+  },
+  "SLD_format": {
+    "load_group": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "APCNF": {
+      "4": "AB",
+      "5": "AC",
+      "6": "BC"
+    },
+    "capacitor_connection": {
+      "0": "shunt Wye",
+      "1": "shunt delta",
+      "2": "shunt, same as parent",
+      "3": "series"
+    },
+    "capacitor_switch_status_code": {
+      "0": {
+        "Value": 0,
+        "Description": "Disconnected (Default)"
+      },
+      "1": {
+        "Value": 1,
+        "Description": "On"
+      },
+      "2": {
+        "Value": 2,
+        "Description": "Off (Controlled)"
+      }
+    },
+    "capacitor_switch_type_code": {
+      "0": {
+        "Value": 0,
+        "Description": "Manual (Default)"
+      },
+      "1": {
+        "Value": 1,
+        "Description": "Voltage"
+      },
+      "2": {
+        "Value": 2,
+        "Description": "Current"
+      },
+      "3": {
+        "Value": 3,
+        "Description": "Reactive Amps"
+      },
+      "4": {
+        "Value": 4,
+        "Description": "Time"
+      },
+      "5": {
+        "Value": 5,
+        "Description": "Temperature"
+      }
+    },
+    "capacitor_switch_on_off_settings": {
+      "value": 0,
+      "description": "For switched capacitors, the value at which the switch will turn on or off"
+    },
+    "capacitor_voltage_rating": {
+      "value": 0,
+      "description": "value in Volts line-ground for Wye connected and Volts line-line for Delta connected"
+    },
+    "circuit_level": {
+      "0": {
+        "Value": 0,
+        "Description": "None (Default)"
+      },
+      "1": {
+        "Value": 1,
+        "Description": "Feeder (Deprecated but supported)"
+      },
+      "2": {
+        "Value": 2,
+        "Description": "Substation Low Side Bus"
+      },
+      "3": {
+        "Value": 3,
+        "Description": "Substation High Side Bus"
+      },
+      "4": {
+        "Value": 4,
+        "Description": "Spot Load"
+      },
+      "5": {
+        "Value": 5,
+        "Description": "Consumer"
+      },
+      "6": {
+        "Value": 6,
+        "Description": "Active Consumer (Deprecated but supported)"
+      },
+      "7": {
+        "Value": 7,
+        "Description": "Inactive Consumer (Deprecated but supported)"
+      },
+      "8": {
+        "Value": "F",
+        "Description": "End of Element"
+      }
+    },
+    "conductor_description": {
+      "value": null,
+      "description": "An up to 20 character string that will be compared to the conductor labels stored in the Equipment Database (EQDB). \n\nA non null field results in a search for an exact match in the equipment tables. If an exact match is not found, then a conductor with default values is added to the equipment database, and a warning is generated. \n\nThe default is NULL."
+    },
+    "construction_description": {
+      "value": null,
+      "description": "An up to 20 character string that will be compared to the construction type labels stored in the equipment database (EQDB). \n\nA non null field results in a search for an exact match in the equipment tables. If an exact match is not found, then a construction type with default values is added to the equipment database, and a warning is generated. \n\nThe default is NULL. \n\nIf the field remains NULL, the system default construction type will be associated with this section."
+    },
+    "consumer_type": {
+      "0": {
+        "Value": 0,
+        "Description": "Residential (Default)"
+      },
+      "1": {
+        "Value": 1,
+        "Description": "Small Commercial"
+      },
+      "2": {
+        "Value": 2,
+        "Description": "Large Commercial"
+      },
+      "3": {
+        "Value": 3,
+        "Description": "Large Power"
+      },
+      "4": {
+        "Value": 4,
+        "Description": "Motor Load"
+      },
+      "5": {
+        "Value": 5,
+        "Description": "Irrigation"
+      },
+      "6": {
+        "Value": 6,
+        "Description": "Oil and Gas"
+      },
+      "7": {
+        "Value": 7,
+        "Description": "Traffic Lights"
+      },
+      "8": {
+        "Value": 8,
+        "Description": "Security and Street Lights"
+      },
+      "9": {
+        "Value": 9,
+        "Description": "Flat Rate Load"
+      },
+      "10": {
+        "Value": 10,
+        "Description": "Primary"
+      },
+      "11": {
+        "Value": 11,
+        "Description": "Primary 120V"
+      },
+      "12": {
+        "Value": 12,
+        "Description": "Test 120V"
+      }
+    },
+    "control_circuit_element": {
+      "value": null,
+      "description": "A unique, alphanumeric name identifying this element with a maximum length of 32 characters. \n\nIf not blank, specifies the name of the circuit element that will control capacitor switching. \n\nIf blank, the capacitor element itself will control switching. \n\nIf the capacitor is Voltage switched, the voltage at the load end of the Control Circuit Element will be used to control the capacitor. \n\nIf the capacitor is Amps or Reactive Amps switched, the amps or reactive amps through the source end of the Control Circuit Element will be used to control the capacitor."
+    },
+    "switch_status_code": {
+      "0": {
+        "Value": "O",
+        "Description": "Open (Default)"
+      },
+      "1": {
+        "Value": "C",
+        "Description": "Closed"
+      },
+      "2": {
+        "Value": "L",
+        "Description": "Looped"
+      }
+    },
+    "electric_phase_configuration": {
+      "1": "A",
+      "2": "B",
+      "3": "C",
+      "4": "AB",
+      "5": "AC",
+      "6": "BC",
+      "7": "ABC"
+    },
+    "element_type": {
+      "0": {
+        "Value": 0,
+        "Description": "<undefined>"
+      },
+      "1": {
+        "Value": 1,
+        "Description": "Overhead Line"
+      },
+      "2": {
+        "Value": 2,
+        "Description": "Capacitor"
+      },
+      "3": {
+        "Value": 3,
+        "Description": "Underground Line"
+      },
+      "4": {
+        "Value": 4,
+        "Description": "Regulator"
+      },
+      "5": {
+        "Value": 5,
+        "Description": "Step Transformer"
+      },
+      "6": {
+        "Value": 6,
+        "Description": "Electric Switch"
+      },
+      "7": {
+        "Value": 7,
+        "Description": "<undefined>"
+      },
+      "8": {
+        "Value": 8,
+        "Description": "Node/Fake"
+      },
+      "9": {
+        "Value": 9,
+        "Description": "Source"
+      },
+      "10": {
+        "Value": 10,
+        "Description": "Overcurrent Device"
+      },
+      "11": {
+        "Value": 11,
+        "Description": "Motor"
+      },
+      "12": {
+        "Value": 12,
+        "Description": "Generator"
+      },
+      "13": {
+        "Value": 13,
+        "Description": "Consumer"
+      },
+      "14": {
+        "Value": 14,
+        "Description": "Solar"
+      }
+    },
+    "fuse_coordination": {
+      "0": {
+        "value": 0,
+        "description": "fuse save"
+      },
+      "1": {
+        "value": 1,
+        "description": "fuse blow"
+      },
+      "2": {
+        "value": 2,
+        "description": "advanced"
+      },
+      "3": {
+        "value": 3,
+        "description": "not set"
+      },
+      "4": {
+        "Value": 4,
+        "Description": "based on upline device"
+      },
+      "5": {
+        "Value": 5,
+        "Description": "invalid"
+      }
+    },
+    "generator_connection": {
+      "0": {
+        "value": 0,
+        "description": "Wye load connected line to ground"
+      },
+      "1": {
+        "value": 1,
+        "description": "Delta load connected line to line"
+      }
+    },
+    "generator_model": {
+      "0": {
+        "Value": 0,
+        "Description": "Negative Load (Default)"
+      },
+      "1": {
+        "Value": 1,
+        "Description": "Swing Unlimited"
+      },
+      "2": {
+        "Value": 2,
+        "Description": "Swing kVA"
+      },
+      "3": {
+        "Value": 3,
+        "Description": "Swing kvar"
+      }
+    },
+    "is_center_tapped": {
+      "0": {
+        "Value": 0,
+        "Description": "Not center tapped (Default)"
+      },
+      "1": {
+        "Value": 1,
+        "Description": "AB tapped"
+      },
+      "2": {
+        "Value": 2,
+        "Description": "BA tapped"
+      },
+      "3": {
+        "Value": 3,
+        "Description": "CA tapped"
+      }
+    },
+    "load_connection": {
+      "0": {
+        "value": "W",
+        "description": "Wye load connected line to ground (Default)"
+      },
+      "1": {
+        "value": "D",
+        "description": "Delta load connected line to line"
+      }
+    },
+    "load_interuptible": {
+      "0": {
+        "Value": 0,
+        "Description": "General"
+      },
+      "1": {
+        "Value": 1,
+        "Description": "Interruptible"
+      },
+      "2": {
+        "Value": 2,
+        "Description": "Non-Interruptible"
+      }
+    },
+    "load_location": {
+      "0": {
+        "Value": "U",
+        "Description": "Uniform (Default)"
+      },
+      "1": {
+        "Value": "L",
+        "Description": "Load End"
+      },
+      "2": {
+        "Value": "S",
+        "Description": "Source End"
+      }
+    },
+    "load_mix_description": "An up to 20 character string that will be compared to the load mix labels stored in the equipment database (EQDB). \n\nA non null field results in a search for an exact match in the equipment tables. If an exact match is not found, then a load mix (with default values) is added to the equipment database, and a warning is generated. \n\nThe default is NULL. \n\nWhen NULL nothing is added to the equipment database. ",
+    "load_zone_description": "An up to 20 character string that will be compared to the load zone labels stored in the Equipment Database (EQDB). \n\n A non null field results in a search for an exact match in the equipment tables. If an exact match is not found, then a load mix (with default values) is added to the equipment database, and a warning is generated. \n\nThe default is NULL. \n\nWhen NULL, nothing is added to the equipment database.",
+    "mandatory_node": {
+      "value": 0,
+      "description": "This field is used for a Circuit Reducer. It should be marked 'True' if this is a mandatory node."
+    },
+    "motor_status": {
+      "0": {
+        "Value": 0,
+        "Description": "Disconnected (Default)"
+      },
+      "1": {
+        "Value": 1,
+        "Description": "Off"
+      },
+      "2": {
+        "Value": 2,
+        "Description": "Locked Rotor"
+      },
+      "3": {
+        "Value": 3,
+        "Description": "Soft Start"
+      },
+      "4": {
+        "Value": 4,
+        "Description": "Running"
+      }
+    },
+    "nema_type": {
+      "0": {
+        "value": 0,
+        "description": "None"
+      },
+      "1": {
+        "value": 1,
+        "description": "A"
+      },
+      "2": {
+        "value": 2,
+        "description": "B"
+      },
+      "3": {
+        "value": 3,
+        "description": "C"
+      },
+      "4": {
+        "value": 4,
+        "description": "D"
+      },
+      "5": {
+        "value": 5,
+        "description": "E"
+      },
+      "6": {
+        "value": 6,
+        "description": "F"
+      },
+      "7": {
+        "value": 7,
+        "description": "G"
+      },
+      "8": {
+        "value": 8,
+        "description": "H"
+      },
+      "9": {
+        "value": 9,
+        "description": "J"
+      },
+      "10": {
+        "value": 10,
+        "description": "K"
+      },
+      "11": {
+        "value": 11,
+        "description": "L"
+      },
+      "12": {
+        "value": 12,
+        "description": "M"
+      },
+      "13": {
+        "value": 13,
+        "description": "N"
+      },
+      "14": {
+        "value": 14,
+        "description": "P"
+      },
+      "15": {
+        "value": 15,
+        "description": "Q"
+      },
+      "16": {
+        "value": 16,
+        "description": "R"
+      },
+      "17": {
+        "value": 17,
+        "description": "S"
+      },
+      "18": {
+        "value": 18,
+        "description": "T"
+      },
+      "19": {
+        "value": 19,
+        "description": "U"
+      },
+      "20": {
+        "value": 20,
+        "description": "V"
+      },
+      "21": {
+        "value": 21,
+        "description": "W"
+      },
+      "22": {
+        "value": 22,
+        "description": "X"
+      },
+      "23": {
+        "value": 23,
+        "description": "Y"
+      },
+      "24": {
+        "value": 24,
+        "description": "Z"
+      }
+    },
+    "overcurrent_device_connectivity": {
+      "0": {
+        "Value": 0,
+        "Description": "Phase is Open"
+      },
+      "1": {
+        "Value": 1,
+        "Description": "Phase is Closed"
+      }
+    },
+    "overcurrent_device_description": {
+      "value": null,
+      "description": "A 20 character string that will be compared to the device labels stored in the Equipment Database (EQDB). \n\nA non null field results in a search for an exact match in the equipment tables. If no match is found, a device (with default values) is added to the equipment database, and a warning is generated. \n\nThe default is NULL."
+    },
+    "regulated_controlled_phase": {
+      "0": {
+        "Value": 0,
+        "Description": "Each phase controlled independently."
+      },
+      "1": {
+        "Value": 1,
+        "Description": "Control all phases by voltages and currents on Phase A."
+      },
+      "2": {
+        "Value": 2,
+        "Description": "Control all phases by voltages and currents on Phase B."
+      },
+      "3": {
+        "Value": 3,
+        "Description": "Control all phases by voltages and currents on Phase C."
+      }
+    },
+    "regulator_description": {
+      "value": null,
+      "description": "A 20-character string that will be compared to the Regulator labels stored in the Equipment Database (EQDB). \n\nA non null field results in a search for an exact match in the equipment tables. If no match is found, a regulator (with default values) is added to the equipment database, and a warning is generated. \n\nThe default is NULL."
+    },
+    "regulator_form": {
+      "0": {
+        "Value": 1,
+        "Description": "tranForm_A_1 (Y Y)"
+      },
+      "1": {
+        "Value": 6,
+        "Description": "tranForm_A_7 (D D)"
+      },
+      "2": {
+        "Value": 9,
+        "Description": "tranForm_A_7one (D D one)"
+      },
+      "3": {
+        "Value": 10,
+        "Description": "tranForm_A_7open (D D open)"
+      }
+    },
+    "regulator_type": {
+      "0": {
+        "value": 0,
+        "description": "3 phase (regulator type dependent)"
+      },
+      "1": {
+        "value": 1,
+        "description": "1 phase (regulator type independent"
+      }
+    },
+    "soft_start_type": {
+      "0": {
+        "Value": 0,
+        "Description": "None (Default)"
+      },
+      "1": {
+        "Value": 1,
+        "Description": "Impedance"
+      },
+      "2": {
+        "Value": 2,
+        "Description": "Auto Transformer"
+      },
+      "3": {
+        "Value": 3,
+        "Description": "Capacitive"
+      },
+      "4": {
+        "Value": 4,
+        "Description": "Partial Winding"
+      },
+      "5": {
+        "Value": 5,
+        "Description": "Wye Delta"
+      }
+    },
+    "source_regulation": {
+      "0": {
+        "value": "R",
+        "description": "regulated"
+      },
+      "1": {
+        "value": "U",
+        "description": "Unregulated"
+      }
+    },
+    "transformer_windings": {
+      "0": {
+        "Value": 1,
+        "Form Codes": "tranForm_A_1",
+        "Notes": "(Y-Y Ground) Any valid configuration. (Default)"
+      },
+      "1": {
+        "Value": 2,
+        "Form Codes": "tranForm_A_6",
+        "Notes": "(D-Y Ground) See the Transformer Phasing Note 1 section."
+      },
+      "2": {
+        "Value": 3,
+        "Form Codes": "tranForm_A_5",
+        "Notes": "(Y-D Ground) See the Transformer Phasing Note 1 section."
+      },
+      "3": {
+        "Value": 4,
+        "Form Codes": "tranForm_A_5ug",
+        "Notes": "(Ungrounded Y-D) See the Transformer Phasing Note 1 section."
+      },
+      "4": {
+        "Value": 5,
+        "Form Codes": "tranForm_A_5open",
+        "Notes": "(Y-D Open) Transformer must be ABC. Upline element can be ABC, AB, or AC."
+      },
+      "5": {
+        "Value": 6,
+        "Form Codes": "tranForm_A_7",
+        "Notes": "(D-D) See the Transformer Phasing Note 1 section."
+      },
+      "6": {
+        "Value": 7,
+        "Form Codes": "tranForm_A_2",
+        "Notes": "(Y-Y with Grounded Impedance) Any valid configuration."
+      },
+      "7": {
+        "Value": 8,
+        "Form Codes": "tranForm_A_3",
+        "Notes": "(Y-Y with Three-Phase Transformer Core) Any valid configuration."
+      },
+      "8": {
+        "Value": 9,
+        "Form Codes": "tranForm_A_7one",
+        "Notes": "(D-D One) See the Transformer Phasing Note 2 section."
+      },
+      "9": {
+        "Value": 10,
+        "Form Codes": "tranForm_A_7open",
+        "Notes": "(D-D Open) See the Transformer Phasing Note 1 section."
+      },
+      "10": {
+        "Value": 11,
+        "Form Codes": "tranForm_C_3",
+        "Notes": "(Y-Y-D Ground) See the Transformer Phasing Note 1 section."
+      },
+      "11": {
+        "Value": 12,
+        "Form Codes": "tranForm_A_5one",
+        "Notes": "(Y-D One) See the Transformer Phasing Note 3 section."
+      },
+      "12": {
+        "Value": 13,
+        "Form Codes": "tranForm_A_6open",
+        "Notes": "(D-Y Open) See the Transformer Phasing Note 1 section."
+      },
+      "13": {
+        "Value": 14,
+        "Form Codes": "tranForm_A_6one",
+        "Notes": "(D-Y One) See the Transformer Phasing Note 4 section."
+      },
+      "14": {
+        "Value": 15,
+        "Form Codes": "tranForm_A_6ug",
+        "Notes": "(Ungrounded D-Y)"
+      },
+      "15": {
+        "Value": 16,
+        "Form Codes": "tranForm_C_1",
+        "Notes": "(Y-Y-Y Ground)"
+      },
+      "16": {
+        "Value": 17,
+        "Form Codes": "tranForm_C_6",
+        "Notes": "(D-Y-D)"
+      },
+      "17": {
+        "Value": 18,
+        "Form Codes": "tranForm_C_7",
+        "Notes": "(D-D-D)"
+      }
+    },
+    "fault_types": {
+      "0": {
+        "Value": 0,
+        "Description": "Not Required"
+      },
+      "1": {
+        "Value": 1,
+        "Description": "Fuse save for all flt"
+      },
+      "2": {
+        "Value": 2,
+        "Description": "Fuse save for 3-ph flt"
+      },
+      "3": {
+        "Value": 3,
+        "Description": "Fuse save for 2-ph flt"
+      },
+      "4": {
+        "Value": 4,
+        "Description": "Fuse save for 1-ph flt"
+      },
+      "5": {
+        "Value": 5,
+        "Description": "Fuse blow for all flt"
+      },
+      "6": {
+        "Value": 6,
+        "Description": "Fuse blow for 3-ph flt"
+      },
+      "7": {
+        "Value": 7,
+        "Description": "Fuse blow for 2-ph flt"
+      },
+      "8": {
+        "Value": 8,
+        "Description": "Fuse blow for 1-ph flt"
+      },
+      "9": {
+        "Value": 9,
+        "Description": "Coordinate for all flt"
+      },
+      "10": {
+        "Value": 10,
+        "Description": "Coordinate for 3-phase flt"
+      },
+      "11": {
+        "Value": 11,
+        "Description": "Coordinate for 2-phase flt"
+      },
+      "12": {
+        "Value": 12,
+        "Description": "Coordinate for 1-phase flt"
+      },
+      "13": {
+        "Value": 13,
+        "Description": "Sequentially coordinate for transformer multiplier 1.0"
+      },
+      "14": {
+        "Value": 14,
+        "Description": "Sequentially coordinate for 3-phase fault"
+      },
+      "15": {
+        "Value": 15,
+        "Description": "Sequentially coordinate for 2-phase fault"
+      },
+      "16": {
+        "Value": 16,
+        "Description": "Sequentially coordinate for 1-phase fault"
+      },
+      "17": {
+        "Value": 17,
+        "Description": "Recl has no curves"
+      },
+      "18": {
+        "Value": 18,
+        "Description": "Recl has no fast curves"
+      },
+      "19": {
+        "Value": 19,
+        "Description": "Recl has no slow curves"
+      },
+      "20": {
+        "Value": 20,
+        "Description": "Fuse is too small"
+      },
+      "21": {
+        "Value": 21,
+        "Description": "Fuse is too large"
+      },
+      "22": {
+        "Value": 22,
+        "Description": "2 and 3 Phs Flt"
+      },
+      "23": {
+        "Value": 23,
+        "Description": "1-phase fault with upline delta transformer"
+      },
+      "24": {
+        "Value": 24,
+        "Description": "2- or 3-phase fault with upline ground return"
+      },
+      "25": {
+        "Value": 25,
+        "Description": "Recloser has no phase curves"
+      },
+      "26": {
+        "Value": 26,
+        "Description": "Fuse is too small for multi phase"
+      },
+      "27": {
+        "Value": 27,
+        "Description": "Fuse is too small for single phase"
+      },
+      "28": {
+        "Value": 28,
+        "Description": "Coordinate for all faults (initially slower)"
+      },
+      "29": {
+        "Value": 29,
+        "Description": "Coordinate for 3-phase faults (initially slower)"
+      },
+      "30": {
+        "Value": 30,
+        "Description": "Coordinate for 2-phase faults (initially slower)"
+      },
+      "31": {
+        "Value": 31,
+        "Description": "Coordinate for 1-phase faults (initially slower)"
+      },
+      "32": {
+        "Value": 32,
+        "Description": "Coordinate for 2&3-phase faults (initially slower)"
+      },
+      "33": {
+        "Value": 33,
+        "Description": "Invalid device coordination type"
+      }
+    },
+    "op_mode": {
+      "0": {
+        "index": 0,
+        "name": "Constant PQ",
+        "description": "The inverter controls power output directly, but voltage may vary."
+      },
+      "1": {
+        "index": 1,
+        "name": "Voltage Controlled",
+        "description": "The inverter controls voltage directly, but power output may vary."
+      }
+    },
+    "array_tilt_type": {
+      "0": {
+        "index": 0,
+        "name": "Fixed",
+        "description": "The panels in the solar array cannot change their tilt or azimuth."
+      },
+      "1": {
+        "index": 1,
+        "name": "One-Axis Tilt",
+        "description": "The panels in the solar array can rotate along one axis to follow the sun."
+      },
+      "2": {
+        "index": 2,
+        "name": "Two-Axis Tilt",
+        "description": "The panels in the solar array can rotate along two axes to follow the sun."
+      }
+    },
+    "xfmr_mounting_type_code": {
+      "0": {
+        "Value": 0,
+        "Description": "Unknown"
+      },
+      "1": {
+        "Value": 1,
+        "Description": "Bus Mounted"
+      },
+      "2": {
+        "Value": 2,
+        "Description": "Pole Mounted"
+      },
+      "3": {
+        "Value": 3,
+        "Description": "Pad Mounted"
+      },
+      "4": {
+        "Value": 4,
+        "Description": "Vault Mounted"
+      },
+      "5": {
+        "Value": 5,
+        "Description": "Substation"
+      },
+      "6": {
+        "Value": 6,
+        "Description": "Other"
+      }
+    },
+    "APCNF_note": "Open for Open Y D and the prior section is 3 phase. \n\nA valid 2 phase configuration code identifies the input phasing of the transformer bank. See the Element Type Code section. \n\nThe setting denotes the source side phase connection of the transformer bank.",
+    "transformer_notes": {
+      "phasing_note_1": "Transformer and upline element must be required to be AB, BC, or AC phasing. This line is required to be ABC.",
+      "phasing_note_2": "Transformer is always two-phase. \n\nParent AB -> Transformer AB \n\nParent BC -> Transformer BC \n\nParent AC -> Transformer AC",
+      "phasing_note_3": "Parent element can be any valid configuration. Transformer must be two-phase. \n\nParent A -> Transformer AB \n\nParent B -> Transformer BC \n\nParent C -> Transformer AC",
+      "phasing_note_4": "Parent element can be ABC, AB, BC, or AC. Transformer is always single-phase. \n\nParent AB -> Transformer B \n\nParent BC -> Transformer C \n\nParent AC -> Transformer A",
+      "voltage_note": "These fields are the rated nominal input and output voltages of the transformer. \n\nThe output voltage will define the nominal voltage for all system downline from the transformer. \n\nOff nominal taps can be defined by using the input voltage. \n\nYou should set the input voltage to that voltage which results in the specified output voltage. \n\nInput and output voltages values are in kV. \n\nInput voltage values are stored L G (Wye connected). \n\nOutput voltage is L G. \n\nIf the import file does not specify a rated input voltage for a transformer and the option in Circuit Element Defaults called 'Default rated input voltage to base kV of parent element' is set, we will default the rated input voltage of the transformer to the voltage of the upline element. If a default input voltage is specified in Circuit Element Defaults, we will use that voltage and not emit an import warning.",
+      "winding_note": "Specifies the winding connection configuration. \n\nForm definitions correspond to definitions in Electrical Transmission and Distribution Reference Book, Table 7. \n\nThe following rules apply: \n\nDelta windings are not allowed on Wye 1 phase sections.\n\nOpen Y D requires APCNF. See the APCNF Source Side Configuration section.\n\nSee the code notes below for additional rules."
+    },
+    "coordinate_note": "These are double-precision floating point numbers that refer to the location of a circuit element in the model's chosen coordinate system. \n\nFor line elements, fields 6 and 7 contain the downline coordinate (load end) of the element. The upline coordinate of a line element is contained in fields 32 and 33. \n\nFor symbol (non-line) elements, fields 6 and 7 contain the coordinate of the element's symbol, where it is drawn on the map. The physical location of a symbol element (where the leader line points) is exported in fields 57 and 58."
+  }
+}
